@@ -4,11 +4,11 @@
   "builtInWeapons": {
     "WS0008": "rifttorpedo"
   },
-  "descriptionPrefix": "The variant of the Silverlight first encountered by the Persean Sector, restraining its true power.",
+  "descriptionPrefix": "Вариант «Серебряного света», впервые встреченный в Персеанском секторе; его истинная мощь ограничена.",
   "fighterBays": 0,
   "fleetPoints":40,
   "ordnancePoints":350,
-  "hullName": "Silverlight (R)",
+  "hullName": "Серебряный свет (О)",
   "restoreToBaseHull": false,
   "skinHullId": "nex_silverlight_restrained",
   "systemId":"microburn_omega",

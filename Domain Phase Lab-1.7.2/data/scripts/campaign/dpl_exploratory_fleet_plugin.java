@@ -137,7 +137,7 @@ public class dpl_exploratory_fleet_plugin implements EveryFrameScript, FleetEven
 		
 		fleet.getFleetData().addFleetMember("dpl_pioneer_standard");
 		
-		fleet.setName("Phase Lab Exploratory Fleet");
+		fleet.setName("Исследовательский флот Фазовой Лаборатории");
 		fleet.setNoFactionInName(true);
 		
 		fleet.getFleetData().sort();

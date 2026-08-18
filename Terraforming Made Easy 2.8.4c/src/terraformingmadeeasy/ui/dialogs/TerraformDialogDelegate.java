@@ -72,7 +72,7 @@ public class TerraformDialogDelegate extends TMEBaseDialogDelegate {
         TooltipMakerAPI creditsElement = panel.createUIElement(WIDTH, 0f, false);
         TooltipMakerAPI creditsSubElement = creditsElement.beginSubTooltip(380f);
         creditsSubElement.setParaSmallInsignia();
-        LabelAPI creditsLabel = creditsSubElement.addPara("Credits: %s", 3f, Misc.getGrayColor(), Misc.getHighlightColor(),
+        LabelAPI creditsLabel = creditsSubElement.addPara("Кредиты: %s", 3f, Misc.getGrayColor(), Misc.getHighlightColor(),
                 Misc.getWithDGS(Global.getSector().getPlayerFleet().getCargo().getCredits().get()));
         creditsLabel.setHighlightOnMouseover(true);
         creditsLabel.getPosition().setXAlignOffset(0f);

@@ -12,7 +12,7 @@ public class OrbitFocusFieldTooltip extends BaseTooltipCreator {
 
     @Override
     public void createTooltip(TooltipMakerAPI tooltip, boolean expanded, Object tooltipParam) {
-        tooltip.addPara("The %s where the megastructure orbits", 0f, Misc.getHighlightColor(), "main entity");
-        tooltip.addPara("Only %s are eligible", 10f, Misc.getHighlightColor(), "planets and stars");
+        tooltip.addPara("%s, вокруг которого обращается мегаструктура", 0f, Misc.getHighlightColor(), "Основной объект");
+        tooltip.addPara("Допустимы только %s", 10f, Misc.getHighlightColor(), "планеты и звёзды");
     }
 }

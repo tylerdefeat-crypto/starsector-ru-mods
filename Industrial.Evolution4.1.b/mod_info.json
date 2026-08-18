@@ -3,7 +3,7 @@
 	"name":"Industrial.Evolution", # displayed to the player
 	"author":"SirHartley",
 	"version":"4.1.b",
-	"description":"Expands the available campaign content through addition of buildings, interactions, abilities, events, terrain and exploration content.",
+	"description":"Расширяет кампанию новыми сооружениями, взаимодействиями, способностями, событиями, видами местности и исследовательским контентом.",
 	"gameVersion":"0.98a",
 	"jars":["jars/IndEvo.jar"],
 	"modPlugin":"indevo.utils.ModPlugin",

@@ -24,16 +24,16 @@ public class MegastructureTooltip extends BaseTooltipCreator {
     @Override
     public void createTooltip(TooltipMakerAPI tooltip, boolean expanded, Object tooltipParam) {
         if (Objects.equals(this.project.id, Entities.CORONAL_TAP)) {
-            tooltip.addPara("Only %s can exist in a system", 0f, Misc.getHighlightColor(), "1 " + this.project.name);
-            tooltip.addPara("Needs a %s in the system", 10f, Misc.getHighlightColor(), "Blue Supergiant Star");
+            tooltip.addPara("В системе может существовать только %s", 0f, Misc.getHighlightColor(), "1: " + this.project.name);
+            tooltip.addPara("В системе требуется %s", 10f, Misc.getHighlightColor(), "голубой сверхгигант");
         } else if (Objects.equals(this.project.id, Entities.DERELICT_CRYOSLEEPER)) {
-            tooltip.addPara("Only %s can exist in a system", 0f, Misc.getHighlightColor(), "1 " + this.project.name);
+            tooltip.addPara("В системе может существовать только %s", 0f, Misc.getHighlightColor(), "1: " + this.project.name);
         } else if (Objects.equals(this.project.id, Entities.INACTIVE_GATE)) {
-            tooltip.addPara("Only %s can exist in a system", 0f, Misc.getHighlightColor(), "1 " + this.project.name);
+            tooltip.addPara("В системе может существовать только %s", 0f, Misc.getHighlightColor(), "1: " + this.project.name);
         } else if (Objects.equals(this.project.id, TMEIds.TME_STATION)) {
-            tooltip.addPara("Only %s can exist in a system", 0f, Misc.getHighlightColor(), "3 " + this.project.name);
+            tooltip.addPara("В системе может существовать не более %s", 0f, Misc.getHighlightColor(), "3: " + this.project.name);
         } else {
-            tooltip.addPara("Only %s can exist in a system", 0f, Misc.getHighlightColor(), "1 " + this.project.name);
+            tooltip.addPara("В системе может существовать только %s", 0f, Misc.getHighlightColor(), "1: " + this.project.name);
         }
     }
 }

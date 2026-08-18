@@ -163,7 +163,7 @@ public class dpl_Celebration extends HubMissionWithBarEvent implements FleetEven
         );
     	
     	target = FleetFactoryV3.createFleet(params);
-        target.setName("Armageddon Fleet");
+		target.setName("Флот «Армагеддон»");
         target.setNoFactionInName(true);
 
         target.setCommander(pather);
@@ -178,7 +178,7 @@ public class dpl_Celebration extends HubMissionWithBarEvent implements FleetEven
         target.getMemoryWithoutUpdate().set("$ignorePlayerCommRequests", true);
         target.getMemoryWithoutUpdate().set("$dpl_celebration_patherfleet", true);
         target.getAI().addAssignment(FleetAssignment.DELIVER_FUEL, research_site_v, 200f, null);
-        target.addAssignment(FleetAssignment.HOLD, research_site_v, 0.25f, "Attacking Research Site V", 
+		target.addAssignment(FleetAssignment.HOLD, research_site_v, 0.25f, "Атакует Исследовательский объект V", 
         		new Script() {
 					public void run() {
 						checkRamPlanet(target, market);
@@ -211,7 +211,7 @@ public class dpl_Celebration extends HubMissionWithBarEvent implements FleetEven
         );
     	
     	banach_fleet = FleetFactoryV3.createFleet(params);
-    	banach_fleet.setName(banach_salazar.getNameString() + "'s Defence Armada");
+		banach_fleet.setName("Оборонительная армада: " + banach_salazar.getNameString());
     	banach_fleet.getFleetData().addFleetMember(member);
     	banach_fleet.getFleetData().setFlagship(member);
     	banach_fleet.getFleetData().addFleetMember("dpl_cimbasso_AA");
@@ -356,13 +356,13 @@ public class dpl_Celebration extends HubMissionWithBarEvent implements FleetEven
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Find the agent and eliminate the pather in the " +
+			info.addPara("Найдите агента и устраните луддита в локации " +
                     system.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V to release the agent.", opad);
+			info.addPara("Вернитесь на Исследовательский объект V, чтобы отпустить агента.", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: PATHER IS LOCATED IN THE " +
+			info.addPara("РЕЖИМ РАЗРАБОТЧИКА: ЛУДДИТ НАХОДИТСЯ В ЛОКАЦИИ " +
                     system.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -372,11 +372,11 @@ public class dpl_Celebration extends HubMissionWithBarEvent implements FleetEven
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Defend Research Site V in " +
+			info.addPara("Защитите Исследовательский объект V в локации " +
                     system.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V.", tc, pad);
+			info.addPara("Вернитесь на Исследовательский объект V.", tc, pad);
             return true;
         }
         return false;

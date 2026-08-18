@@ -56,7 +56,7 @@ public class DevelopmentDialogDelegate extends BaseCustomDialogDelegate {
     public void addPlayerCredits(CustomPanelAPI panel) {
         TooltipMakerAPI creditsElement = panel.createUIElement(this.width / 4f, 20f, false);
         creditsElement.setParaSmallInsignia();
-        LabelAPI creditsLabel = creditsElement.addPara("Credits: %s", 3f, Misc.getGrayColor(), Misc.getHighlightColor(),
+        LabelAPI creditsLabel = creditsElement.addPara("Кредиты: %s", 3f, Misc.getGrayColor(), Misc.getHighlightColor(),
                 Misc.getWithDGS(Global.getSector().getPlayerFleet().getCargo().getCredits().get()));
         creditsLabel.setHighlightOnMouseover(true);
         creditsElement.addTooltipToPrevious(new TextTooltip("Credits available"), TooltipMakerAPI.TooltipLocation.ABOVE);
@@ -121,7 +121,7 @@ public class DevelopmentDialogDelegate extends BaseCustomDialogDelegate {
         // Orbit focus input
         CustomPanelAPI orbitFocusPanel = inputsPanel.createCustomPanel(this.width / 4f, 40f, null);
         TooltipMakerAPI orbitFocusElement = orbitFocusPanel.createUIElement(this.width / 4f, 40f, false);
-        orbitFocusElement.addPara("Orbit focus", 0f).setAlignment(Alignment.MID);
+        orbitFocusElement.addPara("Центр орбиты", 0f).setAlignment(Alignment.MID);
         orbitFocusElement.setParaSmallInsignia();
         orbitFocusElement.addSpacer(3f);
         // Orbit focus input dropdown
@@ -139,7 +139,7 @@ public class DevelopmentDialogDelegate extends BaseCustomDialogDelegate {
         // Start angle input
         CustomPanelAPI startAnglePanel = inputsPanel.createCustomPanel(this.width / 4f, 40f, null);
         TooltipMakerAPI startAngleElement = startAnglePanel.createUIElement(this.width / 4f, 40f, false);
-        startAngleElement.addPara("Start angle", 0f).setAlignment(Alignment.MID);
+        startAngleElement.addPara("Начальный угол", 0f).setAlignment(Alignment.MID);
         startAngleElement.setParaSmallInsignia();
         startAngleElement.addSpacer(3f);
         // Start angle input text field
@@ -154,7 +154,7 @@ public class DevelopmentDialogDelegate extends BaseCustomDialogDelegate {
         // Orbit radius input
         CustomPanelAPI orbitRadiusPanel = inputsPanel.createCustomPanel(this.width / 4f, 40f, null);
         TooltipMakerAPI orbitRadiusElement = orbitRadiusPanel.createUIElement(this.width / 4f, 40f, false);
-        orbitRadiusElement.addPara("Orbit radius", 0f).setAlignment(Alignment.MID);
+        orbitRadiusElement.addPara("Радиус орбиты", 0f).setAlignment(Alignment.MID);
         orbitRadiusElement.setParaSmallInsignia();
         orbitRadiusElement.addSpacer(3f);
         // Orbit radius input text field
@@ -169,7 +169,7 @@ public class DevelopmentDialogDelegate extends BaseCustomDialogDelegate {
         // Orbit days input panel
         CustomPanelAPI orbitDaysPanel = inputsPanel.createCustomPanel(this.width / 4f, 40f, null);
         TooltipMakerAPI orbitDaysElement = orbitDaysPanel.createUIElement(this.width / 4f, 40f, false);
-        orbitDaysElement.addPara("Orbit days", 0f).setAlignment(Alignment.MID);
+        orbitDaysElement.addPara("Период орбиты", 0f).setAlignment(Alignment.MID);
         orbitDaysElement.setParaSmallInsignia();
         orbitDaysElement.addSpacer(3f);
         // Orbit days input text field

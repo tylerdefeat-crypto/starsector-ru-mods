@@ -1,17 +1,17 @@
 {
 	"temporalConduits": {
-		"description": "\"Long term effects of persistent temporal acceleration are largely unknown... Although it seems stable enough for practical implementation, despite past incidents.\" - Dr. Lange - Temporal physics, wing #17"
+		"description": "«Долгосрочные последствия постоянного ускорения времени по большей части неизвестны... Несмотря на прошлые инциденты, технология выглядит достаточно стабильной для практического применения». — доктор Ланге, отдел темпоральной физики №17"
 	},
 	"spaceTimeAnchor": {
-		"description": "\"Wild rumours that the recently installed device on board is a - black hole, are only in part truthful. I'd like to remind all crew onboard that such hearsay is unprofessional, and will not be tolerated in the future.\" - Officer Talef - onboard the DSRD Verge"
+		"description": "«Дикие слухи о том, что недавно установленное на борту устройство является чёрной дырой, правдивы лишь отчасти. Напоминаю экипажу: подобные домыслы непрофессиональны и впредь терпеться не будут». — офицер Талеф, борт DSRD Verge"
 	},
 	
 	"nskr_misc":{
-		"shipSwapSelect":"Select artifacts to trade in",
-		"shipSwapMsg":"The selected artifacts are worth $points points.",
-		"shipSwapPurchaseOption":"$name ($points pts)",
-		"shipSwapPurchased":"Acquired $name",
-		"shipSwapGainedPoints":"Gained $points points",
-		"shipSwapLostPoints":"Lost $points points",
+		"shipSwapSelect":"Выберите артефакты для обмена",
+		"shipSwapMsg":"Стоимость выбранных артефактов: $points очк.",
+		"shipSwapPurchaseOption":"$name ($points очк.)",
+		"shipSwapPurchased":"Получено: $name",
+		"shipSwapGainedPoints":"Получено очков: $points",
+		"shipSwapLostPoints":"Потрачено очков: $points",
 	},
 }

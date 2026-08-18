@@ -63,9 +63,9 @@ public class FuelForge extends BaseToggleAbility {
         //Color gray = Misc.getGrayColor();
         Color highlight = Misc.getHighlightColor();
 
-        String status = " (off)";
+        String status = " (выкл.)";
         if (turnedOn) {
-                status = " (on)";
+                status = " (вкл.)";
         }
 
         LabelAPI title = tooltip.addTitle(spec.getName() + status);
@@ -77,8 +77,8 @@ public class FuelForge extends BaseToggleAbility {
             String Supply = Misc.getRoundedValueMaxOneAfterDecimal(getFUELNEWPerFUEL());
             float iCoom = iCalculateBonus();
             if (iCoom > 1) {Supply = Misc.getRoundedValueMaxOneAfterDecimal(getFUELNEWPerFUEL()*iCoom);}
-            String canOrIs = isActive() ? "are smelting" : "can smelt";
-            String Based = iCoom > 1 ? "Nanoforges in your inventory and ships with Salvage Gantry are improving the process of forging Compressed Fuel by": "You do not possess a nanoforge or a ship with Salvage Gantry that can hasten the process.";
+            String canOrIs = isActive() ? "перерабатывают" : "могут переработать";
+            String Based = iCoom > 1 ? "Нанокузни в трюме и корабли с ремонтными кранами ускоряют сжатие топлива на": "У вас нет нанокузни или корабля с ремонтными кранами, способных ускорить процесс.";
             String Based2 = iCoom > 1 ? Misc.getRoundedValue((iCoom-1)*100) + "%." : "";
             tooltip.addPara("\u0410\u0432\u0442\u043e\u0444\u0430\u0431\u0440\u0438\u043a\u0438 \u0432\u0430\u0448\u0435\u0433\u043e \u0444\u043b\u043e\u0442\u0430 " + canOrIs + " %s \u0435\u0434. \u0442\u043e\u043f\u043b\u0438\u0432\u0430 \u0441 %s \u0435\u0434. \u0442\u044f\u0436\u0435\u043b\u043e\u0439 \u0442\u0435\u0445\u043d\u0438\u043a\u0438, \u0441\u043e\u0437\u0434\u0430\u0432\u0430\u044f %s \u0441\u0436\u0430\u0442\u043e\u0433\u043e \u0442\u043e\u043f\u043b\u0438\u0432\u0430 \u0435\u0436\u0435\u0434\u043d\u0435\u0432\u043d\u043e.",
                         pad, Misc.getTextColor(), Misc.getRoundedValueMaxOneAfterDecimal(FUELCost*iCoom), Misc.getRoundedValueMaxOneAfterDecimal(HeavyMachineryCost*iCoom), Supply);
@@ -113,17 +113,17 @@ public class FuelForge extends BaseToggleAbility {
         float supply = fleet.getCargo().getCommodityQuantity(jydr_Items.FUELNEW);
         if (MFUELCoom() > 0) {
             if(fleet.getCargo().getCommodityQuantity(Commodities.FUEL) <= 0 || fleet.getCargo().getCommodityQuantity(Commodities.HEAVY_MACHINERY) <= 0) {
-                fleet.addFloatingText("Out of Resources", Misc.setAlpha(entity.getIndicatorColor(), 255), 0.5f);
+                fleet.addFloatingText("Недостаточно ресурсов", Misc.setAlpha(entity.getIndicatorColor(), 255), 0.5f);
                 deactivate(); 
             } else if(supply >= fleet.getCargo().getMaxCapacity()) {
-                fleet.addFloatingText("Full of FUELNEW", Misc.setAlpha(entity.getIndicatorColor(), 255), 0.5f);
+                fleet.addFloatingText("Трюм заполнен сжатым топливом", Misc.setAlpha(entity.getIndicatorColor(), 255), 0.5f);
                 deactivate();
             } else {
                 float basedmodifier = iCalculateBonus();
                 if (affectInput) {
                     for (int i = 0; i < MFUELCoom(); i++) {
                         if (fleet.getCargo().getCommodityQuantity(Global.getSettings().getString("ExtraCommodities" + i)) <= 0) {
-                            fleet.addFloatingText("Out of " + Global.getSettings().getCommoditySpec(Global.getSettings().getString("ExtraCommodities" + i)).getName(), Misc.setAlpha(entity.getIndicatorColor(), 255), 0.5f); deactivate();  break;
+                            fleet.addFloatingText("Не хватает: " + Global.getSettings().getCommoditySpec(Global.getSettings().getString("ExtraCommodities" + i)).getName(), Misc.setAlpha(entity.getIndicatorColor(), 255), 0.5f); deactivate();  break;
                         }
                         fleet.getCargo().removeCommodity(Global.getSettings().getString("ExtraCommodities" + i), cost*Global.getSettings().getFloat("ExtraCommoditiesCost" + i)*basedmodifier);
                     }
@@ -132,7 +132,7 @@ public class FuelForge extends BaseToggleAbility {
                 } else {
                     for (int i = 0; i < MFUELCoom(); i++) {
                         if (fleet.getCargo().getCommodityQuantity(Global.getSettings().getString("ExtraCommodities" + i)) <= 0) {
-                            fleet.addFloatingText("Out of " + Global.getSettings().getCommoditySpec(Global.getSettings().getString("ExtraCommodities" + i)).getName(), Misc.setAlpha(entity.getIndicatorColor(), 255), 0.5f); deactivate();  break;
+                            fleet.addFloatingText("Не хватает: " + Global.getSettings().getCommoditySpec(Global.getSettings().getString("ExtraCommodities" + i)).getName(), Misc.setAlpha(entity.getIndicatorColor(), 255), 0.5f); deactivate();  break;
                         }
                         fleet.getCargo().removeCommodity(Global.getSettings().getString("ExtraCommodities" + i), cost*Global.getSettings().getFloat("ExtraCommoditiesCost" + i));
                     }
@@ -147,10 +147,10 @@ public class FuelForge extends BaseToggleAbility {
             }
         } else{
             if(fleet.getCargo().getCommodityQuantity(Commodities.FUEL) <= 0 || fleet.getCargo().getCommodityQuantity(Commodities.HEAVY_MACHINERY) <= 0) {
-                fleet.addFloatingText("Out of FUEL or Heavy Machinery", Misc.setAlpha(entity.getIndicatorColor(), 255), 0.5f);
+                fleet.addFloatingText("Не хватает топлива или тяжёлой техники", Misc.setAlpha(entity.getIndicatorColor(), 255), 0.5f);
                 deactivate(); 
             } else if(supply >= fleet.getCargo().getMaxCapacity()) {
-                fleet.addFloatingText("Full of FUELNEW", Misc.setAlpha(entity.getIndicatorColor(), 255), 0.5f);
+                fleet.addFloatingText("Трюм заполнен сжатым топливом", Misc.setAlpha(entity.getIndicatorColor(), 255), 0.5f);
                 deactivate();
             } else {
                 float basedmodifier = iCalculateBonus();

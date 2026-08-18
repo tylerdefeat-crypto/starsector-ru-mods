@@ -128,19 +128,19 @@ public class dpl_SwimmingWithSharks extends HubMissionWithBarEvent {
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.GO_TO_KAZERON) {
-            info.addPara("Find clues in Kazeron. Try to ask some gens you know first in " +
+			info.addPara("Найдите улики на Казероне. Сначала попробуйте расспросить знакомых в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.GO_TO_RSV) {
-            info.addPara("Go back to Research Site V to ask Eliza about Yaribay's demands.", opad);
+			info.addPara("Вернитесь на Исследовательский объект V и спросите Элизу о требованиях Ярибай.", opad);
         } else if (currentStage == Stage.GO_FOR_AGENT) {
-            info.addPara("Go to Kazeron to show Yaribay the documents.", opad);
+			info.addPara("Отправляйтесь на Казерон и покажите Ярибай документы.", opad);
         } else if (currentStage == Stage.WAIT_FOR_AGENT) {
-            info.addPara("Yaribay is looking for the agent at Kazeron, be patient.", opad);
+			info.addPara("Ярибай ищет агента на Казероне. Подождите.", opad);
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V to release the agent.", opad);
+			info.addPara("Вернитесь на Исследовательский объект V, чтобы отпустить агента.", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: YARIBAY IS LOCATED IN THE " +
+			info.addPara("РЕЖИМ РАЗРАБОТЧИКА: ЯРИБАЙ НАХОДИТСЯ В ЛОКАЦИИ " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -150,23 +150,23 @@ public class dpl_SwimmingWithSharks extends HubMissionWithBarEvent {
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.GO_TO_KAZERON) {
-            info.addPara("Go to " +
+			info.addPara("Отправляйтесь в локацию " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.GO_TO_RSV) {
-            info.addPara("Ask Eliza in " +
+			info.addPara("Спросите Элизу в локации " +
                     system.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.GO_FOR_AGENT) {
-            info.addPara("Tell Yaribay about the fighter in " +
+			info.addPara("Расскажите Ярибай об истребителе в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.WAIT_FOR_AGENT) {
-            info.addPara("Wait for Yaribay to find the agent, he is in " +
+			info.addPara("Дождитесь, пока Ярибай найдёт агента; он находится в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V.", tc, pad);
+			info.addPara("Вернитесь на Исследовательский объект V.", tc, pad);
             return true;
         }
         return false;
@@ -192,7 +192,7 @@ public class dpl_SwimmingWithSharks extends HubMissionWithBarEvent {
     // mission name
     @Override
     public String getBaseName() {
-        return "Swimming With Sharks";
+		return "Плавание с акулами";
     }
 
 }

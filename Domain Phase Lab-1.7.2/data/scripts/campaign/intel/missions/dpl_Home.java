@@ -104,10 +104,10 @@ public class dpl_Home extends HubMissionWithBarEvent {
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.GO_TO_GILEAD) {
-            info.addPara("Pick up the furnitures in the " +
+			info.addPara("Заберите мебель в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V.", opad);
+			info.addPara("Вернитесь на Исследовательский объект V.", opad);
         }
     }
 
@@ -116,11 +116,11 @@ public class dpl_Home extends HubMissionWithBarEvent {
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.GO_TO_GILEAD) {
-            info.addPara("Pick up the furnitures in the " +
+			info.addPara("Заберите мебель в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V.", tc, pad);
+			info.addPara("Вернитесь на Исследовательский объект V.", tc, pad);
             return true;
         }
         return false;
@@ -140,6 +140,6 @@ public class dpl_Home extends HubMissionWithBarEvent {
     // mission name
     @Override
     public String getBaseName() {
-        return "New Home";
+		return "Новый дом";
     }
 }

@@ -1,7 +1,7 @@
 {
     "playableFaction":false,
     "corvusCompatible":true,
-    "rebelFleetSuffix":"Heretics",
+    "rebelFleetSuffix":"Еретики",
 
     "startRelationships":{ "luddic_church":0.6 },
     "morality":"good",

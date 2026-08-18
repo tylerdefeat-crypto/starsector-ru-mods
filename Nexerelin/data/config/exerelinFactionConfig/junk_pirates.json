@@ -4,15 +4,15 @@
     "pirateFaction":true,
     "noHomeworld":true,
     
-    "rebelFleetSuffix":"Outlaws",
+    "rebelFleetSuffix":"Изгои",
     
     "freeMarket":true,
 	
 	"diplomacyTraits":["anarchist", "temperamental"],
     
     "vengeanceLevelNames":["Grudge", "Vendetta"],
-    "vengeanceFleetNames":["Enforcers", "Hit-Fleet"],
-    "vengeanceFleetNamesSingle":["an Enforcer fleet", "a Hit-Fleet"],
+    "vengeanceFleetNames":["Каратели", "Ударный флот"],
+    "vengeanceFleetNamesSingle":["флот карателей", "ударный флот"],
     
     "miningVariantsOrWings":["junk_pirates_the_reaper_Standard"],
     

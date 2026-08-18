@@ -1,5 +1,5 @@
 fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
-IndEvo_header1,General,Header,General,,,,,General
-demandIndicators_show,Show Trade Indicators,Boolean,TRUE,,Show price / Shortage / Excess indicators in the market screens,,,General
-demandIndicators_lowVis,Low Impact Mode,Boolean,FALSE,,Setting this to true makes the mod much less intrusive - showing indicators only when excess or shortage exists and forgoing quantity indication and price guides. Set it to true if you think there is too much stuff happening on your market screen.,,,General
-demandIndicators_invert,Invert Indicators,Boolean,FALSE,,Make excess indicators point up and shortage indicators point down,,,General
+IndEvo_header1,Основные,Header,General,,,,,Основные
+demandIndicators_show,Показывать торговые индикаторы,Boolean,TRUE,,Показывать на экранах рынков индикаторы цен / дефицита / избытка,,,Основные
+demandIndicators_lowVis,Ненавязчивый режим,Boolean,FALSE,,Показывать индикаторы только при наличии избытка или дефицита без указания количества и ориентировочных цен. Включите этот режим, если экран рынка кажется перегруженным.,,,Основные
+demandIndicators_invert,Инвертировать индикаторы,Boolean,FALSE,,Направить индикаторы избытка вверх, а индикаторы дефицита вниз,,,Основные

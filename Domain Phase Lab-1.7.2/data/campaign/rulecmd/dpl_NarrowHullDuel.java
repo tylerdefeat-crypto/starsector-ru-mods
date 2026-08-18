@@ -271,40 +271,39 @@ public class dpl_NarrowHullDuel extends BaseCommandPlugin {
 		memory.set("$YourHealth", YourHealth, 0);
 		memory.set("$BossHealth", BossHealth, 0);
 		
-		text.addPara("The Robot moves 1 meter ahead.");
+			text.addPara("Робот продвигается на 1 метр.");
 		
 		if (YourPos < 0) {
-			text.addPara("You are smashed into wall.");
+			text.addPara("Вас швыряет в стену.");
 			YourHealth = -1;
 		}
 		
 		if (YourHealth <= 10 && 5 < YourHealth) {
-			text.addPara("You can take 3 more hits.");
+				text.addPara("Вы выдержите ещё 3 удара.");
 		} else if (YourHealth <= 5 && 1 < YourHealth) {
-			text.addPara("The robot hits you. You can take 2 more hits.");
+				text.addPara("Робот бьёт вас. Вы выдержите ещё 2 удара.");
 		} else if (YourHealth <= 1 && 0 <= YourHealth) {
-			text.addPara("The robot hits you. You can take 1 more hit.");
+				text.addPara("Робот бьёт вас. Вы выдержите ещё 1 удар.");
 		} else if (YourHealth < 0) {
-			text.addPara("You fall unconscious.");
+				text.addPara("Вы теряете сознание.");
 		}
 		
 		if (BossHealth <= 12 && 10 < BossHealth) {
-			text.addPara("The Robot needs damage of 6 more Gauss Pistol shots.");
+				text.addPara("Роботу нужно нанести урон ещё от 6 выстрелов из гаусс-пистолета.");
 		} else if (BossHealth <= 10 && 8 < BossHealth) {
-			text.addPara("The Robot needs damage of 5 more Gauss Pistol shots.");
+				text.addPara("Роботу нужно нанести урон ещё от 5 выстрелов из гаусс-пистолета.");
 		} else if (BossHealth <= 8 && 6 < BossHealth) {
-			text.addPara("The Robot needs damage of 4 more Gauss Pistol shots.");
+				text.addPara("Роботу нужно нанести урон ещё от 4 выстрелов из гаусс-пистолета.");
 		} else if (BossHealth <= 6 && 4 < BossHealth) {
-			text.addPara("The Robot needs damage of 3 more Gauss Pistol shots.");
+				text.addPara("Роботу нужно нанести урон ещё от 3 выстрелов из гаусс-пистолета.");
 		} else if (BossHealth <= 4 && 2 < BossHealth) {
-			text.addPara("The Robot needs damage of 2 more Gauss Pistol shots.");
+				text.addPara("Роботу нужно нанести урон ещё от 2 выстрелов из гаусс-пистолета.");
 		} else if (BossHealth <= 2 && 0 < BossHealth) {
-			text.addPara("The Robot needs damage of 1 more Gauss Pistol shots, plus a slight damage to finish him.");
+				text.addPara("Роботу нужно нанести урон ещё от 1 выстрела из гаусс-пистолета, а затем слегка добить его.");
 		} else if (BossHealth == 0) {
-			text.addPara("You just need to do a slight more damage to finish the robot.");
+				text.addPara("Осталось нанести совсем немного урона, чтобы добить робота.");
 		}
 		
 	}
 	
 }
-

@@ -2,31 +2,31 @@
 	"traits":[
 		{
 			"id":"paranoid",
-			"name":"Paranoid",
-			"desc":"Can opportunistically declare war at Suspicious reputation level.",
+			"name":"Параноики",
+			"desc":"Могут при удобном случае объявить войну при уровне отношений «Подозрение».",
 			"icon":"graphics/exerelin/icons/intel/war.png",
 			"color":[144, 16, 144],
 			"incompatible":["pacifist"]	# used when generating randomized diplomacy traits
 		},
 		{
 			"id":"predatory",
-			"name":"Predatory",
-			"desc":"Can opportunistically declare war regardless of disposition score, at Favorable (Suspicious if Player) reputation level or lower",
+			"name":"Хищники",
+			"desc":"Могут при удобном случае объявить войну независимо от настроя при уровне отношений не выше «Благоприятные» («Подозрение» для игрока).",
 			"icon":"graphics/icons/markets/pirate_moot.png",
 			"color":[255, 32, 32]
 		},
 		{
 			"id":"pacifist",
-			"name":"Pacifist",
-			"desc":"Will never opportunistically declare war.",
+			"name":"Пацифисты",
+			"desc":"Никогда не объявляют войну при удобном случае.",
 			"icon":"graphics/exerelin/icons/intel/peace.png",
 			"color":[0, 255, 255],
 			"incompatible":["paranoid"]
 		},
 		{
 			"id":"helps_allies",
-			"name":"Helps Allies",
-			"desc":"Disposition penalties towards enemies of our friends/allies. Will always vote yes for an alliance action.",
+			"name":"Помощь союзникам",
+			"desc":"Хуже относятся к врагам друзей и союзников. Всегда голосуют за совместные действия альянса.",
 			"icon":"graphics/icons/intel/stars.png",
 			"color":[144, 238, 144]
 		},
@@ -39,138 +39,138 @@
 		#},
 		{
 			"id":"irredentist",
-			"name":"Irredentist",
-			"desc":"+50% disposition penalties from revanchism.",
+			"name":"Ирредентисты",
+			"desc":"Штраф к настрою от реваншизма увеличен на 50%.",
 			"icon":"graphics/factions/crest_domain.png",
 			"color":[165, 42, 42],
 		},
 		{
 			"id":"stalwart",
-			"name":"Stalwart",
-			"desc":"-33% war weariness gains.",
+			"name":"Стойкие",
+			"desc":"Накопление усталости от войны снижено на 33%.",
 			"icon":"graphics/icons/skills/leadership2.png",
 			"color":[173, 163, 156],
 			"incompatible":["weak-willed", "foreverwar"]
 		},
 		{
 			"id":"weak-willed",
-			"name":"Weak-willed",
-			"desc":"+50% war weariness gains.",
+			"name":"Слабовольные",
+			"desc":"Накопление усталости от войны увеличено на 50%.",
 			"icon":"graphics/exerelin/icons/intel/white_flag.png",
 			"color":[255, 255, 153],
 			"incompatible":["stalwart", "foreverwar"]
 		},
 		{
 			"id":"foreverwar",
-			"name":"Forever War",
-			"desc":"Zero war weariness.",
+			"name":"Вечная война",
+			"desc":"Усталость от войны отсутствует.",
 			"icon":"graphics/exerelin/icons/intel/corinthian_helmet.png",
 			"color":[168, 80, 96],
 			"incompatible":["weak-willed", "stalwart"]
 		},
 		{
 			"id":"selfrighteous",
-			"name":"One True Way",
-			"desc":"Doubled disposition effects from alignment.",
+			"name":"Единственно верный путь",
+			"desc":"Влияние мировоззрения на настрой удвоено.",
 			"color":[255, 204, 102],
 			"icon":"graphics/icons/markets/luddic_majority.png"
 		},
 		{
 			"id":"temperamental",
-			"name":"Temperamental",
-			"desc":"+25% to all disposition effects.",
+			"name":"Темпераментные",
+			"desc":"Все эффекты настроя усилены на 25%.",
 			"color":[0, 160, 0],
 			"icon":"graphics/exerelin/icons/intel/double_exclamation.png"
 		},
 		{
 			"id":"dislikes_ai",
-			"name":"Dislikes AI",
-			"desc":"Disposition penalty for use of AI cores.",
+			"name":"Не любят ИИ",
+			"desc":"Штраф к настрою за использование ИИ-ядер.",
 			"color":[255, 128, 0],
 			"icon":"graphics/exerelin/icons/intel/bannedcore1.png",
 			"incompatible":["hates_ai", "likes_ai"]
 		},
 		{
 			"id":"hates_ai",
-			"name":"Hates AI",
-			"desc":"Heavy disposition penalty for use of AI cores.",
+			"name":"Ненавидят ИИ",
+			"desc":"Значительный штраф к настрою за использование ИИ-ядер.",
 			"color":[255, 40, 40],
 			"icon":"graphics/exerelin/icons/intel/bannedcore2.png",
 			"incompatible":["dislikes_ai", "likes_ai"]
 		},
 		{
 			"id":"likes_ai",
-			"name":"Likes AI",
-			"desc":"Disposition bonus for use of AI cores.",
+			"name":"Любят ИИ",
+			"desc":"Бонус к настрою за использование ИИ-ядер.",
 			"color":[255, 128, 128],
 			"icon":"graphics/exerelin/icons/intel/heartcore.png",
 			"incompatible":["hates_ai", "dislikes_ai"]
 		},
 		{
 			"id":"envious",
-			"name":"Envious",
-			"desc":"+50% disposition penalty from dominance.",
+			"name":"Завистливые",
+			"desc":"Штраф к настрою из-за чужого превосходства увеличен на 50%.",
 			"color":[0, 160, 0],
 			"icon":"graphics/exerelin/icons/intel/greeneye.png",
 			"incompatible":["submissive", "neutralist"]
 		},
 		{
 			"id":"submissive",
-			"name":"Submissive",
-			"desc":"Dominance disposition penalty becomes a bonus instead.",
+			"name":"Покорные",
+			"desc":"Штраф к настрою из-за чужого превосходства заменяется бонусом.",
 			"color":[255, 64, 255],
 			"icon":"graphics/exerelin/icons/intel/chain_and_ball.png",
 			"incompatible":["envious", "neutralist"]
 		},
 		{
 			"id":"neutralist",
-			"name":"Neutralist",
-			"desc":"No disposition penalty from dominance.",
+			"name":"Нейтралисты",
+			"desc":"Чужое превосходство не даёт штрафа к настрою.",
 			"color":[255, 255, 255],
 			"icon":"graphics/exerelin/icons/intel/swiss_flag.png",
 			"incompatible":["envious", "submissive"]
 		},
 		{
 			"id":"monopolist",
-			"name":"Monopolist",
-			"desc":"Disposition penalty from economic competition. Looser relationship limits on targeting other factions for economic sabotage.",
+			"name":"Монополисты",
+			"desc":"Штраф к настрою из-за экономической конкуренции. Более мягкие ограничения по отношениям при выборе других фракций целью экономического саботажа.",
 			"color":[255, 255, 0],
 			"icon":"graphics/icons/industry/exports40.png"
 		},
 		{
 			"id":"law_and_order",
-			"name":"Law & Order",
-			"desc":"Disposition penalty from free ports.",
+			"name":"Закон и порядок",
+			"desc":"Штраф к настрою из-за свободных портов.",
 			"color":[0, 128, 255],
 			"icon":"graphics/exerelin/icons/intel/police_star.png",
 			"incompatible":["anarchist"]
 		},
 		{
 			"id":"anarchist",
-			"name":"Anarchistic",
-			"desc":"Disposition bonus from free ports.",
+			"name":"Анархисты",
+			"desc":"Бонус к настрою от свободных портов.",
 			"color":[198, 198, 0],
 			"icon":"graphics/icons/markets/free_port.png",
 			"incompatible":["law_and_order"]
 		},
 		{
 			"id":"lowprofile",
-			"name":"Low Profile",
-			"desc":"Markets less likely to be targeted for raids/invasions, if the attacker has multiple enemies. Effect diminishes with empire size.",
+			"name":"Незаметные",
+			"desc":"Если у нападающего несколько врагов, рынки этой фракции реже становятся целью рейдов и вторжений. Эффект ослабевает с ростом державы.",
 			"color":[160, 160, 176],
 			"icon":"graphics/portraits/bgs/bg03.png"
 		},
 		{
 			"id":"devious",
-			"name":"Devious",
-			"desc":"Agent actions have increased chance of execution, success rate and effect.",
+			"name":"Коварные",
+			"desc":"Агентурные операции чаще предпринимаются, успешнее выполняются и дают более сильный эффект.",
 			"color":[96, 128, 144],
 			"icon":"graphics/exerelin/icons/intel/spy.png"
 		},
 		{
 			"id":"monstrous",
-			"name":"Monstrous",
-			"desc":"This faction is seen as inhuman, and not in a cute way. Disposition penalties from everyone, and reduced rep penalty on the player for atrocities against this faction.",
+			"name":"Чудовищные",
+			"desc":"Эту фракцию считают бесчеловечной, и вовсе не в милом смысле. Все относятся к ней хуже, а игрок получает меньший штраф к репутации за зверства против неё.",
 			"color":[224, 32, 48],
 			"icon":"graphics/exerelin/icons/intel/claw.png",
 			"noRandom":true,

@@ -82,9 +82,9 @@ public class FortressWorld extends BaseMarketConditionPlugin {
 
     @Override
     protected void createTooltipAfterDescription(TooltipMakerAPI tooltip, boolean expanded) {
-        tooltip.addPara("%s fleet size", 10f, Misc.getHighlightColor(), "+" + Math.round(FLEET_SIZE_MULT * 100f) + "%");
-        tooltip.addPara("%s ground defense", 10f, Misc.getHighlightColor(), "+" + Math.round(GROUND_DEFENSE_MULT * 100f) + "%");
-        tooltip.addPara("%s number of heavy patrols", 10f, Misc.getHighlightColor(), "+" + HEAVY_PATROL_BONUS);
-        tooltip.addPara("%s production to population & infrastructure, orbital works, high command, and fuel production. Applies to all similar structures.", 10f, Misc.getHighlightColor(), "+" + SUPPLY_BONUS);
+        tooltip.addPara("%s к размеру флотов", 10f, Misc.getHighlightColor(), "+" + Math.round(FLEET_SIZE_MULT * 100f) + "%");
+        tooltip.addPara("%s к наземной обороне", 10f, Misc.getHighlightColor(), "+" + Math.round(GROUND_DEFENSE_MULT * 100f) + "%");
+        tooltip.addPara("%s к числу тяжёлых патрулей", 10f, Misc.getHighlightColor(), "+" + HEAVY_PATROL_BONUS);
+        tooltip.addPara("%s к производству населения и инфраструктуры, орбитальных верфей, верховного командования и производства топлива. Действует на все аналогичные сооружения.", 10f, Misc.getHighlightColor(), "+" + SUPPLY_BONUS);
     }
 }

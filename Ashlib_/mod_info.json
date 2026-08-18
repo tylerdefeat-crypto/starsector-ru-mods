@@ -4,7 +4,7 @@
 	"author":"Kaysaar",
 	"utility":"false",
 	"version":"2.1.2",
-	"description":"Library containing functions mainly used by me: Kaysaar",	
+	"description":"Библиотека функций, используемых преимущественно автором Kaysaar.",	
     "gameVersion": "0.98",
 	"jars":["jars/ashlib.jar"],
 "dependencies": [  

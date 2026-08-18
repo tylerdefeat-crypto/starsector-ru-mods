@@ -71,9 +71,9 @@ public class ParadiseWorld extends BaseMarketConditionPlugin {
 
     @Override
     protected void createTooltipAfterDescription(TooltipMakerAPI tooltip, boolean expanded) {
-        tooltip.addPara("%s income", 10f, Misc.getHighlightColor(), "+" + Math.round(INCOME_MULT * 100f) + "%");
-        tooltip.addPara("%s accessibility", 10f, Misc.getHighlightColor(), "+" + Math.round(ACCESSIBILITY_MOD * 100f) + "%");
-        tooltip.addPara("%s stability", 10f, Misc.getHighlightColor(), "+" + STABILITY_BONUS);
-        tooltip.addPara("%s production to population & infrastructure, farming, and light industry. Applies to all similar structures.", 10f, Misc.getHighlightColor(), "+" + SUPPLY_BONUS);
+        tooltip.addPara("%s к доходу", 10f, Misc.getHighlightColor(), "+" + Math.round(INCOME_MULT * 100f) + "%");
+        tooltip.addPara("%s к доступности", 10f, Misc.getHighlightColor(), "+" + Math.round(ACCESSIBILITY_MOD * 100f) + "%");
+        tooltip.addPara("%s к стабильности", 10f, Misc.getHighlightColor(), "+" + STABILITY_BONUS);
+        tooltip.addPara("%s к производству населения и инфраструктуры, сельского хозяйства и лёгкой промышленности. Действует на все аналогичные сооружения.", 10f, Misc.getHighlightColor(), "+" + SUPPLY_BONUS);
     }
 }

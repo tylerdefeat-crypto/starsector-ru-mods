@@ -18,7 +18,7 @@
 	
 	"actions":{
 		"travel":{
-			"name":"Travel",
+			"name":"Перемещение",
 			"className":"exerelin.campaign.intel.agents.Travel",
 			"costScaling":false,
 			"useAlertLevel":false,
@@ -26,7 +26,7 @@
 			"sortOrder":1,
 		},
 		"injury":{
-			"name":"Injury Recovery",
+			"name":"Восстановление после ранения",
 			"className":"exerelin.campaign.intel.agents.Injury",
 			"time":40,
 			"costScaling":false,
@@ -35,7 +35,7 @@
 			"sortOrder":2,
 		},
 		"raiseRelations":{
-			"name":"Raise Relations",
+			"name":"Улучшение отношений",
 			"className":"exerelin.campaign.intel.agents.RaiseRelations",
 			"time":90,
 			"successChance":0.6,
@@ -55,7 +55,7 @@
 			"sortOrder":3,
 		},
 		"lowerRelations":{
-			"name":"Lower Relations",
+			"name":"Ухудшение отношений",
 			"className":"exerelin.campaign.intel.agents.LowerRelations",
 			"time":90,
 			"successChance":0.65,
@@ -75,7 +75,7 @@
 			"sortOrder":4,
 		},
 		"destabilizeMarket":{
-			"name":"Destabilize Market",
+			"name":"Дестабилизация рынка",
 			"nameForSub":"Destabilize %s",
 			"className":"exerelin.campaign.intel.agents.DestabilizeMarket",
 			"time":20,
@@ -93,7 +93,7 @@
 			"sortOrder":5,
 		},
 		"sabotageIndustry":{
-			"name":"Sabotage Industry",
+			"name":"Саботаж производства",
 			"nameForSub":"Sabotage %s",
 			"className":"exerelin.campaign.intel.agents.SabotageIndustry",
 			"time":45,
@@ -112,7 +112,7 @@
 			"sortOrder":6,
 		},
 		"destroyCommodities":{
-			"name":"Destroy Commodity Stocks",
+			"name":"Уничтожение товарных запасов",
 			"nameForSub":"Destroy %s Stocks",
 			"className":"exerelin.campaign.intel.agents.DestroyCommodityStocks",
 			"time":25,
@@ -146,7 +146,7 @@
 		#},
 		"infiltrateCell":{
 			"time":30,
-			"name":"Infiltrate Luddic Cell",
+			"name":"Внедрение в ячейку луддитов",
 			"className":"exerelin.campaign.intel.agents.InfiltrateCell",
 			"successChance":0.75,
 			"useAlertLevel":false,
@@ -160,7 +160,7 @@
 		},
 		"instigateRebellion":{
 			"time":75,
-			"name":"Instigate Rebellion",
+			"name":"Подстрекательство к восстанию",
 			"className":"exerelin.campaign.intel.agents.InstigateRebellion",
 			"successChance":0.5,
 			"detectionChance":0.3,
@@ -176,7 +176,7 @@
 		},
 		"procureShip":{
 			"time":40,
-			"name":"Procure Ship",
+			"name":"Приобретение корабля",
 			"className":"exerelin.campaign.intel.agents.ProcureShip",
 			"successChance":0.75,
 			"detectionChance":0.4,
@@ -193,7 +193,7 @@
 		},
 		"procureEquipment":{
 			"time":30,
-			"name":"Procure Equipment",
+			"name":"Приобретение снаряжения",
 			"className":"exerelin.campaign.intel.agents.ProcureEquipment",
 			"detectionChance":0,
 			"detectionChanceFail":0,
@@ -208,7 +208,7 @@
 			"sortOrder":10.5,
 		},
 		"findPirateBase":{
-			"name":"Find Pirate Base",
+			"name":"Поиск пиратской базы",
 			"className":"exerelin.campaign.intel.agents.FindPirateBase",
 			"time":2,
 			"costScaling":false,
@@ -217,7 +217,7 @@
 		},
 		"recruitAgent":{
 			"time":120,
-			"name":"Recruit Operative",
+			"name":"Вербовка оперативника",
 			"className":"exerelin.campaign.intel.agents.RecruitAgent",
 			"successChance":1,
 			"useAlertLevel":false,
@@ -230,7 +230,7 @@
 		},
 		"counterInsurgency":{
 			"time":30,
-			"name":"Counterinsurgency",
+			"name":"Борьба с повстанцами",
 			"className":"exerelin.campaign.intel.agents.CounterInsurgency",
 			"successChance":0.75,
 			"useAlertLevel":false,

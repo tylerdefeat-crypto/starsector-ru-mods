@@ -9,7 +9,7 @@
         "minor":0,
         "patch":0 #// Should always be 0 or a letter, not a non-zero digit
     },
-    "description": "A collection of classes to aid modding. Not a mod in itself, but required by certain other mods.",
+    "description": "Набор классов для разработки модов. Сам по себе не добавляет игровой контент, но необходим некоторым другим модам.",
     "gameVersion": "0.98a-RC5",
     "jars": ["jars/LazyLib.jar","jars/LazyLib-Kotlin.jar","jars/internal/LazyLib-Console.jar","jars/internal/Kotlin-Runtime.jar"],
     "modPlugin": "org.lazywizard.lazylib.LazyLib"

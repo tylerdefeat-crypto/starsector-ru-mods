@@ -199,7 +199,7 @@ public class dpl_HELAEntityPlugin extends BaseCustomEntityPlugin {
 
 		if (!madeActive && entity.hasTag("dpl_HELA_activated")) {
 			entity.setCustomDescriptionId("dpl_active_HELA");
-			entity.setName("Active HELA Device");
+			entity.setName("Активное устройство HELA");
 			entity.setInteractionImage("illustrations", "active_gate");
 			
 			LocationAPI cl = entity.getContainingLocation();

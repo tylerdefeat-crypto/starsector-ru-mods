@@ -113,31 +113,31 @@
 	
 	"conditions":{
 		"water_surface":{
-			"desc":"The water surface does not permit normal combat. Most fighting will take place in the interior of sea habitats, where the usefulness of heavy armaments will be limited.",
-			"highlights":["heavy armaments"],
+			"desc":"Водная поверхность не позволяет вести обычные боевые действия. Большая часть сражений пройдёт внутри морских поселений, где эффективность тяжёлого вооружения ограничена.",
+			"highlights":["тяжёлого вооружения"],
 			"color":[64, 96, 255, 255],
 			"tags":["cramped"],
 			"plugin":"exerelin.campaign.intel.groundbattle.plugins.MarketConditionPlugin",	# unlike industries, this must be specified to do anything
 		},
 		
 		"US_tunnels":{
-			"desc":"The cramped spaces of underground fighting inhibits the usefulness of heavy armaments.",
-			"highlights":["heavy armaments"],
+			"desc":"Тесные пространства подземных боёв снижают эффективность тяжёлого вооружения.",
+			"highlights":["тяжёлого вооружения"],
 			"color":[64, 180, 55, 255],
 			"tags":["cramped"],
 			"plugin":"exerelin.campaign.intel.groundbattle.plugins.MarketConditionPlugin",
 		},
 		
 		"US_magnetic":{
-			"desc":"Communications disrupted. All attacker units will reorganize for 1 turn after moving, and attack power reduced by 15%. Many special abilities are disabled.",
-			"highlights":["1", "15%", "disabled"],
+			"desc":"Связь нарушена. После перемещения все подразделения атакующей стороны будут перегруппировываться 1 ход, а их сила атаки снижена на 15%. Многие особые способности отключены.",
+			"highlights":["1", "15%", "отключены"],
 			"color":[92, 110, 187, 255],
 			"tags":["preventEW", "preventInspire"],
 			"plugin":"exerelin.campaign.intel.groundbattle.plugins.MagneticCrustPlugin",
 		},
 		
 		"FPE_defense":{
-			"desc":"Massively hardened ground defenses give the defender +25% attack strength and -25% damage received on industries they control.",
+			"desc":"Мощные укрепления дают обороняющимся +25% к силе атаки и снижают получаемый урон на 25% на подконтрольных им объектах.",
 			"highlights":["25%", "25%"],
 			"color":[190,63,0,255],
 			"tags":[],
@@ -145,7 +145,7 @@
 		},
 		
 		"IndEvo_mineFieldCondition":{
-			"desc":"Some mines are still present close to $market and will interfere with deployments and orbital fires.",
+			"desc":"Вблизи рынка $market ещё сохранились мины, мешающие высадке войск и орбитальной огневой поддержке.",
 			"highlights":["25%", "25%"],
 			"color":[224,96,48,255],
 			"tags":["preventBombardment", "preventCAS"],
@@ -168,7 +168,7 @@
 	
 	"abilities":{
 		"fireSupport":{
-			"name":"Fire Support",
+			"name":"Огневая поддержка",
 			"icon":"graphics/icons/cargo/fuel.png",
 			"plugin":"exerelin.campaign.intel.groundbattle.plugins.FireSupportAbilityPlugin",
 			"sound":"nex_sfx_deciv_bomb",
@@ -178,7 +178,7 @@
 			"order":1,
 		},
 		"inspire":{
-			"name":"Inspire",
+			"name":"Воодушевление",
 			"icon":"graphics/icons/skills/leadership.png",
 			"plugin":"exerelin.campaign.intel.groundbattle.plugins.InspireAbilityPlugin",
 			"sound":"nex_sfx_gb_inspire",
@@ -188,7 +188,7 @@
 			#"illustration":"",
 		},
 		"electronicwarfare":{
-			"name":"Electronic Warfare",
+			"name":"Радиоэлектронная борьба",
 			"icon":"graphics/icons/skills/EW.png",
 			"plugin":"exerelin.campaign.intel.groundbattle.plugins.EWAbilityPlugin",
 			"sound":"nex_sfx_gb_ewar",
@@ -198,7 +198,7 @@
 			"order":3,
 		},
 		"ignisPluvia":{
-			"name":"Ignis Pluvia",
+			"name":"Огненный дождь",
 			"icon":"graphics/exerelin/icons/groundbattle/ignispluvia.png",
 			"plugin":"exerelin.campaign.intel.groundbattle.plugins.IgnisPluviaAbilityPlugin",
 			"sound":"nex_sfx_gb_ignispluvia",
@@ -226,7 +226,7 @@
 		# if you need an extra-large unit, use the unitSizeMult
 		
 		"marine":{
-			"name":"marine",
+			"name":"морпехи",
 			"type":"MARINE",	# legacy setting, may remove later; for now it's mandatory though
 			"playerCanCreate":true,
 			#"sprite":"optional/path_to/sprite.png",	# used in background of unit card; not automatically loaded so specify it in settings.json if needed
@@ -242,7 +242,7 @@
 			"sortOrder":1,
 		},
 		"heavy":{
-			"name":"heavy",
+			"name":"тяжёлые войска",
 			"type":"HEAVY",
 			"playerCanCreate":true,
 			"strength":5.5,
@@ -264,7 +264,7 @@
 			"sortOrder":2,
 		},
 		"militia":{
-			"name":"militia",
+			"name":"ополчение",
 			"type":"MILITIA",
 			"playerCanCreate":false,
 			"strength":0.4,
@@ -279,7 +279,7 @@
 			"sortOrder":3,
 		},
 		"rebel":{
-			"name":"rebel",
+			"name":"повстанцы",
 			"type":"REBEL",
 			"playerCanCreate":false,
 			"strength":0.3,

@@ -1,6 +1,6 @@
 fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
-RevealInactiveGates,Reveal Inactive Gates,Boolean,false,,Gate scan ability will add gates in systems with no non-hidden markets to the intel screen.,,,"Ability Settings"
-ActivateInactiveGates,Activate Inactive Gates,Boolean,false,,Gate scan ability will activate gates in systems with no non-hidden markets. Setting this to true will make the mod behave as though Reveal Inactive Gates is true.,,,"Ability Settings"
+RevealInactiveGates,Обнаруживать неактивные Врата,Boolean,false,,Добавляет в разведданные Врата из систем без открытых рынков.,,,"Настройки способностей"
+ActivateInactiveGates,Активировать неактивные Врата,Boolean,false,,Активирует Врата в системах без открытых рынков. Включение также задействует обнаружение неактивных Врат.,,,"Настройки способностей"
 ,,,,,,,,
-GateScanUsableCheckInterval,Gate Scanner Usable Check Interval,Float,1,,"Sets the time between checks for new gates or markets that determines whether the Gate Scanner ability can be used again.",1,10,"Performance & Developer Settings"
-GateScanDiagnosticsInterval,Gate Scanner Diagnostic Reporting Interval,Float,60,,Sets the time between each log report for how long it took for the usability check to be done.,1,300,"Performance & Developer Settings"
+GateScanUsableCheckInterval,Интервал проверки сканера Врат,Float,1,,"Интервал проверки новых Врат и рынков, определяющей доступность повторного применения способности.",1,10,"Производительность и разработка"
+GateScanDiagnosticsInterval,Интервал диагностики сканера Врат,Float,60,,Интервал между записями в журнал о длительности проверки доступности.,1,300,"Производительность и разработка"

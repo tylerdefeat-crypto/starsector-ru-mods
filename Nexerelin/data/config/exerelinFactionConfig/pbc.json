@@ -2,7 +2,7 @@
     "playableFaction":true,
     "corvusCompatible":true,
     
-    "rebelFleetSuffix":"Splinter Group",
+    "rebelFleetSuffix":"Отколовшаяся группа",
     
     "startRelationships":{ "tiandong": 0.4, "tritachyon":-0.6, "hegemony":-0.6 },
 

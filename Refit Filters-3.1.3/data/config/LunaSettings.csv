@@ -1,28 +1,28 @@
 fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
-refitfilters_header,Filter Configurations,Header,Filter Configurations,,,,,
-refitfilters_searchbarBehaviour,Searchbar behaviour,Radio,"Sort & Filter","Sort, Filter, Sort & Filter","Select the behaviour of the searchbar.
+refitfilters_header,Настройка фильтров,Header,Настройка фильтров,,,,,
+refitfilters_searchbarBehaviour,Поведение строки поиска,Radio,"Sort & Filter","Sort, Filter, Sort & Filter","Выберите поведение строки поиска.
 
 
-[Sort] - Sort the list based on the best match.
-[Filter] - Remove entries that do not match the prompt enough.
-[Sort & Filter] - Combined behaviour of the above.",,,
-refitfilters_searchByDesignType,Filter Search by Design Type,Boolean,true,,Enables the search bar to also filter by design type/mod name in addition to weapon name.,,,
-refitfilters_resetButtonSearchBarPanelOrder,Reset Button/Search Bar Filter Location,Int,1,,"Location of the Reset Button/Search Bar Filter Panel, 1 being the top, 4 at the bottom.",1,4,
-refitfilters_vanillaWeaponAvailabilityWeaponSlotPanelOrder,Availability/Weapon Slot Filter Location,Int,2,,"Location of the vanilla Weapon Availability/Weapon Slot filter Panel, 1 being the top, 4 at the bottom.",1,4,
-refitfilters_weaponTypePanelOrder,Weapon Type Filter Location,Int,3,,"Location of the Weapon Type filter Panel, 1 being the top, 4 at the bottom. 0 to disable.",0,4,
-refitfilters_damageTypeRangeSliderOrder,Damage Type/Range Slider Filter Location,Int,4,,"Location of the Damage Type/Range Slider filter Panel, 1 being the top, 4 at the bottom. 0 to disable.",0,4,
+[Sort] — сортирует список по близости совпадения.
+[Filter] — скрывает недостаточно подходящие записи.
+[Sort & Filter] — объединяет оба варианта.",,,
+refitfilters_searchByDesignType,Искать по типу разработки,Boolean,true,,Позволяет искать не только по названию оружия, но и по типу разработки или названию мода.,,,
+refitfilters_resetButtonSearchBarPanelOrder,Положение поиска и сброса,Int,1,,"Положение панели строки поиска и кнопки сброса: 1 — сверху, 4 — снизу.",1,4,
+refitfilters_vanillaWeaponAvailabilityWeaponSlotPanelOrder,Положение доступности и слотов,Int,2,,"Положение стандартной панели доступности оружия и типов слотов: 1 — сверху, 4 — снизу.",1,4,
+refitfilters_weaponTypePanelOrder,Положение типов оружия,Int,3,,"Положение панели типов оружия: 1 — сверху, 4 — снизу, 0 — отключить.",0,4,
+refitfilters_damageTypeRangeSliderOrder,Положение урона и дальности,Int,4,,"Положение панели типов урона и дальности: 1 — сверху, 4 — снизу, 0 — отключить.",0,4,
 ,,,,,,,,
-refitfilters_weaponRangeslider_header,Weapon Range Slider,Header,Weapon Range Slider,,,,,
-refitfilters_weaponMinRange,Range Slider Min Range,Int,0,,"The lower end of the range slider. Setting the range slider to this value includes all lower ranges.",0,99000,
-refitfilters_weaponMaxRange,Range Slider Max Range,Int,1500,,"The upper end of the range slider. Setting the range slider to this value includes all higher ranges.",0,99000,
-refitfilters_weaponRangeTickSnapping,Range Slider Snapping,Boolean,true,,"Enables snapping to the nearest tick mark on the Range Slider.",,,
-refitfilters_weaponRangeIncrement,Range Slider Snapping Increment,Int,100,,"The distance between each tick mark on the Range Slider.",0,10000,
+refitfilters_weaponRangeslider_header,Дальность оружия,Header,Дальность оружия,,,,,
+refitfilters_weaponMinRange,Минимальная дальность шкалы,Int,0,,"Нижняя граница шкалы. Выбор этого значения включает всю меньшую дальность.",0,99000,
+refitfilters_weaponMaxRange,Максимальная дальность шкалы,Int,1500,,"Верхняя граница шкалы. Выбор этого значения включает всю большую дальность.",0,99000,
+refitfilters_weaponRangeTickSnapping,Привязка шкалы к делениям,Boolean,true,,"Привязывает ползунок дальности к ближайшему делению.",,,
+refitfilters_weaponRangeIncrement,Шаг шкалы дальности,Int,100,,"Расстояние между делениями шкалы дальности.",0,10000,
 ,,,,,,,,
-refitfilters_fighterRangeslider_header,Fighter Range Slider,Header,Fighter Range Slider,,,,,
-refitfilters_fighterMinRange,Range Slider Min Range,Int,0,,"The lower end of the range slider. Setting the range slider to this value includes all lower ranges.",0,99000,
-refitfilters_fighterMaxRange,Range Slider Max Range,Int,6000,,"The upper end of the range slider. Setting the range slider to this value includes all higher ranges.",0,99000,
-refitfilters_fighterRangeTickSnapping,Range Slider Snapping,Boolean,true,,"Enables snapping to the nearest tick mark on the Range Slider.",,,
-refitfilters_fighterRangeIncrement,Range Slider Snapping Increment,Int,500,,"The distance between each tick mark on the Range Slider.",0,10000,
+refitfilters_fighterRangeslider_header,Дальность авиакрыльев,Header,Дальность авиакрыльев,,,,,
+refitfilters_fighterMinRange,Минимальная дальность шкалы,Int,0,,"Нижняя граница шкалы. Выбор этого значения включает всю меньшую дальность.",0,99000,
+refitfilters_fighterMaxRange,Максимальная дальность шкалы,Int,6000,,"Верхняя граница шкалы. Выбор этого значения включает всю большую дальность.",0,99000,
+refitfilters_fighterRangeTickSnapping,Привязка шкалы к делениям,Boolean,true,,"Привязывает ползунок дальности к ближайшему делению.",,,
+refitfilters_fighterRangeIncrement,Шаг шкалы дальности,Int,500,,"Расстояние между делениями шкалы дальности.",0,10000,
 #refitfilters_simulation_header,Simulation,Header,Simulation,,,,,
 #refitfilters_enableSimulation,Enable Weapon Simulation,Boolean,false,,"An experimental feature that enables a quick and preset weapon simulation. Can be entered by pressing [F1] while hovering over a weapon in the weapons selection list in refit. The simulation equips a hyperion with the weapon you selected, facing you off against a medusa and an enforcer with no AI.",,,
 ,,,,,,,,

@@ -45,9 +45,9 @@ public class PlanetaryHologram extends BaseTerraformingIndustry {
             float pad = 3f;
 
             tooltip.addSpacer(oPad);
-            tooltip.addSectionHeading("Hologram Project", Alignment.MID, 0f);
-            tooltip.addPara("Original Planet Type: %s", oPad, Misc.getHighlightColor(), this.originalPlanetSpec != null ? this.originalPlanetSpec.getName() + " World" : this.market.getPlanetEntity().getSpec().getName() + " World");
-            tooltip.addPara("Fake Planet Type: %s", pad, Misc.getHighlightColor(), this.fakePlanetSpec != null ? this.fakePlanetSpec.getName() + " World" : "None");
+            tooltip.addSectionHeading("Проект голограммы", Alignment.MID, 0f);
+            tooltip.addPara("Исходный тип планеты: %s", oPad, Misc.getHighlightColor(), this.originalPlanetSpec != null ? this.originalPlanetSpec.getName() : this.market.getPlanetEntity().getSpec().getName());
+            tooltip.addPara("Имитируемый тип планеты: %s", pad, Misc.getHighlightColor(), this.fakePlanetSpec != null ? this.fakePlanetSpec.getName() : "нет");
         }
     }
 
@@ -58,8 +58,8 @@ public class PlanetaryHologram extends BaseTerraformingIndustry {
     @Override
     public void sendCompletedMessage() {
         if (this.market.isPlayerOwned()) {
-            MessageIntel intel = new MessageIntel("Changed the visuals of the planet %s", Misc.getBasePlayerColor(), new String[]{this.market.getName()}, Misc.getBasePlayerColor());
-            intel.addLine(BaseIntelPlugin.BULLET + "The planet's visuals are now a %s-type world", Misc.getTextColor(), new String[]{this.project.name.toLowerCase()}, Misc.getTextColor());
+            MessageIntel intel = new MessageIntel("Изменён облик планеты %s", Misc.getBasePlayerColor(), new String[]{this.market.getName()}, Misc.getBasePlayerColor());
+            intel.addLine(BaseIntelPlugin.BULLET + "Теперь планета выглядит как мир типа «%s»", Misc.getTextColor(), new String[]{this.project.name.toLowerCase()}, Misc.getTextColor());
             intel.setIcon(Global.getSector().getPlayerFaction().getCrest());
             intel.setSound(BaseIntelPlugin.getSoundStandardUpdate());
             Global.getSector().getCampaignUI().addMessage(intel, CommMessageAPI.MessageClickAction.COLONY_INFO, this.market);

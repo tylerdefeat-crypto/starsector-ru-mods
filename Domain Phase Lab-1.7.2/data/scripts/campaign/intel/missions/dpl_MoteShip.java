@@ -115,16 +115,16 @@ public class dpl_MoteShip extends HubMissionWithBarEvent {
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.SCAN_LIGHT) {
-            info.addPara("Find an abyssal light and scan it with Eliza's device.", opad);
+			info.addPara("Найдите свет бездны и просканируйте его устройством Элизы.", opad);
         } else if (currentStage == Stage.GO_TO_RSV) {
-            info.addPara("Report to Research Site V with the data in " +
+			info.addPara("Доставьте данные на Исследовательский объект V в локации " +
                     system.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.WAIT_FOR_SHIP) {
-            info.addPara("Wait for Eliza to complete the prototype, she is in " +
+			info.addPara("Дождитесь, пока Элиза закончит прототип; она находится в локации " +
                     system.getNameWithLowercaseTypeShort() + ".", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: MERC IS LOCATED IN THE " +
+			info.addPara("РЕЖИМ РАЗРАБОТЧИКА: НАЁМНИК НАХОДИТСЯ В ЛОКАЦИИ " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -134,13 +134,13 @@ public class dpl_MoteShip extends HubMissionWithBarEvent {
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.SCAN_LIGHT) {
-            info.addPara("Look for an abyssal light.", tc, pad);
+			info.addPara("Найдите свет бездны.", tc, pad);
             return true;
         } else if (currentStage == Stage.GO_TO_RSV) {
-            info.addPara("Go to Research Site V.", tc, pad);
+			info.addPara("Отправляйтесь на Исследовательский объект V.", tc, pad);
             return true;
         } else if (currentStage == Stage.WAIT_FOR_SHIP) {
-            info.addPara("Wait for the ship at Research Site V", tc, pad);
+			info.addPara("Дождитесь корабля на Исследовательском объекте V", tc, pad);
             return true;
         }
         return false;
@@ -160,6 +160,6 @@ public class dpl_MoteShip extends HubMissionWithBarEvent {
     // mission name
     @Override
     public String getBaseName() {
-        return "Mote Anomaly Project";
+		return "Проект мотовой аномалии";
     }
 }

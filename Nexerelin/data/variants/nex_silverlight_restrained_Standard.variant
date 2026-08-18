@@ -1,7 +1,7 @@
 {
   "variantId": "nex_silverlight_restrained_Standard",
   "hullId": "nex_silverlight_restrained",
-  "displayName": "Standard",
+  "displayName": "Стандартный",
   "goalVariant": true,
   "fluxCapacitors": 12,
   "fluxVents": 35,

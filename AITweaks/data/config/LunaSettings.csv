@@ -1,31 +1,31 @@
 fieldID,,,,fieldName,,fieldType,defaultValue,secondaryValue,,,fieldDescription,,,minValue,maxValue,tab
 
-aitweaks_enable_fleet_cohesion_ai,,,,Enable Fleet Cohesion AI,,Boolean,true,,,,"Should the AI attempt to maintain fleet cohesion by auto-assigning move commands to cruisers and capitals that stray off from the rest of the fleet.",,,,,Ship AI
-aitweaks_ai_core_personality,,,,Player Fleet AI Core Personality,,Radio,Aggressive,"Timid, Cautious, Steady, Aggressive, Reckless, Vanilla",,,"Override the personality of AI cores piloting ships in the player fleet. In vanilla, automated ships piloted by AI cores (except carriers) are locked to fearless personality. Ships with AI personality overridden by a mod other than AI Tweaks will remain unaffected.",,,,,Ship AI
-aitweaks_fleetwide_search_destroy,,,,Enable Fleetwide Search & Destroy,,Boolean,false,,,,"All player ships default to the Search & Destroy assignment. Ships are not automatically assigned to Assault, Eliminate, or other tasks. Players may manually assign ships to any task.
+aitweaks_enable_fleet_cohesion_ai,,,,ИИ сплочённости флота,,Boolean,true,,,,"Автоматически назначать приказы движения крейсерам и линкорам, слишком далеко отошедшим от остального флота.",,,,,ИИ кораблей
+aitweaks_ai_core_personality,,,,Характер ИИ-ядер во флоте игрока,,Radio,Aggressive,"Timid, Cautious, Steady, Aggressive, Reckless, Vanilla",,,"Переопределяет характер ИИ-ядер, управляющих кораблями игрока. В базовой игре автоматизированные корабли под управлением ИИ-ядер, кроме авианосцев, всегда бесстрашны. Корабли, характер ИИ которых изменён другим модом, не затрагиваются.",,,,,ИИ кораблей
+aitweaks_fleetwide_search_destroy,,,,«Поиск и уничтожение» для всего флота,,Boolean,false,,,,"Все корабли игрока по умолчанию получают приказ «Поиск и уничтожение». Они не назначаются автоматически на «Штурм», «Ликвидацию» и другие задачи. Игрок может вручную назначать им любые задачи.
 
-If this setting is disabled, individual ships can still be configured to default to Search & Destroy via a hullmod.",,,,,Ship AI
-aitweaks_fleetwide_custom_ai,,,,Enable Fleetwide Custom AI,,Boolean,false,,,,"All player ships, except carriers and phase ships, are controlled by the AI Tweaks Custom AI.
+Если настройка отключена, отдельным кораблям всё ещё можно назначить этот приказ с помощью модификации корпуса.",,,,,ИИ кораблей
+aitweaks_fleetwide_custom_ai,,,,Пользовательский ИИ для всего флота,,Boolean,false,,,,"Все корабли игрока, кроме авианосцев и фазовых кораблей, управляются Пользовательским ИИ мода.
 
-If this setting is disabled, individual ships can still be configured to use the Custom AI via a hullmod.",,,,,Ship AI
+Если настройка отключена, Пользовательский ИИ всё ещё можно включить на отдельных кораблях с помощью модификации корпуса.",,,,,ИИ кораблей
 
-aitweaks_staggered_fire_threshold,,,,Staggered Firing Mode Cycle Threshold,,Double,4.5,,,,"If a ship’s autofire weapon has a firing cycle shorter than this threshold, it will fire in staggered mode. In this mode, all weapons of the same type fire at evenly spaced intervals rather than all at once. Setting this value to 0 disables staggered fire. (For reference: Plasma Cannon has a 2-second firing cycle; Light Needler has a 5-second cycle.)",,,0,10,Autofire AI
-aitweaks_enable_needler_fix,,,,Enable Anti Shield Burst Weapon AI,,Boolean,true,,,,"Adjusts all ammo-based kinetic weapons, as well as the vanilla Light and Medium Needlers, to attack enemy ships only when their shields are raised. This optimizes flux usage and burst effectiveness for breaking through shields.",,,,,Autofire AI
-aitweaks_enable_beam_sweep,,,,Enable PD Beam Sweep,,Boolean,true,,,,"Allow PD beams to rotate the active beam towards a new target rather than turning it off and reactivating after realignment. This greatly improves beam effectiveness against swarms of low HP threats.",,,,,Autofire AI
-aitweaks_strict_use_less_vs_shields,,,,Strict USE_LESS_VS_SHIELDS,,Boolean,true,,,,"Weapons tagged USE_LESS_VS_SHIELDS (such as the Mining Blaster and IR Autolance) will not fire at shields, ever. When this option is off, those weapons revert to vanilla behaviour and will target shields once their magazines are full.",,,,,Autofire AI
-aitweaks_allow_beams_through_shields,,,,Allow Beams Attack Through Allied Shields,,Boolean,true,,,,"Allow to fire non-burst beams through inside of allied ships’ shields.",,,,,Autofire AI
+aitweaks_staggered_fire_threshold,,,,Порог цикла для поочерёдного огня,,Double,4.5,,,,"Если цикл автоматического оружия короче этого значения, одинаковые орудия стреляют поочерёдно через равные интервалы, а не одновременно. Значение 0 отключает режим. Для сравнения: цикл плазменной пушки — 2 секунды, лёгкого игольника — 5 секунд.",,,0,10,ИИ автоогня
+aitweaks_enable_needler_fix,,,,ИИ кинетического оружия с боезапасом,,Boolean,true,,,,"Кинетическое оружие с боезапасом, а также стандартные лёгкий и средний игольники атакуют корабли только при поднятых щитах. Это экономит поток и повышает эффективность залпов против щитов.",,,,,ИИ автоогня
+aitweaks_enable_beam_sweep,,,,Наведение лучей ПКО без отключения,,Boolean,true,,,,"Позволяет активным лучам ПКО поворачиваться к новой цели без отключения и повторного включения. Значительно повышает эффективность против скоплений малопрочных целей.",,,,,ИИ автоогня
+aitweaks_strict_use_less_vs_shields,,,,Строгий USE_LESS_VS_SHIELDS,,Boolean,true,,,,"Оружие с тегом USE_LESS_VS_SHIELDS никогда не стреляет по щитам. При отключении используется стандартное поведение: такое оружие может атаковать щиты после заполнения боезапаса.",,,,,ИИ автоогня
+aitweaks_allow_beams_through_shields,,,,Огонь лучами сквозь союзные щиты,,Boolean,true,,,,"Разрешает непрерывным лучам стрелять изнутри щитов союзных кораблей.",,,,,ИИ автоогня
 
-aitweaks_use_vanilla_ai,,,,Only Player Assist,,Boolean,false,,,,"Disable all AI Tweaks modifications to Ship AI; keep only Player Assist features enabled.",,,,,Player Assist
-aitweaks_shield_assist_keybind,,,,Shield Assist Toggle Keybind,,Keycode,27,,,,"Hotkey used to pass control of player ship shield to AI. The AI will take over the shield control when player is piloting manually. Indicator circle is drawn around the ship when shield is in AI control.",,,,,Player Assist
-aitweaks_aim_bot_keybind,,,,Aim Assist Toggle Keybind,,Keycode,26,,,,"Hotkey to toggle aim assist for manually controlled weapon groups. When enabled, aim assist automatically calculates and applies target leading for all projectile and unguided missile weapons in the selected weapon group.",,,,,Player Assist
-aitweaks_aim_bot_rotate_ship,,,,Aim Assist Controls Ship Facing,,Boolean,true,,,,"Allow aim assist to correct ship facing when auto-turning to cursor. Aim assist will rotate the ship to correctly aim the selected weapon group.",,,,,Player Assist
-aitweaks_aim_bot_target_junk,,,,Aim Assist Targets Hulks And Asteroids,,Boolean,false,,,,"Allow aim assist to target hulks and asteroids when no enemy ships are nearby. This setting is primarily used for testing and development.",,,,,Player Assist
-aitweaks_aim_bot_perfect,,,,Aim Assist Perfect Targeting,,Boolean,false,,,,"Aim assist disregards mouse input and aims precisely at the target center.",,,,,Player Assist
+aitweaks_use_vanilla_ai,,,,Только помощь игроку,,Boolean,false,,,,"Отключает все изменения корабельного ИИ, оставляя только функции помощи игроку.",,,,,Помощь игроку
+aitweaks_shield_assist_keybind,,,,Клавиша передачи щита ИИ,,Keycode,27,,,,"Передаёт управление щитом корабля игрока искусственному интеллекту при ручном пилотировании. Когда щитом управляет ИИ, вокруг корабля отображается круговой индикатор.",,,,,Помощь игроку
+aitweaks_aim_bot_keybind,,,,Клавиша помощи в прицеливании,,Keycode,26,,,,"Включает помощь в прицеливании для управляемых вручную групп оружия. Система автоматически рассчитывает упреждение для снарядов и неуправляемых ракет выбранной группы.",,,,,Помощь игроку
+aitweaks_aim_bot_rotate_ship,,,,Помощь управляет направлением корабля,,Boolean,true,,,,"Позволяет системе прицеливания корректировать направление корабля при автоматическом повороте к курсору.",,,,,Помощь игроку
+aitweaks_aim_bot_target_junk,,,,Наведение на остовы и астероиды,,Boolean,false,,,,"Разрешает системе прицеливания выбирать остовы и астероиды, если поблизости нет вражеских кораблей. Предназначено преимущественно для тестирования.",,,,,Помощь игроку
+aitweaks_aim_bot_perfect,,,,Идеальное наведение,,Boolean,false,,,,"Система игнорирует движение мыши и точно целится в центр цели.",,,,,Помощь игроку
 
-aitweaks_enable_devmode,,,,Dev Mode,,Boolean,false,,,,"Enable AI Tweaks dev mode.",,,,,Debug & Misc
-aitweaks_highlight_custom_ai,,,,Highlight Custom AI,,Boolean,false,,,,"Highlight ships piloted by AI Tweaks custom AI. Works only in devmode.",,,,,Debug & Misc
-aitweaks_remove_combat_map_grid,,,,Remove Combat Map Grid,,Boolean,false,,,,"Remove the square grid in combat map.",,,,,Debug & Misc
-aitweaks_enable_simulator_custom_ai,,,,Enable Custom AI in Simulator,,Boolean,false,,,,"Eligible enemy ships in the simulator are controlled by AI Tweaks custom AI.",,,,,Debug & Misc
-aitweaks_enable_all_custom_ai,,,,Enable Custom AI in All Ships,,Boolean,false,,,,"All eligible ships are controlled by AI Tweaks custom AI. The AI is not finished yet, so don't expect good results.",,,,,Debug & Misc
-aitweaks_enable_title_screen_fire,,,,Enable Title Screen Fire,,Boolean,true,,,,"Ships on the title screen fire at asteroids.",,,,,Debug & Misc
-aitweaks_hide_hullmods,,,,Hide AI Tweaks Hullmods,,Boolean,false,,,,"Show AI Tweaks hullmods only in the AI Tweaks tab in the refit screen. Requires restart.",,,,,Debug & Misc
+aitweaks_enable_devmode,,,,Режим разработчика,,Boolean,false,,,,"Включает режим разработчика мода.",,,,,Отладка и прочее
+aitweaks_highlight_custom_ai,,,,Выделять Пользовательский ИИ,,Boolean,false,,,,"Выделяет корабли под управлением Пользовательского ИИ. Работает только в режиме разработчика.",,,,,Отладка и прочее
+aitweaks_remove_combat_map_grid,,,,Убрать сетку боевой карты,,Boolean,false,,,,"Убирает квадратную сетку с боевой карты.",,,,,Отладка и прочее
+aitweaks_enable_simulator_custom_ai,,,,Пользовательский ИИ в симуляторе,,Boolean,false,,,,"Подходящие корабли противника в симуляторе управляются Пользовательским ИИ.",,,,,Отладка и прочее
+aitweaks_enable_all_custom_ai,,,,Пользовательский ИИ на всех кораблях,,Boolean,false,,,,"Все подходящие корабли управляются Пользовательским ИИ. Он ещё не закончен, поэтому хороших результатов ожидать не стоит.",,,,,Отладка и прочее
+aitweaks_enable_title_screen_fire,,,,Стрельба на главном экране,,Boolean,true,,,,"Корабли на главном экране стреляют по астероидам.",,,,,Отладка и прочее
+aitweaks_hide_hullmods,,,,Скрыть модификации «Настроек ИИ»,,Boolean,false,,,,"Показывает модификации корпуса только на вкладке мода в экране переоснащения. Требуется перезапуск.",,,,,Отладка и прочее

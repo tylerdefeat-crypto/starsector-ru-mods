@@ -207,34 +207,34 @@ public class dpl_RossTradeCMD extends BaseCommandPlugin {
 			
 			@Override
 			public String getWeaponColumnNameOverride() {
-				return "Weapon";
+				return "Оружие";
 			}
 
 			@Override
 			public String getNoMatchingBlueprintsLabelOverride() {
-				return "No matching weapons";
+				return "Нет подходящего оружия";
 			}
 
 			@Override
 			public String getMaximumOrderValueLabelOverride() {
-				return "Data Archives available";
+				return "Доступно архивов данных";
 			}
 
 			@Override
 			public String getCurrentOrderValueLabelOverride() {
-				return "Data Archives required";
+				return "Требуется архивов данных";
 			}
 			@Override
 			public String getItemGoesOverMaxValueStringOverride() {
-				return "Not enough Data Archives";
+				return "Недостаточно архивов данных";
 			}
 			@Override
 			public String getCustomOrderLabelOverride() {
-				return "Order Specific Weapons";
+				return "Заказать выбранное оружие";
 			}
 			@Override
 			public String getNoProductionOrdersLabelOverride() {
-				return "No available orders";
+				return "Нет доступных заказов";
 			}
 			@Override
 			public boolean withQuantityLimits() {

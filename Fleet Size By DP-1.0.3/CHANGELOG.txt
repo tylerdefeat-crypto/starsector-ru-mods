@@ -1,21 +1,21 @@
 1.0.3:
--Refactor Fleet Size By DP skill to improve performance and reduce pausing/hitching behavior when used with certain mods.
--Add initial notification that Fleet Size By DP is loaded.
--Update notification string formatting to use multicolored strings, added mod title as notification message header.
+- Переработан навык «Размер флота по ОР»: повышена производительность и устранены задержки при использовании с некоторыми модами.
+- Добавлено первое уведомление о загрузке мода.
+- Обновлено форматирование уведомлений: добавлены разноцветные строки и название мода в заголовке.
 
 1.0.2b:
--Initial Update for 0.96a.
--Add setting to enable/disable the over DP notification on the campaign layer.
+- Первая версия для 0.96a.
+- Добавлена настройка уведомлений о превышении лимита ОР на карте кампании.
 
 1.0.1b:
--Update skill_data.csv file to match new format in 0.95.1a. 
--Update README.
+- Файл skill_data.csv приведён к новому формату версии 0.95.1a.
+- Обновлён README.
 
 1.0.0:
--Add campaign layer notification to alert player when over fleet DP limit.
+- Добавлено уведомление о превышении лимита ОР флота на карте кампании.
 
 0.9.1b:
--Fix for NullPointerException error on game load.
+- Исправлена ошибка NullPointerException при загрузке игры.
 
 0.9.0b:
--Beta Release.
+- Выпущена бета-версия.

@@ -2,7 +2,7 @@
     "playableFaction":true,
     "corvusCompatible":true,
     
-    "rebelFleetSuffix":"Splinter Group",
+    "rebelFleetSuffix":"Отколовшаяся группа",
     
     "startRelationships":{ "exipirated": -0.8 },
     "maxRelationships":{ "exipirated":-0.76 },

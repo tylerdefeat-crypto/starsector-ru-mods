@@ -1,6 +1,6 @@
 {
 	"timid_tmi":{
-		"tmi_debug":"Missing string: [%s]", #detect bugs or whatever
+		"tmi_debug":"Отсутствует строка: [%s]", #detect bugs or whatever
 		"sotruebestie":"Вот и все? Буквально ничего!",
 		"sotruebestie2":"Что-то могло быть, но TMI сейчас не смог это определить.",
 		"shiptags":"Теги корабля",

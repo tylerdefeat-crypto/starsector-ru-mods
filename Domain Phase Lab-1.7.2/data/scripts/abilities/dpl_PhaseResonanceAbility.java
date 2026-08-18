@@ -141,7 +141,7 @@ public class dpl_PhaseResonanceAbility extends BaseDurationAbility {
 	@Override
 	protected String getActivationText() {
 		//return Misc.ucFirst(spec.getName().toLowerCase());
-		return "Phase Resonance pulse";
+		return "Импульс фазового резонанса";
 	}
 
 
@@ -475,42 +475,41 @@ public class dpl_PhaseResonanceAbility extends BaseDurationAbility {
 		Color fuel = Global.getSettings().getColor("progressBarFuelColor");
 		Color bad = Misc.getNegativeHighlightColor();
 		
-		LabelAPI title = tooltip.addTitle("Phase Resonance");
+		LabelAPI title = tooltip.addTitle("Фазовый резонанс");
 
 		float pad = 10f;
 		
 		int range = (int) getRange(fleet);
 		
 		if (!isUsable() && super.isUsable() && getFleet() != null) {
-			tooltip.addPara("You need Elly in your fleet and a converted comm relay in the system.", bad, pad);
+			tooltip.addPara("В вашем флоте должна быть Элли, а в системе — переоборудованный ретранслятор связи.", bad, pad);
 		}
 
-		tooltip.addPara("Slows* the fleet and uses its active sensor network to induce phase resonance with the local comm relay, " +
-				"this can disrupt engines of nearby enemy fleets, and greatly reduce their combat readiness. " + "The relay will be destroyed.", pad);
+		tooltip.addPara("Замедляет* флот и использует его активную сенсорную сеть, чтобы вызвать фазовый резонанс с местным ретранслятором связи. " +
+				"Это нарушает работу двигателей ближайших вражеских флотов и резко снижает их боеготовность. Ретранслятор будет уничтожен.", pad);
 		
 		Color c = Misc.getTooltipTitleAndLightHighlightColor();
-		tooltip.addPara("The disruption interrupts any movement-related abilities (such as %s) " +
-				"and prevents their use for some time afterwards. " + "Also interrupts interdiction pulses and charging interdiction pulses.", pad,
-				highlight, "Sustained Burn");
+		tooltip.addPara("Возмущение прерывает все способности, связанные с движением (например, %s), " +
+				"и на некоторое время блокирует их повторное применение. Также прерывает импульсы запрета движения и их подготовку.", pad,
+				highlight, "«Ускоренное перемещение»");
 
-		tooltip.addPara("The disruption lasts for %s seconds, modified by %s second for " +
-				"every %s points of difference in the fleets' sensor strengths.", pad, highlight,
+		tooltip.addPara("Возмущение длится %s сек.; продолжительность изменяется на %s сек. за каждые %s ед. разницы " +
+				"между мощностями сенсоров флотов.", pad, highlight,
 				"" + (int) BASE_SECONDS,
 				"" + (int) 1,
 				"" + (int) STRENGTH_PER_SECOND);
 		
-		tooltip.addPara("Base range of %s* units, increased by half your fleet's sensor strength, " +
-				"for a total of %s units. While the pulse is charging, the range at which the fleet can be detected will " +
-				"gradually increase by up to %s.", pad, highlight, 
+		tooltip.addPara("Базовая дальность — %s* ед.; к ней добавляется половина мощности сенсоров вашего флота, " +
+				"что даёт итоговую дальность %s ед. Во время подготовки импульса дальность обнаружения флота " +
+				"постепенно увеличивается вплоть до %s.", pad, highlight, 
 				"" + (int) BASE_RANGE,
 				"" + range,
 				"" + (int) DETECTABILITY_PERCENT + "%");
 		
-		tooltip.addPara("A successful phase resonance is considered a hostile act, though not on the same level as " +
-						"open warfare.", pad);
+		tooltip.addPara("Успешный фазовый резонанс считается враждебным действием, хотя и не равнозначен открытой войне.", pad);
 		
-		tooltip.addPara("*2000 units = 1 map grid cell", gray, pad);
-		tooltip.addPara("*A fleet is considered slow-moving at a burn level of half that of its slowest ship.", gray, pad);
+		tooltip.addPara("*2000 ед. = 1 клетка карты", gray, pad);
+		tooltip.addPara("*Флот считается движущимся медленно, если его уровень маршевой скорости не превышает половины скорости самого медленного корабля.", gray, pad);
 		addIncompatibleToTooltip(tooltip, expanded);
 	}
 
@@ -532,6 +531,5 @@ public class dpl_PhaseResonanceAbility extends BaseDurationAbility {
 	}
 	
 }
-
 
 

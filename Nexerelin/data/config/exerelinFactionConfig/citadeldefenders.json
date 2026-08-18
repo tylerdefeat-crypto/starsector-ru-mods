@@ -2,7 +2,7 @@
     "playableFaction":true,
     "corvusCompatible":true,
     
-    "rebelFleetSuffix":"Splinter Group",
+    "rebelFleetSuffix":"Отколовшаяся группа",
     
     "startRelationships":{ "tiandong": -0.6 },
     "diplomacyPositiveChance":{ "tiandong":0.75 },
@@ -14,8 +14,8 @@
     },
     
     "vengeanceLevelNames":["Grudge"],
-    "vengeanceFleetNames":["Enforcers"],
-    "vengeanceFleetNamesSingle":["an Enforcer fleet"],
+    "vengeanceFleetNames":["Каратели"],
+    "vengeanceFleetNamesSingle":["флот карателей"],
     
     "customStations":["station_citadel_type"],
     

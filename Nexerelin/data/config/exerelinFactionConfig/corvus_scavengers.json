@@ -2,7 +2,7 @@
     "playableFaction":true,
     "corvusCompatible":true,
     
-    "rebelFleetSuffix":"Splinter Group", # String
+    "rebelFleetSuffix":"Отколовшаяся группа", # String
     
     "alignments":{},
 

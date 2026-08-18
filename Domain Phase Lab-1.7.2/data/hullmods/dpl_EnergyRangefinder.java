@@ -141,18 +141,17 @@ public class dpl_EnergyRangefinder extends BaseHullMod {
 		
 		
 		
-		tooltip.addPara("Utilizes targeting data from the ship's largest energy slot "
-				+ "to benefit certain weapons, extending the base range of "
-				+ "typical energy weapons to match similar but larger weapons. "
-				+ "Also benefits hybrid weapons. Point-defense weapons are unaffected.",
-				opad, h, "ship's largest energy slot", "base range");
+		tooltip.addPara("Использует данные наведения крупнейшего энергетического слота корабля, "
+				+ "увеличивая базовую дальность некоторых энергетических орудий до уровня аналогичного оружия большего размера. "
+				+ "Также действует на гибридное оружие. На оружие ПВО не влияет.",
+				opad, h, "крупнейшего энергетического слота", "базовую дальность");
 		
-		tooltip.addPara("The range bonus is based on the size of the largest energy slot, "
-				+ "and the increased base range is capped, but still subject to other modifiers.", opad);
+		tooltip.addPara("Бонус дальности зависит от размера крупнейшего энергетического слота. "
+				+ "Увеличенная базовая дальность ограничена, но на неё продолжают действовать другие модификаторы.", opad);
 		
-		tooltip.addSectionHeading("Energy weapon range", Alignment.MID, opad);
+		tooltip.addSectionHeading("Дальность энергетического оружия", Alignment.MID, opad);
 		
-		tooltip.addPara("Affects small and medium energy weapons.", opad);
+		tooltip.addPara("Действует на малое и среднее энергетическое оружие.", opad);
 		
 		float col1W = 120;
 		float colW = (int) ((width - col1W - 12f) / 3f);
@@ -160,21 +159,21 @@ public class dpl_EnergyRangefinder extends BaseHullMod {
 		
 		tooltip.beginTable(Misc.getBasePlayerColor(), Misc.getDarkPlayerColor(), Misc.getBrightPlayerColor(),
 				20f, true, true, 
-				new Object [] {"Largest e. slot", col1W, "Small wpn", colW, "Medium wpn", colW, "Range cap", lastW});
+				new Object [] {"Макс. энерг. слот", col1W, "Малое", colW, "Среднее", colW, "Предел", lastW});
 		
 		
 		Color c = null;
 		if (largest == WeaponSize.SMALL) c = h;
 		else if (largest == WeaponSize.MEDIUM) c = h;
 		else c = g;
-		tooltip.addRow(Alignment.MID, c, "Small / Medium",
+		tooltip.addRow(Alignment.MID, c, "Малый / Средний",
 				Alignment.MID, c, "+" + (int) BONUS_SMALL_1,
 				Alignment.MID, g, "---",
 				Alignment.MID, c, "" + (int)BONUS_MAX_1);
 		
 		if (largest == WeaponSize.LARGE) c = h;
 		else c = g;
-		tooltip.addRow(Alignment.MID, c, "Large",
+		tooltip.addRow(Alignment.MID, c, "Большой",
 				Alignment.MID, c, "+" + (int) BONUS_SMALL_3,
 				Alignment.MID, c, "+" + (int) BONUS_MEDIUM_3,
 				Alignment.MID, c, "" + (int)BONUS_MAX_3);
@@ -182,24 +181,23 @@ public class dpl_EnergyRangefinder extends BaseHullMod {
 		tooltip.addTable("", 0, opad);
 
 		
-		tooltip.addSectionHeading("Hybrid weapon range", Alignment.MID, opad + 7f);
+		tooltip.addSectionHeading("Дальность гибридного оружия", Alignment.MID, opad + 7f);
 		
-		tooltip.addPara("Affects hybrid weapons (those that can fit into both ballistic and energy slots)"
-				+ " of all sizes.", opad);
+		tooltip.addPara("Действует на гибридное оружие всех размеров — его можно устанавливать как в баллистические, так и в энергетические слоты.", opad);
 		
 		col1W = 120;
 		colW = (int) ((width - col1W - lastW - 15f) / 3f);
 		
 		tooltip.beginTable(Misc.getBasePlayerColor(), Misc.getDarkPlayerColor(), Misc.getBrightPlayerColor(),
 				20f, true, true, 
-				new Object [] {"Largest e. slot", col1W, "Small", colW, "Medium", colW, "Large", colW, "Range cap", lastW});
+				new Object [] {"Макс. энерг. слот", col1W, "Малое", colW, "Среднее", colW, "Большое", colW, "Предел", lastW});
 		
 		
 		c = null;
 		if (largest == WeaponSize.SMALL) c = h;
 		else if (largest == WeaponSize.MEDIUM) c = h;
 		else c = g;
-		tooltip.addRow(Alignment.MID, c, "Small / Medium",
+		tooltip.addRow(Alignment.MID, c, "Малый / Средний",
 				Alignment.MID, c, "+" + (int) (BONUS_SMALL_1 * HYBRID_MULT),
 				Alignment.MID, c, "+" + (int) HYBRID_BONUS_MIN,
 				Alignment.MID, c, "+" + (int) HYBRID_BONUS_MIN,
@@ -207,7 +205,7 @@ public class dpl_EnergyRangefinder extends BaseHullMod {
 		
 		if (largest == WeaponSize.LARGE) c = h;
 		else c = g;
-		tooltip.addRow(Alignment.MID, c, "Large",
+		tooltip.addRow(Alignment.MID, c, "Большой",
 				Alignment.MID, c, "+" + (int) (BONUS_SMALL_3 * HYBRID_MULT),
 				Alignment.MID, c, "+" + (int) (BONUS_MEDIUM_3 * HYBRID_MULT),
 				Alignment.MID, c, "+" + (int) HYBRID_BONUS_MIN,
@@ -216,10 +214,9 @@ public class dpl_EnergyRangefinder extends BaseHullMod {
 		tooltip.addTable("", 0, opad);
 		
 		
-		tooltip.addSectionHeading("Interactions with other modifiers", Alignment.MID, opad + 7f);
-		tooltip.addPara("Since the base range is increased, this modifier"
-				+ " - unlike most other flat modifiers - "
-				+ "is increased by percentage modifiers from other hullmods and skills.", opad);
+		tooltip.addSectionHeading("Взаимодействие с другими модификаторами", Alignment.MID, opad + 7f);
+		tooltip.addPara("Поскольку увеличивается базовая дальность, этот бонус, в отличие от большинства других фиксированных модификаторов, "
+				+ "усиливается процентными бонусами других модификаций корпуса и навыков.", opad);
 	}
 	
 	public float getTooltipWidth() {
@@ -238,19 +235,18 @@ public class dpl_EnergyRangefinder extends BaseHullMod {
 	public String getUnapplicableReason(ShipAPI ship) {
 		WeaponSize largest = getLargestEnergySlot(ship);
 		if (ship != null && largest == null) {
-			return "Ship has no energy weapon slots";
+			return "На корабле нет энергетических орудийных слотов";
 		}
 		if (ship != null && 
 				ship.getHullSize() != HullSize.CAPITAL_SHIP && 
 				ship.getHullSize() != HullSize.DESTROYER && 
 				ship.getHullSize() != HullSize.CRUISER) {
-			return "Can only be installed on destroyer-class hulls and larger";
+			return "Можно установить только на эсминцы и более крупные корабли";
 		}
 		return null;
 	}
 	
 }
-
 
 
 

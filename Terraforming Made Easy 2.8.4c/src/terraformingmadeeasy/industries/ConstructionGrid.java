@@ -47,15 +47,15 @@ public class ConstructionGrid extends BaseDevelopmentIndustry {
             float pad = 3f;
 
             if (isUpgrading()) {
-                tooltip.addSectionHeading("Megastructure project", Alignment.MID, oPad);
+                tooltip.addSectionHeading("Проект мегаструктуры", Alignment.MID, oPad);
                 TooltipMakerAPI imageWithText = tooltip.beginImageWithText(this.project.icon, 40f);
-                imageWithText.addPara("Status: %s", 0f, Misc.getHighlightColor(), "Ongoing");
-                imageWithText.addPara("Action: %s", pad, Misc.getHighlightColor(), "Add");
-                imageWithText.addPara("Megastructure: %s", pad, Misc.getHighlightColor(), this.project.name);
-                imageWithText.addPara("Days Left: %s", pad, Misc.getHighlightColor(), Math.round(this.buildTime - this.buildProgress) + "");
+                imageWithText.addPara("Статус: %s", 0f, Misc.getHighlightColor(), "Выполняется");
+                imageWithText.addPara("Действие: %s", pad, Misc.getHighlightColor(), "Построить");
+                imageWithText.addPara("Мегаструктура: %s", pad, Misc.getHighlightColor(), this.project.name);
+                imageWithText.addPara("Осталось дней: %s", pad, Misc.getHighlightColor(), Math.round(this.buildTime - this.buildProgress) + "");
                 tooltip.addImageWithText(oPad);
             } else {
-                tooltip.addSectionHeading("No Projects started", Alignment.MID, oPad);
+                tooltip.addSectionHeading("Нет активных проектов", Alignment.MID, oPad);
             }
         }
     }
@@ -112,7 +112,7 @@ public class ConstructionGrid extends BaseDevelopmentIndustry {
             SectorEntityToken inactiveGate = system.addCustomEntity(null, null, Entities.INACTIVE_GATE, Factions.NEUTRAL);
             inactiveGate.setCircularOrbit(orbitEntity, orbitAngle, orbitRadius, orbitDays);
             inactiveGate.getMemoryWithoutUpdate().set("$gateScanned", true);
-            inactiveGate.getMemoryWithoutUpdate().set("$fullName", "Active Gate");
+            inactiveGate.getMemoryWithoutUpdate().set("$fullName", "Активные врата");
             GateEntityPlugin.addGateScanned();
             GateEntityPlugin.getGateData().scanned.add(inactiveGate);
             inactiveGate.getCustomPlugin().advance(0f);
@@ -158,7 +158,7 @@ public class ConstructionGrid extends BaseDevelopmentIndustry {
             // Needed to fix bug where market size instantly raises to max
             Global.getSector().getCampaignUI().showInteractionDialog(station);
             Global.getSector().getCampaignUI().getCurrentInteractionDialog().getTextPanel().clear();
-            Global.getSector().getCampaignUI().getCurrentInteractionDialog().getTextPanel().addPara("Sorry, I have to force open a dialog to fix a bug that instantly increases the population size of a recently finished Orbital Station Megastructure to 6 (haven't found any other solutions)", Misc.getHighlightColor());
+            Global.getSector().getCampaignUI().getCurrentInteractionDialog().getTextPanel().addPara("Это окно открыто принудительно, чтобы обойти ошибку, мгновенно повышающую размер населения только что построенной орбитальной станции до 6.", Misc.getHighlightColor());
         } else {
             SectorEntityToken entity = system.addCustomEntity(null, null, customEntityId, Factions.NEUTRAL);
             entity.setCircularOrbit(orbitEntity, orbitAngle, orbitRadius, orbitDays);
@@ -168,7 +168,7 @@ public class ConstructionGrid extends BaseDevelopmentIndustry {
     @Override
     public void sendCompletedMessage() {
         if (this.market.isPlayerOwned()) {
-            MessageIntel intel = new MessageIntel(this.project.name + " megastructure completed", Misc.getBasePlayerColor());
+            MessageIntel intel = new MessageIntel("Завершено строительство мегаструктуры: " + this.project.name, Misc.getBasePlayerColor());
             intel.setIcon(Global.getSector().getPlayerFaction().getCrest());
             intel.setSound(BaseIntelPlugin.getSoundStandardUpdate());
             Global.getSector().getCampaignUI().addMessage(intel, CommMessageAPI.MessageClickAction.COLONY_INFO, this.market);

@@ -1,10 +1,10 @@
 {
   "id": "bmo",
-  "name": "Building Menu Overhaul",
+  "name": "Переработка меню строительства",
   "author": "Kaysaar",
   "utility": false,
 	"version":"2.0.3",
-  "description": "Mod that overhauls buildnig menu adding filters, searchbar etc etc.",
+  "description": "Перерабатывает меню строительства, добавляя фильтры, строку поиска и другие улучшения.",
   "gameVersion": "0.98",
   "jars": [ "jars/bmo.jar" ],
   "modPlugin": "kaysaar.bmo.BmoModPlugin",

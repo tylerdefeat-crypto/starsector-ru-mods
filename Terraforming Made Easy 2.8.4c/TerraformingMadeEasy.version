@@ -1,6 +1,6 @@
 {
     "masterVersionFile": "https://raw.githubusercontent.com/AudaxLudos/terraforming-made-easy/main/TerraformingMadeEasy.version",
-    "modName": "Terraforming Made Easy",
+    "modName": "Простое терраформирование",
     "modVersion": {
         "major": 2,
         "minor": 8,

@@ -64,7 +64,7 @@
 		#},
 		
 		"steinerGuards":{
-			"name":"Steiner Life Guards",
+			"name":"Лейб-гвардия Штайнера",
 			"desc":"«Разведывательный элемент» личной гвардии дома Steiner of Eventide. Шутка смешит всех, кроме их врагов.",
 			"feeUpfront":140000,
 			"feeMonthly":3500,
@@ -93,7 +93,7 @@
 		},
 		
 		"trigun":{
-			"name":"TriGun Services",
+			"name":"Служба TriGun",
 			"desc":"Проблемы с пиратами? TriGun™ Services спешит на помощь. Ваши враги даже не увидят, как мы подойдём. Мы можем убить их более чем семьюстами способами, и это только лазерами! TriGun™ — полностью принадлежащая дочерняя компания Tri-Tachyon Corporation.",
 			"feeUpfront":85000,
 			"feeMonthly":2125,
@@ -115,7 +115,7 @@
 		},
 		
 		"westernesseKingsOwn":{
-			"name":"Westernesse King's Own",
+			"name":"Личная гвардия короля Вестернесса",
 			"desc":"Иностранные наёмники, содержимые — и сдаваемые внаём — королём Westernesse. Этот отряд определяется не только боевым мастерством, но и своим статусом чужаков повсюду, куда бы ни отправился, а также верностью текущему официальному нанимателю.",
 			"feeUpfront":100000,
 			"feeMonthly":2500,
@@ -146,7 +146,7 @@
 		},
 		
 		"menFromVolturn":{
-			"name":"Men from Volturn",
+			"name":"Люди с Вольтурна",
 			"desc":"Люмпен-пролетарии из низов океанических поселений Volturn. Такие люди идут в армию Diktat как способ сбежать — или просто ради большего количества голов, которые можно проломить.",
 			"feeUpfront":70000,
 			"feeMonthly":1750,
@@ -206,7 +206,7 @@
 		#},
 		
 		"lastCrusader":{
-			"name":"The Last Crusader",	# reference to the 1989 Indiana Jones film
+			"name":"Последний крестоносец",	# reference to the 1989 Indiana Jones film
 			"desc":"Говорят, этот корабль сражается ещё со времён разгара первой Войны ИИ. Вокруг него ходят мрачные слухи: будто он сам стал тем, с чем борется.",
 			"feeUpfront":150000,
 			"feeMonthly":10000,	# higher since you're saving on the crew and officer salaries
@@ -245,7 +245,7 @@
 		},
 		
 		"dorasSurvey":{
-			"name":"Dora's Surveyor Corps",
+			"name":"Корпус исследователей Доры",
 			"desc":"Ответвление Ibrahim Interstellar Transport and Salvage; к Dora обращаются, когда нужна одна из тех дальних экспедиций по обследованию глубокого космоса.",
 			"feeUpfront":70000,
 			"feeMonthly":1750,
@@ -271,7 +271,7 @@
 		},
 		
 		"theJokers":{
-			"name":"The Jokers",
+			"name":"Джокеры",
 			"desc":"Неясно, настоящая ли это наёмная компания или сборище случайных капитанов без формальной организации. Одно известно точно: среди флотов, нанимаемых под эгидой AIM, нет двух одинаковых.",
 			"logo":"graphics/fx/question_mark.png",
 			"feeUpfront":90000,
@@ -300,7 +300,7 @@
 		},
 		
 		"dickerson":{
-			"name":"Les Enfants de Dicker",
+			"name":"Дети Дикера",
 			"desc":"Отпрыски печально известного пиратского клана Dickerson, жаждущие доказать свою ценность обильным насилием за прибыль.",
 			"feeUpfront":80000,
 			"feeMonthly":2000,
@@ -337,7 +337,7 @@
 		
 		# disabled via min level, it kind of rekts the lore
 		"endbringer":{
-			"name":"The Bringer of End",
+			"name":"Несущий Конец",
 			"desc":"Этот совершенно потусторонний корабль однажды появился и предложил свои услуги AIM. Расследования указали на связь с таинственной «Omega», почитаемой ИИ-остатками, но почему один из них решил помогать нам, людям, остаётся загадкой. В сложившихся обстоятельствах мы решили, что лучше не спрашивать.",
 			"feeUpfront":200000,
 			"feeMonthly":15000,	# more since you're not paying officer salaries (but are paying for repairs)

@@ -273,7 +273,7 @@ public class dpl_Objectives extends BaseCommandPlugin {
     	
     	CampaignFleetAPI target;
     	target = FleetFactoryV3.createFleet(params);
-        target.setName("HELA Device Defense");
+        target.setName("Охрана устройства HELA");
         target.setNoFactionInName(true);
 		
         if (Global.getSector().getMemoryWithoutUpdate().getBoolean("$dpl_HELA_noshield")) {
@@ -302,7 +302,6 @@ public class dpl_Objectives extends BaseCommandPlugin {
 		return new String[] {Commodities.HEAVY_MACHINERY, Commodities.METALS, Commodities.RARE_METALS, Commodities.SUPPLIES};
 	}
 }
-
 
 
 

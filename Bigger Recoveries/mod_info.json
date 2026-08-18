@@ -1,9 +1,9 @@
 {
   "id": "biggerrecoveries",
-  "name": "Bigger Recoveries",
+  "name": "Больше восстанавливаемых кораблей",
   "version": "1.0",
   "author": "Schmidt",
-  "description": "Increases max recoverable ships per type to 72.",
+  "description": "Увеличивает максимальное количество восстанавливаемых кораблей каждого типа до 72.",
   "jars": [
     "jars/starfarer.api.jar"
   ],

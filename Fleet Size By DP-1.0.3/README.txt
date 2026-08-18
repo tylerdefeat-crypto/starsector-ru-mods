@@ -1,30 +1,28 @@
-ABOUT
+О МОДЕ
 
-This mod changes how the player's max fleet size is determined: instead of ship count, total DP (not including
-mothballed ships) is counted instead.  Going over the fleet DP limit will incur burn speed and supply use
-penalties, similar to vanilla.
+Мод определяет максимальный размер флота игрока по суммарным очкам развёртывания (ОР), а не по количеству кораблей. Законсервированные корабли не учитываются. Превышение лимита ОР снижает скорость на форсаже и увеличивает расход припасов, как в базовой игре.
 
-CONFIGURATION
+НАСТРОЙКА
 
-Mod settings are available in data\config\settings.json.
+Параметры мода находятся в data\config\settings.json.
 
-DISABLING MID-GAME
+ОТКЛЮЧЕНИЕ ВО ВРЕМЯ ПРОХОЖДЕНИЯ
 
-To disable this mod and return to vanilla fleet tracking, DO NOT disable this mod in the mod manager.  Instead:
+Чтобы отключить мод и вернуть стандартный подсчёт флота, НЕ отключайте его в менеджере модов. Вместо этого:
 
-1. Open this mod's settings.json file and change "useFleetSizeByDPMod" to false.
-2. In the same file, comment out "showMaxShipsWidgetAtShips" and "maxShipsInFleet".
-3. With this mod enabled, load game as normal.
+1. Откройте settings.json этого мода и измените значение "useFleetSizeByDPMod" на false.
+2. В том же файле закомментируйте параметры "showMaxShipsWidgetAtShips" и "maxShipsInFleet".
+3. Оставив мод включённым, загрузите сохранение обычным способом.
 
-FINAL NOTES
-Feedback/bug reports/incoherent rage can be sent to:
--Chozo on the FractalSoftworks forums
--This mod's forum thread (https://fractalsoftworks.com/forum/index.php?topic=22191.0)
--Chozo on the unofficial Starsector Discord
+ОБРАТНАЯ СВЯЗЬ
 
+Отзывы и сообщения об ошибках можно отправлять:
+- Chozo на форуме Fractal Softworks;
+- в теме мода (https://fractalsoftworks.com/forum/index.php?topic=22191.0);
+- Chozo в неофициальном Discord-сообществе Starsector.
 
-SPECIAL THANKS:
--Jaghaimo for his Starsector mod template (https://github.com/jaghaimo/starsector-mod)
--Various members of the Starsector Discord modding channels, who humored my dumb questions about 
-the Starsector API 
--Players like you
+ОСОБАЯ БЛАГОДАРНОСТЬ
+
+- Jaghaimo за шаблон мода Starsector (https://github.com/jaghaimo/starsector-mod);
+- участникам каналов по моддингу Starsector в Discord за помощь с API;
+- таким игрокам, как вы.

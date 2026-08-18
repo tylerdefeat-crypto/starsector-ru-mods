@@ -119,13 +119,13 @@ public class dpl_LightMeetsDark extends HubMissionWithBarEvent {
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.GO_TO_DEN) {
-            info.addPara("Take Eliza to Kanta's Den located in " +
+			info.addPara("Отвезите Элизу в Логово Канты в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V to drop Eliza off.", opad);
+			info.addPara("Вернитесь на Исследовательский объект V и высадите Элизу.", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: KANTA IS LOCATED IN THE " +
+			info.addPara("РЕЖИМ РАЗРАБОТЧИКА: КАНТА НАХОДИТСЯ В ЛОКАЦИИ " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -135,11 +135,11 @@ public class dpl_LightMeetsDark extends HubMissionWithBarEvent {
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.GO_TO_DEN) {
-            info.addPara("Take Eliza to Kanta's Den located in " +
+			info.addPara("Отвезите Элизу в Логово Канты в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V.", tc, pad);
+			info.addPara("Вернитесь на Исследовательский объект V.", tc, pad);
             return true;
         }
         return false;
@@ -159,7 +159,7 @@ public class dpl_LightMeetsDark extends HubMissionWithBarEvent {
     // mission name
     @Override
     public String getBaseName() {
-        return "Light Meets Dark";
+		return "Встреча света и тьмы";
     }
 
 }
