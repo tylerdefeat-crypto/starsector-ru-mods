@@ -4,7 +4,7 @@
     "corvusCompatible":true,
     "spawnAsFactionId":"sindrian_diktat",
     "ngcTooltip":"Старт Diktat, но с высокотехнологичными кораблями.",
-    "rebelFleetSuffix":"Rogues",
+    "rebelFleetSuffix":"Отступники",
     "startRelationships":{ "sindrian_diktat":1 },
     
     "responseFleetName":"Guardian Fleet",

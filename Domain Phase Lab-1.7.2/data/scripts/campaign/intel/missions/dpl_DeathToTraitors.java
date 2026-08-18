@@ -240,16 +240,16 @@ public class dpl_DeathToTraitors extends HubMissionWithBarEvent implements Fleet
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.GO_TO_SINDRIA) {
-            info.addPara("Find clues at Sindria, try to ask Macario in " +
+			info.addPara("Найдите улики на Синдрии; попробуйте расспросить Макарио в локации " +
                     system1.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.GO_TO_TSE) {
-            info.addPara("Eliminate the traitor in " +
+			info.addPara("Устраните предателя в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Report back to Research Site V.", opad);
+			info.addPara("Вернитесь с докладом на Исследовательский объект V.", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: TRAITOR IS LOCATED IN THE " +
+			info.addPara("РЕЖИМ РАЗРАБОТЧИКА: ПРЕДАТЕЛЬ НАХОДИТСЯ В ЛОКАЦИИ " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -259,15 +259,15 @@ public class dpl_DeathToTraitors extends HubMissionWithBarEvent implements Fleet
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.GO_TO_SINDRIA) {
-            info.addPara("Talk to Macario in Sindria " +
+			info.addPara("Поговорите с Макарио на Синдрии в локации " +
                     system1.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.GO_TO_TSE) {
-            info.addPara("Eliminate the traitor in " +
+			info.addPara("Устраните предателя в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V.", tc, pad);
+			info.addPara("Вернитесь на Исследовательский объект V.", tc, pad);
             return true;
         }
         return false;
@@ -289,7 +289,7 @@ public class dpl_DeathToTraitors extends HubMissionWithBarEvent implements Fleet
     // mission name
     @Override
     public String getBaseName() {
-        return "Death to Traitors";
+		return "Смерть предателям";
     }
 
 	@Override

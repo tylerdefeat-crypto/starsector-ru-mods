@@ -2,7 +2,7 @@
     "playableFaction":true,
     "corvusCompatible":true,
     
-    "rebelFleetSuffix":"Heretics",
+    "rebelFleetSuffix":"Еретики",
     
     "directoryUseShortName":true,
 
@@ -26,8 +26,8 @@
     "colonyTargetValuator":"exerelin.campaign.colony.LuddicColonyTargetValuator",
         
     "vengeanceLevelNames":["Excommunication", "Interdiction", "Jihad"],
-    "vengeanceFleetNames":["Evangelists", "Inquisition", "Crusade"],
-    "vengeanceFleetNamesSingle":["Evangelists", "an Inquisition", "a Crusade"],
+    "vengeanceFleetNames":["Евангелисты", "Инквизиция", "Крестовый поход"],
+    "vengeanceFleetNamesSingle":["Евангелисты", "инквизиция", "крестовый поход"],
     
     "groundBattleSettings":{
 		"luddef_moraleDamageTakenMult":0.85f,

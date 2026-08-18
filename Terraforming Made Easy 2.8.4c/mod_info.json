@@ -1,9 +1,9 @@
 {
   "id": "terraformingmadeeasy",
-  "name": "Terraforming Made Easy",
+  "name": "Простое терраформирование",
   "author": "Audax",
   "version": "2.8.4c",
-  "description": "A mod for starsector that allows to player to build structures that can remove or add planet conditions to a colony or build megastructures like stations and gates.",
+  "description": "Позволяет строить сооружения, которые добавляют или устраняют планетарные условия колонии, а также возводить мегаструктуры — например, станции и врата.",
   "gameVersion": "0.98a",
   "jars": [
     "TerraformingMadeEasy.jar"

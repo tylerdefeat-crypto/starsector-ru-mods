@@ -1,88 +1,87 @@
 fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
-EnableAutoShieldOnAfterSystem,Deploy shield after system,Boolean,false,,"If system folds shield deploy it after system ends if it was deployed when you activated the system
+EnableAutoShieldOnAfterSystem,Поднимать щит после системы,Boolean,false,,"Если система убирает щит, снова поднять его после завершения работы системы, если он был активен при её включении.
 
-(Side Note: if you manually deactivate shield in exact moment you activate ship system this will deploy shields after system ends)
-(not recomended to use quite unstable doesn't work on some modded systems, some effects like time flow increases might also break it)",,,
-EnableAutoShieldOnAfterOverload,Deploy shield after overload,Boolean,true,,Press RMB while overloaded/venting to deploy shield/activate phase cloak right after overload/venting ends,,,
+(Если вручную отключить щит одновременно с активацией системы, он всё равно поднимется после её завершения.)
+Функция нестабильна, не работает с некоторыми системами из модов и может конфликтовать с изменением течения времени.",,,
+EnableAutoShieldOnAfterOverload,Поднимать щит после перегрузки,Boolean,true,,Нажмите ПКМ во время перегрузки или сброса потока, чтобы поднять щит либо включить фазовую маскировку сразу после завершения.,,,
 ,,,,,,,,
-settign_header_1,,Header,Shield assist,,"Settings for shield auto targetting, controls shield for you",0,4,
-DefaultShieldSnapMode,Default Shield Snap Mode,Int,1,,"0 - No snapping
-1 - Snaps to ship's target follow mouse if no target
-2 - Snaps to current target and stay snap to it even if target changes
-3 - Snaps to current position relative to the ship
-4 - Snaps to current position relative to the world",0,4,
-SaveModeBetweenEncounters,Save Mode Between Encounters,Boolean,false,,Saves selected mode between combat encounters,,,
-ShieldSnappingMenuKey,Radial Menu key,Keycode,59,,,,,
-ShieldSnappingMenuTextRender,Enable Mode Labels,Boolean,true,,Show text labels for modes on radial menu,,,
-ShieldSnappingMenuInnerR,Radius Of Central Circle,Int,25,,,5,50,
-ShieldSnappingMenuRingThinknes,Ring Thickness,Int,125,,,10,250,
-ShieldSnappingMenuTheme,Radial menu color scheme,Int,1,,"1 - Use player faction colors
-2 - Copy player's shield colors
-3 - Use combat UI colors
+settign_header_1,,Header,Помощь со щитом,,"Автоматическое наведение щита",0,4,
+DefaultShieldSnapMode,Режим наведения щита по умолчанию,Int,1,,"0 — без привязки
+1 — к цели корабля, а при её отсутствии за мышью
+2 — к текущей цели даже после смены цели корабля
+3 — к текущему направлению относительно корабля
+4 — к текущему направлению относительно мира",0,4,
+SaveModeBetweenEncounters,Сохранять режим между боями,Boolean,false,,Сохраняет выбранный режим между боевыми столкновениями.,,,
+ShieldSnappingMenuKey,Клавиша кругового меню,Keycode,59,,,,,
+ShieldSnappingMenuTextRender,Подписи режимов,Boolean,true,,Показывает названия режимов в круговом меню.,,,
+ShieldSnappingMenuInnerR,Радиус центрального круга,Int,25,,,5,50,
+ShieldSnappingMenuRingThinknes,Толщина кольца,Int,125,,,10,250,
+ShieldSnappingMenuTheme,Цветовая схема кругового меню,Int,1,,"1 — цвета фракции игрока
+2 — цвета щита игрока
+3 — цвета боевого интерфейса
 ",1,3,
-ShieldSnappingSlowDown,Menu Slow-mo,Int,95,,"Percentage value by which game slows down then menu is active
-100 pauses the game 0 removes slowdown",0,100,
-ShieldSnappingResetMouse,Reset Mouse,Boolean,false,,When menu deactivated puts mouse in position it was when menu was activated,,,
-settign_header_LegacyShieldSnapping,,Header,Legacy Shield snapping,,,,,
-EnableLegacyShieldSnapping,Enable legacy mode,Boolean,false,,Use keybind for each individual mode instead of radial menu,,,
-snapIfTarget,Snap If Target,Keycode,59,,Snaps to ship's target follow mouse if no target,,,
-rememberTarget,Remember Target,Keycode,60,,Snaps to current target and stay snap to it even if target changes,,,
-shipSide,Ship Side,Keycode,61,,Snaps to current position relative to the ship,,,
-direction,Direction,Keycode,62,,Snaps to current position relative to the world,,,
+ShieldSnappingSlowDown,Замедление в меню,Int,95,,"Процент замедления игры при открытом меню: 100 останавливает игру, 0 отключает замедление.",0,100,
+ShieldSnappingResetMouse,Возвращать указатель,Boolean,false,,После закрытия меню возвращает указатель в исходное положение.,,,
+settign_header_LegacyShieldSnapping,,Header,Старое управление щитом,,,,,
+EnableLegacyShieldSnapping,Включить старый режим,Boolean,false,,Использовать отдельную клавишу для каждого режима вместо кругового меню.,,,
+snapIfTarget,Наводить на цель,Keycode,59,,Наводит щит на цель корабля, а при её отсутствии — за мышью.,,,
+rememberTarget,Запомнить цель,Keycode,60,,Сохраняет привязку к текущей цели даже после смены цели корабля.,,,
+shipSide,Направление относительно корабля,Keycode,61,,Фиксирует текущее направление относительно корабля.,,,
+direction,Направление относительно мира,Keycode,62,,Фиксирует текущее направление относительно мира.,,,
 ,,,,,,,,
-settign_header_2,System Notify settings,Header,System Notify settings,,,,,
-EnableSystemNotify,Enable System Notify,Boolean,true,,,,,
-TextSize,Text Size,Int,30,,,,,
-systemNotifcustomColors,Custom Text color,Boolean,false,,"Enable custom color for text, if disabled uses UI color including from UI mods",,,
-OnTextColorNew,On Text Color,Color,#00ff00,,,,,
-OffTextColorNew,Off Text Color,Color,#ff0000,,,,,
-AllowForPlayerShip,Allow For Player Ship,Boolean,false,,Shows system notify on player ship,,,
+settign_header_2,Уведомления систем,Header,Уведомления систем,,,,,
+EnableSystemNotify,Показывать уведомления систем,Boolean,true,,,,,
+TextSize,Размер текста,Int,30,,,,,
+systemNotifcustomColors,Свой цвет текста,Boolean,false,,"Использовать выбранный цвет текста; иначе применяется цвет интерфейса.",,,
+OnTextColorNew,Цвет включения,Color,#00ff00,,,,,
+OffTextColorNew,Цвет выключения,Color,#ff0000,,,,,
+AllowForPlayerShip,Показывать на корабле игрока,Boolean,false,,Показывает уведомления системы на корабле игрока.,,,
 ,,,,,,,,
-settign_header_3,Misc,Header,Clock,,,,,
-EnableClock,Enable Clock,Boolean,true,,Real time clock in campaign in left top corner under game date,,,
-12HourCLock,12 Hour Clock,Boolean,false,,12 hours AM/PM style clock,,,
+settign_header_3,Прочее,Header,Часы,,,,,
+EnableClock,Показывать часы,Boolean,true,,Показывает реальное время в левом верхнем углу карты кампании под игровой датой.,,,
+12HourCLock,12-часовой формат,Boolean,false,,Использовать 12-часовой формат AM/PM.,,,
 ,,,,,,,,
-settign_header_4,Order Drawer,Header,Order Drawer,,,,,
-orderDrawEnable,Enable Order Draw,Boolean,true,,Enable drawing of fleet orders in combat,,,
-orderSize,Order icon size,Double,1,,Change size of icons,0,20,
+settign_header_4,Отображение приказов,Header,Отображение приказов,,,,,
+orderDrawEnable,Показывать приказы,Boolean,true,,Отображает приказы флоту непосредственно на поле боя.,,,
+orderSize,Размер значков приказов,Double,1,,Изменяет размер значков.,0,20,
 ,,,,,,,,
-settign_header_5,General,Header,General,,,,,Ship Direction Marker
-DisableMarkerOnPause,Disable marker while paused,Boolean,true,,Draw markers while game paused.,,,Ship Direction Marker
-PayerMarkerOnAtStartOfCombat,Draw on player,Boolean,true,,Enable marker on player ship (can still be toggled with a key),,,Ship Direction Marker
-TargetMarkerOnAtStartOfCombat,Draw on target,Boolean,true,,Enable marker on player's target (can still be toggled with a key),,,Ship Direction Marker
-DrawOnAll,Draw on all,Boolean,false,,Enable markers on all ships (can still be toggled with a key),,,Ship Direction Marker
-DrawOnAllFighters,Draw on fighters,Boolean,false,,Enable markers on markers on fighters (can still be toggled with a key)(beware performance impact) ,,,Ship Direction Marker
+settign_header_5,Основные,Header,Основные,,,,,Маркер направления корабля
+DisableMarkerOnPause,Скрывать при паузе,Boolean,true,,Не отображать маркеры во время паузы.,,,Маркер направления корабля
+PayerMarkerOnAtStartOfCombat,Маркер на корабле игрока,Boolean,true,,Включает маркер на корабле игрока; его можно переключать клавишей.,,,Маркер направления корабля
+TargetMarkerOnAtStartOfCombat,Маркер на цели,Boolean,true,,Включает маркер на цели игрока; его можно переключать клавишей.,,,Маркер направления корабля
+DrawOnAll,Маркеры на всех кораблях,Boolean,false,,Включает маркеры на всех кораблях; их можно переключать клавишей.,,,Маркер направления корабля
+DrawOnAllFighters,Маркеры на истребителях,Boolean,false,,Включает маркеры на истребителях; может снизить производительность.,,,Маркер направления корабля
 ,,,,,,,,
-settign_header_6,Keybinds,Header,Keybinds,,,,,Ship Direction Marker
-PlayerShipToggleButton,Toggle player,Keycode,26,,Button to toggle marker on player ship,,,Ship Direction Marker
-TargetShipToggleButton,Toggle target,Keycode,27,,Button to toggle marker on player's target,,,Ship Direction Marker
-DrawOnAllShipsToggleButton,Toggle all ships,Keycode,40,,Button to toggle markers on all other ships,,,Ship Direction Marker
-IncludeFightersInDrawOnAllToggle,Toggle fighters,Keycode,43,,Button to toggle markers on fighters (beware performance impact),,,Ship Direction Marker
+settign_header_6,Горячие клавиши,Header,Горячие клавиши,,,,,Маркер направления корабля
+PlayerShipToggleButton,Маркер игрока,Keycode,26,,Переключает маркер на корабле игрока.,,,Маркер направления корабля
+TargetShipToggleButton,Маркер цели,Keycode,27,,Переключает маркер на цели игрока.,,,Маркер направления корабля
+DrawOnAllShipsToggleButton,Маркеры всех кораблей,Keycode,40,,Переключает маркеры на остальных кораблях.,,,Маркер направления корабля
+IncludeFightersInDrawOnAllToggle,Маркеры истребителей,Keycode,43,,Переключает маркеры истребителей; может снизить производительность.,,,Маркер направления корабля
 ,,,,,,,,
-settign_header_7,Marker color,Header,Marker color,,,,,Ship Direction Marker
-customColors,Custom marker color,Boolean,false,,"Enabler custom colors for markers, if disabled uses UI color including from UI mods",,,Ship Direction Marker
-allyColor,Ally color,Color,#00ff00,,,,,Ship Direction Marker
-enemyColor,Enemy color,Color,#ff0000,,,,,Ship Direction Marker
+settign_header_7,Цвет маркеров,Header,Цвет маркеров,,,,,Маркер направления корабля
+customColors,Свой цвет маркеров,Boolean,false,,"Использовать выбранные цвета маркеров; иначе применяются цвета интерфейса.",,,Маркер направления корабля
+allyColor,Цвет союзников,Color,#00ff00,,,,,Маркер направления корабля
+enemyColor,Цвет врагов,Color,#ff0000,,,,,Маркер направления корабля
 ,,,,,,,,
-BetterSensorBurst,Better Sensor Burst,Boolean,true,,Do not disable Sustained Burn when using Active Sensor Burst. Fleet will move slowly for the cool-down duration (instead of doing full stop),,,TransponderOff
-BetterRemoteSurvey,Better Remote Survey,Boolean,true,,Do not disable Sustained Burn when using Remote Survey. Fleet will still stand still for duration of ability.,,,TransponderOff
-PartialSurveyAsYouFly,Partial Survey As You Fly,Boolean,true,,Automatically provide partial survey for planets within your sensor range.,,,TransponderOff
-ScavengeAsYouFly,Scavenge As You Fly,Boolean,true,,Use Scavenge ability as soon as it is usable. There is a new ability (with blue scavenge icon) that is used to turn this functionality on,,,TransponderOff
-Transpoffder,Transpoffder,Boolean,true,,Automatically turn off fleet transponder whenever transitioning to Hyperspace,,,TransponderOff
+BetterSensorBurst,Улучшенный импульс датчика,Boolean,true,,Не отключает «Ускоренный марш» при активном импульсе датчика. Во время восстановления флот движется медленно вместо полной остановки.,,,Кампания
+BetterRemoteSurvey,Улучшенное удалённое исследование,Boolean,true,,Не отключает «Ускоренный марш» при удалённом исследовании; на время действия флот всё равно останавливается.,,,Кампания
+PartialSurveyAsYouFly,Исследование на лету,Boolean,true,,Автоматически частично исследует планеты в радиусе датчиков.,,,Кампания
+ScavengeAsYouFly,Сбор трофеев на лету,Boolean,true,,Автоматически применяет сбор трофеев при первой возможности. Функция включается новой способностью с синим значком.,,,Кампания
+Transpoffder,Автовыключение транспондера,Boolean,true,,Автоматически выключает транспондер при переходе в гиперпространство.,,,Кампания
 ,,,,,,,,
-settign_header_ammoDraw,Ready Fire Indicator,Header,Weapon Ammo Indicator,,,,,Combat Information
-rfi_header_text,Draws cooldown or ammo near weapon,text,Draws cooldown or ammo near weapon,,,,,Combat Information
-rfi_enable,Enable,Boolean,true,,,,,Combat Information
-rfi_onlyPhase,Only draw for phase ships,Boolean,false,,,,,Combat Information
-rfi_drawonActive,Draw on selected weapons,Boolean,false,,,,,Combat Information
-rfi_ignorePD,Don't draw on PD weapons,Boolean,true,,,,,Combat Information
-rfi_ignoreSMALL,Don't draw on small weapons,Boolean,false,,,,,Combat Information
-rfi_minCD,Minimal refire delay to draw,Double,3,,Coutns without burst duration,,,Combat Information
-rfi_minReload,Minimal total reload time to draw,Double,3,,,,,Combat Information
-rfi_offset,Bar offset,Double,5,,,-20,20,Combat Information
-rfi_scale,Size scale,Double,1,,,0,5,Combat Information
-rfi_scaleX,Width scale,Double,1,,,0,5,Combat Information
-rfi_scaleY,Height scale,Double,1,,,0,5,Combat Information
+settign_header_ammoDraw,Индикатор готовности,Header,Боезапас оружия,,,,,Боевая информация
+rfi_header_text,Показывает боезапас или перезарядку рядом с оружием,text,Показывает боезапас или перезарядку рядом с оружием,,,,,Боевая информация
+rfi_enable,Включить,Boolean,true,,,,,Боевая информация
+rfi_onlyPhase,Только фазовые корабли,Boolean,false,,,,,Боевая информация
+rfi_drawonActive,На выбранном оружии,Boolean,false,,,,,Боевая информация
+rfi_ignorePD,Не показывать на оружии ПКО,Boolean,true,,,,,Боевая информация
+rfi_ignoreSMALL,Не показывать на малом оружии,Boolean,false,,,,,Боевая информация
+rfi_minCD,Минимальная задержка выстрела,Double,3,,Без учёта продолжительности залпа.,,,Боевая информация
+rfi_minReload,Минимальное полное время перезарядки,Double,3,,,,,Боевая информация
+rfi_offset,Смещение полосы,Double,5,,,-20,20,Боевая информация
+rfi_scale,Масштаб,Double,1,,,0,5,Боевая информация
+rfi_scaleX,Масштаб по ширине,Double,1,,,0,5,Боевая информация
+rfi_scaleY,Масштаб по высоте,Double,1,,,0,5,Боевая информация
 ,,,,,,,,
 ,,,,,,,,
 ,,,,,,,,

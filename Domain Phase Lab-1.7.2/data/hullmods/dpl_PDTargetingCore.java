@@ -117,21 +117,20 @@ public class dpl_PDTargetingCore extends BaseHullMod {
 		Color h = Misc.getHighlightColor();
 		Color bad = Misc.getNegativeHighlightColor();
 		
-		tooltip.addPara("If this ship has any large non-PD weapon, its system will greatly suffer, resulting in a %s penalty of its damage.", opad, h,
+		tooltip.addPara("Если на корабле установлено хотя бы одно большое оружие не-ПВО, эффективность системы резко снизится, уменьшив её урон на %s.", opad, h,
 				"" + (int)Math.round((1f - DAMAGE_PENALTY) * 100f) + "%"
 				);
 		
-		tooltip.addPara("Reduces the portion of the range of all weapons that is above %s by %s. The base range is affected.", opad, h,
-				"" + (int)RANGE_THRESHOLD_PD,
-				"" + (int)Math.round((1f - RANGE_MULT) * 100f) + "%"
+		tooltip.addPara("Сокращает на %s ту часть дальности всего оружия, которая превышает %s. Изменяется базовая дальность.", opad, h,
+				"" + (int)Math.round((1f - RANGE_MULT) * 100f) + "%",
+				"" + (int)RANGE_THRESHOLD_PD
 				);
 		
-		tooltip.addSectionHeading("Interactions with other modifiers", Alignment.MID, opad);
-		tooltip.addPara("The base range is reduced, thus percentage and multiplicative modifiers - such as from Integrated Targeting Unit, "
-				+ "skills, or similar sources - apply to the reduced base value.", opad);
+		tooltip.addSectionHeading("Взаимодействие с другими модификаторами", Alignment.MID, opad);
+		tooltip.addPara("Поскольку базовая дальность уменьшена, процентные и множительные бонусы от интегрированного блока целеуказания, "
+				+ "навыков и других источников применяются к уменьшенному базовому значению.", opad);
 	}
 }
-
 
 
 

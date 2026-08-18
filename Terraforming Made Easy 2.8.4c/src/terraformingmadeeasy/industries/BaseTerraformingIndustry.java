@@ -22,7 +22,7 @@ import java.util.*;
 public class BaseTerraformingIndustry extends BaseDevelopmentIndustry {
     @Override
     protected String getBuildingText() {
-        return "terraforming";
+        return "терраформирование";
     }
 
     @Override
@@ -32,15 +32,15 @@ public class BaseTerraformingIndustry extends BaseDevelopmentIndustry {
 
         if (mode == IndustryTooltipMode.NORMAL || isUpgrading()) {
             if (isUpgrading()) {
-                tooltip.addSectionHeading("Terraforming project", Alignment.MID, oPad);
+                tooltip.addSectionHeading("Проект терраформирования", Alignment.MID, oPad);
                 TooltipMakerAPI imageWithText = tooltip.beginImageWithText(this.project.icon, 40f, getTooltipWidth(), false);
-                imageWithText.addPara("Status: %s", 0f, Misc.getHighlightColor(), "Ongoing");
-                imageWithText.addPara("Action: %s", pad, Misc.getHighlightColor(), !this.market.hasCondition(this.project.id) ? "Add" : "Remove");
-                imageWithText.addPara("Condition: %s", pad, Misc.getHighlightColor(), this.project.name);
-                imageWithText.addPara("Days Left: %s", pad, Misc.getHighlightColor(), Math.round(this.buildTime - this.buildProgress) + "");
+                imageWithText.addPara("Статус: %s", 0f, Misc.getHighlightColor(), "Выполняется");
+                imageWithText.addPara("Действие: %s", pad, Misc.getHighlightColor(), !this.market.hasCondition(this.project.id) ? "Добавить" : "Устранить");
+                imageWithText.addPara("Условие: %s", pad, Misc.getHighlightColor(), this.project.name);
+                imageWithText.addPara("Осталось дней: %s", pad, Misc.getHighlightColor(), Math.round(this.buildTime - this.buildProgress) + "");
                 tooltip.addImageWithText(oPad);
             } else {
-                tooltip.addSectionHeading("No projects started", Alignment.MID, oPad);
+                tooltip.addSectionHeading("Нет активных проектов", Alignment.MID, oPad);
             }
         }
     }
@@ -102,9 +102,9 @@ public class BaseTerraformingIndustry extends BaseDevelopmentIndustry {
     @Override
     public void sendCompletedMessage() {
         if (this.market.isPlayerOwned()) {
-            String addOrRemoveText = !this.market.hasCondition(this.project.id) ? "Added " : "Removed ";
-            MessageIntel intel = new MessageIntel("Terraforming completed at " + this.market.getName(), Misc.getBasePlayerColor());
-            intel.addLine(BaseIntelPlugin.BULLET + addOrRemoveText + this.project.name.toLowerCase() + " planet condition");
+            String addOrRemoveText = !this.market.hasCondition(this.project.id) ? "Добавлено условие: " : "Устранено условие: ";
+            MessageIntel intel = new MessageIntel("Терраформирование завершено: " + this.market.getName(), Misc.getBasePlayerColor());
+            intel.addLine(BaseIntelPlugin.BULLET + addOrRemoveText + this.project.name.toLowerCase());
             intel.setIcon(Global.getSector().getPlayerFaction().getCrest());
             intel.setSound(BaseIntelPlugin.getSoundStandardUpdate());
             Global.getSector().getCampaignUI().addMessage(intel, CommMessageAPI.MessageClickAction.COLONY_INFO, this.market);

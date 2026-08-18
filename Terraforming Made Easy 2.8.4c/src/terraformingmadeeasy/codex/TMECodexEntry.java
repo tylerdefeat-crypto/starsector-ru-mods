@@ -65,9 +65,9 @@ public class TMECodexEntry extends CodexEntryV2 implements CustomUIPanelPlugin {
     public void createTitleForList(TooltipMakerAPI info, float width, ListMode mode) {
         info.addPara(this.spec.getName(), Misc.getBasePlayerColor(), 0f);
         boolean structure = this.spec.hasTag(Industries.TAG_STRUCTURE);
-        String type = "Industry";
+        String type = "Производство";
         if (structure) {
-            type = "Structure";
+            type = "Сооружение";
         }
         info.addPara(type, Misc.getGrayColor(), 0f);
     }
@@ -132,31 +132,31 @@ public class TMECodexEntry extends CodexEntryV2 implements CustomUIPanelPlugin {
         if (structure) {
             type = "Structure";
         }
-        tooltip.addPara("Type: %s", oPad, g, Global.getSettings().getDesignTypeColor(type), type);
+        tooltip.addPara("Тип: %s", oPad, g, Global.getSettings().getDesignTypeColor(type), type);
         tooltip.setParaSmallInsignia();
         initPad = oPad;
 
         tooltip.addPara(spec.getDesc(), initPad);
-        String optionsText = "Terraforming";
-        String optionsDesc = "Planetary conditions can be added or removed at any time. Once a terraforming project is completed, the planet will be terraformed immediately based on its current conditions.";
-        String nameTooltipText = "Name of the condition to terraform on a planet";
-        String timeTooltipText = "Build time, in days. Until the terraforming project finishes.";
-        String costTooltipText = "One-time cost to begin terraforming project, in credits";
+        String optionsText = "Терраформирование";
+        String optionsDesc = "Планетарные условия можно добавлять и устранять в любое время. После завершения проекта планета немедленно изменится в соответствии с текущими условиями.";
+        String nameTooltipText = "Планетарное условие для изменения";
+        String timeTooltipText = "Время выполнения проекта в днях";
+        String costTooltipText = "Разовая стоимость запуска проекта в кредитах";
         if (Objects.equals(this.id, TMEIds.CONSTRUCTION_GRID)) {
-            optionsText = "Megastructure";
-            optionsDesc = "The construction grid can only be used once. Once a megastructure project is completed, the structure is used and the megastructure is created.";
-            nameTooltipText = "Name of megastructure to build";
-            timeTooltipText = "Build time, in days. Until the megastructure project finishes.";
-            costTooltipText = "One-time cost to begin megastructure project, in credits";
+            optionsText = "Мегаструктура";
+            optionsDesc = "Строительную решётку можно использовать только один раз. После завершения проекта решётка расходуется, а мегаструктура появляется в системе.";
+            nameTooltipText = "Мегаструктура для строительства";
+            timeTooltipText = "Время строительства мегаструктуры в днях";
+            costTooltipText = "Разовая стоимость запуска проекта в кредитах";
         } else if (Objects.equals(this.id, TMEIds.PLANETARY_HOLOGRAM)) {
-            optionsText = "Visual";
-            optionsDesc = "A planet's visual can be changed at any time. Removing the structure will revert the planet's visual to its original state.";
-            nameTooltipText = "Name of planet type to change into";
-            timeTooltipText = "Build time, in days. Until a planet's visual changes.";
-            costTooltipText = "One-time cost to change a planet's visual, in credits";
+            optionsText = "Облик";
+            optionsDesc = "Облик планеты можно изменить в любое время. Демонтаж сооружения вернёт исходный вид планеты.";
+            nameTooltipText = "Тип планеты для имитации";
+            timeTooltipText = "Время изменения облика планеты в днях";
+            costTooltipText = "Разовая стоимость изменения облика в кредитах";
         }
 
-        tooltip.addSectionHeading(optionsText + " Options", Alignment.MID, initPad);
+        tooltip.addSectionHeading(optionsText + ": варианты", Alignment.MID, initPad);
         tooltip.addPara(optionsDesc, initPad);
         tooltip.addSpacer(oPad);
 
@@ -166,7 +166,7 @@ public class TMECodexEntry extends CodexEntryV2 implements CustomUIPanelPlugin {
         TooltipMakerAPI projectsElement = projectsPanel.createUIElement(tw, 23f, false);
         projectsElement.beginTable(Misc.getBasePlayerColor(), Misc.getDarkPlayerColor(), Misc.getBrightPlayerColor(),
                 0f, false, true,
-                new Object[]{"Name", columnOneWidth, "Build time", columnWidth, "Cost", columnWidth - 6f});
+                new Object[]{"Название", columnOneWidth, "Срок", columnWidth, "Стоимость", columnWidth - 6f});
         projectsElement.addTableHeaderTooltip(0, nameTooltipText);
         projectsElement.addTableHeaderTooltip(1, timeTooltipText);
         projectsElement.addTableHeaderTooltip(2, costTooltipText);
@@ -179,7 +179,7 @@ public class TMECodexEntry extends CodexEntryV2 implements CustomUIPanelPlugin {
         tooltip.addCustom(projectListPlugin.panel, 0f).getPosition().setXAlignOffset(-5f);
 
         tooltip.setParaFontDefault();
-        tooltip.addPara("Construction cost: %s", oPad, g, h, Misc.getDGSCredits(spec.getCost()));
+        tooltip.addPara("Стоимость строительства: %s", oPad, g, h, Misc.getDGSCredits(spec.getCost()));
         tooltip.setParaSmallInsignia();
 
         panel.updateUIElementSizeAndMakeItProcessInput(tooltip);

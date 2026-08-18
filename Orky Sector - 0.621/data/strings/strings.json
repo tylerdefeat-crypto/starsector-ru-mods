@@ -1,13 +1,13 @@
   {
   "misc":{
-      "ls_mob_rule_T":"Mob Rule",
-      "ls_mob_rule_D":"Rof and Flux Dissipation + ",
+      "ls_mob_rule_T":"Власть толпы",
+      "ls_mob_rule_D":"Скорострельность и рассеивание потока + ",
 
-      "ls_mob_rule_T2":"Mob Rule",
-      "ls_mob_rule_D2":"System Reliability + ",
+      "ls_mob_rule_T2":"Власть толпы",
+      "ls_mob_rule_D2":"Надёжность системы + ",
 
-      "ls_mob_rule_T3":"Mob Rule",
-      "ls_mob_rule_D3":"Frigate Damage Reduction/Bonus ",
+      "ls_mob_rule_T3":"Власть толпы",
+      "ls_mob_rule_D3":"Снижение/бонус урона фрегатов ",
 
     },
 	
@@ -24,10 +24,10 @@
 	},
 
   "hullMod":{
-      "ls_bosspole_size":"You need a bigger ship for da boss pole!",
-      "LS_HullModRequireBasicMod":"Dat's only good on an orky ship!",
-      "ls_bosspole_conflict":"Not compatible with operation centre!",
-      "ls_bommer_conflict":"We cant fit anymore, boss!",
+      "ls_bosspole_size":"Для босс-шеста нужен корабль побольше!",
+      "LS_HullModRequireBasicMod":"Эта штука годится только для орочьего корабля!",
+      "ls_bosspole_conflict":"Несовместимо с операционным центром!",
+      "ls_bommer_conflict":"Больше не влезет, босс!",
 
     },
 
@@ -52,27 +52,27 @@
     "planet_name_zodrokk": "Zodrokk",
 
     "planet_name_azstag": "Azstag",
-    "planet_name_bootcamp": "Da Boot Camp",
+    "planet_name_bootcamp": "Лагерь подготовки",
     "planet_name_skragrunt": "Skragrunt",
 
     "planet_name_esur": "Esur",
     "planet_name_asawir": "Asawir",
     "planet_name_megiddo": "Megiddo",
-    "planet_name_big_toof ": "Big Toof ",
+    "planet_name_big_toof ": "Большой Зуб ",
 
 
-    "jump_name_big_red_jump": "Big Red Button",
-    "jump_name_deffhead_jump": "Deffhead Jump Point",
-    "jump_name_bad_fang_jump": "Bad Fang Jump Point",
-    "jump_name_morgor_jump": "Morgor Jump Point",
-    "jump_name_grimuz_jump": "Grimuz Jump Point",
-    "jump_name_Fenkhu_jump": "Fenkhu Jump Point",
-    "jump_name_da_base_jump": "Da Base Jump Point",
+    "jump_name_big_red_jump": "Большая красная кнопка",
+    "jump_name_deffhead_jump": "Точка перехода «Деффхед»",
+    "jump_name_bad_fang_jump": "Точка перехода «Бэд Фанг»",
+    "jump_name_morgor_jump": "Точка перехода «Моргор»",
+    "jump_name_grimuz_jump": "Точка перехода «Гримуз»",
+    "jump_name_Fenkhu_jump": "Точка перехода «Фенкху»",
+    "jump_name_da_base_jump": "Точка перехода «База»",
 
-    "ls_big_red_gate_name": "Big Red Gate",
-    "ls_deffhead_gate_name": "Deffhead Gate",
-    "ls_bad_fang_gate_name": "Bad Fang Gate",
-    "ls_da_base_gate_name": "Da Base Gate",
+    "ls_big_red_gate_name": "Большие красные врата",
+    "ls_deffhead_gate_name": "Врата «Деффхед»",
+    "ls_bad_fang_gate_name": "Врата «Бэд Фанг»",
+    "ls_da_base_gate_name": "Врата «База»",
 
     }
 }

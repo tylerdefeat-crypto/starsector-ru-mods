@@ -162,7 +162,7 @@ public class dpl_olympias_CMD extends BaseCommandPlugin {
 
 					Vector2f pos = pf.getLocation();
 					
-					fleet1.setName("Elite Expedition Fleet");
+					fleet1.setName("Элитный экспедиционный флот");
 					fleet1.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_MAKE_AGGRESSIVE, "$dpl_OlympiasFleet");
 					fleet1.getMemoryWithoutUpdate().set(MemFlags.FLEET_MILITARY_RESPONSE, "$dpl_OlympiasFleet");
 					fleet1.getAI().addAssignment(FleetAssignment.ATTACK_LOCATION, Olympias, 200f, null);
@@ -198,7 +198,7 @@ public class dpl_olympias_CMD extends BaseCommandPlugin {
 					Misc.makeHostile(fleet1);
 					Misc.makeNoRepImpact(fleet1, "$dpl_OlympiasFleet");
 
-					fleet1.setName("Elite Expedition Fleet");
+					fleet1.setName("Элитный экспедиционный флот");
 					fleet1.getMemoryWithoutUpdate().set(MemFlags.MEMORY_KEY_MAKE_AGGRESSIVE, "$dpl_OlympiasFleet");
 					fleet1.getMemoryWithoutUpdate().set(MemFlags.FLEET_MILITARY_RESPONSE, "$dpl_OlympiasFleet");
 					fleet1.getAI().addAssignment(FleetAssignment.ATTACK_LOCATION, Olympias, 200f, null);

@@ -36,7 +36,7 @@ public class dpl_LogisticCenter extends BaseHullMod {
 	}
 	
 	public String getUnapplicableReason(ShipAPI ship) {
-		return "Can not be installed on a frigate or destroyer.";
+		return "Нельзя установить на фрегат или эсминец.";
 	}
 	
 	public String getSModDescriptionParam(int index, HullSize hullSize) {
@@ -54,10 +54,9 @@ public class dpl_LogisticCenter extends BaseHullMod {
 	public void addPostDescriptionSection(TooltipMakerAPI tooltip, HullSize hullSize, final ShipAPI ship, float width, boolean isForModSpec) {
 		float opad = 10f;
 		
-		tooltip.addPara("Lowers the DP of your ship by the smaller value between 20% of your ship's base DP and 4, can only be installed on larger ships.", opad);
+		tooltip.addPara("Снижает стоимость развёртывания корабля на меньшее из двух значений: 20% от базовой стоимости развёртывания или 4 ед. Можно установить только на крупные корабли.", opad);
 	}
 	
 }
-
 
 

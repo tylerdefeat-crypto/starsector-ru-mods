@@ -103,7 +103,7 @@ public class MegastructureDialogDelegate extends TMEBaseDialogDelegate {
         TooltipMakerAPI orbitFocusElement = orbitFocusPanel.createUIElement(WIDTH / 4f, 40f, false);
         orbitFocusPanel.addUIElement(orbitFocusElement);
         orbitInputsElement.addCustom(orbitFocusPanel, 0f);
-        orbitFocusElement.addPara("Orbit Focus", 0f).setAlignment(Alignment.MID);
+        orbitFocusElement.addPara("Центр орбиты", 0f).setAlignment(Alignment.MID);
         orbitFocusElement.addSpacer(3f);
         orbitFocusElement.setParaSmallInsignia();
         ButtonAPI mainBtn;
@@ -132,7 +132,7 @@ public class MegastructureDialogDelegate extends TMEBaseDialogDelegate {
         TooltipMakerAPI startAngleElement = startAnglePanel.createUIElement(WIDTH / 4f, 40f, false);
         startAnglePanel.addUIElement(startAngleElement);
         orbitInputsElement.addCustom(startAnglePanel, 0f).getPosition().rightOfMid(orbitFocusPanel, 0f);
-        this.startingAngleField = addCustomTextField(startAnglePanel, startAngleElement, this.startingAngleField, "Starting Angle", "0", 7, startAnglePlugin, new StartingAngleFieldTooltip());
+        this.startingAngleField = addCustomTextField(startAnglePanel, startAngleElement, this.startingAngleField, "Начальный угол", "0", 7, startAnglePlugin, new StartingAngleFieldTooltip());
         startAnglePlugin.setTextField(this.startingAngleField, 0, 0);
 
         // Orbit radius field
@@ -141,7 +141,7 @@ public class MegastructureDialogDelegate extends TMEBaseDialogDelegate {
         TooltipMakerAPI orbitRadiusElement = orbitRadiusPanel.createUIElement(WIDTH / 4f, 40f, false);
         orbitRadiusPanel.addUIElement(orbitRadiusElement);
         orbitInputsElement.addCustom(orbitRadiusPanel, 0f).getPosition().rightOfMid(startAnglePanel, 0f);
-        this.orbitRadiusField = addCustomTextField(orbitRadiusPanel, orbitRadiusElement, this.orbitRadiusField, "Orbit Radius", "1000", 7, orbitRadiusPlugin, new OrbitRadiusFieldTooltip());
+        this.orbitRadiusField = addCustomTextField(orbitRadiusPanel, orbitRadiusElement, this.orbitRadiusField, "Радиус орбиты", "1000", 7, orbitRadiusPlugin, new OrbitRadiusFieldTooltip());
         orbitRadiusPlugin.setTextField(this.orbitRadiusField, 0, 0);
 
         // Orbit days field
@@ -150,14 +150,14 @@ public class MegastructureDialogDelegate extends TMEBaseDialogDelegate {
         TooltipMakerAPI orbitDaysElement = orbitDaysPanel.createUIElement(WIDTH / 4f, 40f, false);
         orbitDaysPanel.addUIElement(orbitDaysElement);
         orbitInputsElement.addCustom(orbitDaysPanel, 0f).getPosition().rightOfMid(orbitRadiusPanel, 0f);
-        this.orbitDaysField = addCustomTextField(orbitDaysPanel, orbitDaysElement, this.orbitDaysField, "Orbit Days", "100", 7, orbitDaysPlugin, new OrbitDaysFieldTooltip());
+        this.orbitDaysField = addCustomTextField(orbitDaysPanel, orbitDaysElement, this.orbitDaysField, "Период орбиты", "100", 7, orbitDaysPlugin, new OrbitDaysFieldTooltip());
         orbitDaysPlugin.setTextField(this.orbitDaysField, 0, 0);
 
         // Show player credits
         TooltipMakerAPI creditsElement = this.mPanel.createUIElement(WIDTH, 0f, false);
         TooltipMakerAPI creditsSubElement = creditsElement.beginSubTooltip(380f);
         creditsSubElement.setParaSmallInsignia();
-        LabelAPI creditsLabel = creditsSubElement.addPara("Credits: %s", 3f, Misc.getGrayColor(), Misc.getHighlightColor(),
+        LabelAPI creditsLabel = creditsSubElement.addPara("Кредиты: %s", 3f, Misc.getGrayColor(), Misc.getHighlightColor(),
                 Misc.getWithDGS(Global.getSector().getPlayerFleet().getCargo().getCredits().get()));
         creditsLabel.setHighlightOnMouseover(true);
         creditsLabel.getPosition().setXAlignOffset(0f);

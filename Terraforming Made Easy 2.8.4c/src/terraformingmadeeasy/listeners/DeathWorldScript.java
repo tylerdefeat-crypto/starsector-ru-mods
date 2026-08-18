@@ -159,8 +159,8 @@ public class DeathWorldScript implements EconomyTickListener, ColonyInteractionL
     }
 
     public void sendConditionSuppressedMessage(MarketAPI market, MarketConditionAPI condition) {
-        MessageIntel intel = new MessageIntel("Citizens of " + market.getName() + " has adapted to a condition", Misc.getBasePlayerColor());
-        intel.addLine(BaseIntelPlugin.BULLET + "The " + condition.getName() + " planetary condition has been suppressed");
+        MessageIntel intel = new MessageIntel("Жители колонии «" + market.getName() + "» приспособились к условиям", Misc.getBasePlayerColor());
+        intel.addLine(BaseIntelPlugin.BULLET + "Подавлено планетарное условие: " + condition.getName());
         intel.setIcon(Global.getSector().getPlayerFaction().getCrest());
         intel.setSound(BaseIntelPlugin.getSoundStandardUpdate());
         Global.getSector().getCampaignUI().addMessage(intel, CommMessageAPI.MessageClickAction.COLONY_INFO, market);

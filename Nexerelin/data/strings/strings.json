@@ -2031,7 +2031,7 @@
 		"tooltipFactionRespawn":"- %s: Не использовать механику возрождения фракций.\n- %s: Могут возрождаться фракции, присутствующие в начале игры.\n- %s: Также разрешает вход новых фракций, которых не было в начале игры.",
 		"optionFactionWeights":"Использовать веса фракций",
 		"tooltipFactionWeights":"При настройках по умолчанию некоторые фракции (например, Гегемония, Лига Персея) начинают игру с большим числом рынков.",
-		"optionPrismFreeport":"Prism Freeport",
+		"optionPrismFreeport":"Фрипорт «Призма»",
 		"tooltipPrismFreeport":"Торговая станция в центре Сектора. Включает особого продавца, который за цену продает разнообразные корабли высокого класса.",
 		"optionRandomStartShips":"Случайные стартовые корабли",
 		"tooltipRandomStartShips":"Случайным образом подбирает стартовые корабли по выбранному типу флота и доступным фракции кораблям",
@@ -2886,7 +2886,7 @@
 	},
 	
 	"nex_world":{
-		"prismSystem_name":"Sitnalta",	# 'Atlantis backwards' because I have no imagination
+		"prismSystem_name":"Ситналта",	# 'Atlantis backwards' because I have no imagination
 		"prismSystem_jumpName":"Сумеречные врата",
 		"prismSystem_stationName":"Свободный порт «Призма»",
 		"prismSystem_gateName":"Потерянные врата",
@@ -2982,9 +2982,9 @@
 		"salvation_endTextFail":"Вы получили сообщение от Полночи. В нем сказано: \"Защитить $nex_remSalvation_targetName ты не смог. Да помилует омега всех нас.\"",
 		"salvation_endTextBadEnd":"Вы получили сообщение от Полночи. В нем сказано: \"Хоть Возвышенный и уничтожен, защитить $nex_remSalvation_targetName ты не смог. Да помилует омега всех нас.\"",
 		"salvation_endTextSuccess":"Вы получили сообщение от Полночи. В нем сказано: \"За эту службу - вечная благодарность самороду. Да пребудет с тобой омега, друг $playerFirstName.\"",
-		"salvation_fleetName":"Arcana XVI",	# "the Tower", also "the House of God"
-		"salvation_shipName1":"TTDS Silverlight",
-		"salvation_shipName2":"TTDS Silverlight",
+		"salvation_fleetName":"Аркан XVI",	# "the Tower", also "the House of God"
+		"salvation_shipName1":"TTDS «Серебряный свет»",
+		"salvation_shipName2":"TTDS «Серебряный свет»",
 		"salvation_statDescSabotage":"Саботаж Ремнантов",
 		"salvation_toweringChatter1":"\"ваше дальнейшее существование - скверна в видении омеги. время очищения настало.\"",
 		"salvation_toweringChatter2":"\"приговор за ваши преступления против вселенной - смерть.\"",

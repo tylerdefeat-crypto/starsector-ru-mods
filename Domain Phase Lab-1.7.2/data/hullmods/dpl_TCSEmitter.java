@@ -26,7 +26,7 @@ public class dpl_TCSEmitter extends BaseHullMod {
 	}
 	
 	public String getUnapplicableReason(ShipAPI ship) {
-		return "Ship has no shields";
+		return "На корабле нет щитов";
 	}
 
 }

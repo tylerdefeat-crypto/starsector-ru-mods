@@ -193,7 +193,7 @@ public class dpl_Ascension extends HubMissionWithBarEvent implements FleetEventL
     
     public void Victory_Omega() {
     	Vector2f loc = last_loc_omega;
-    	wreck_omega = dpl_phase_labAddEntities.spawnNamedWreck(loc, system3, "dpl_persean_imperium", "dpl_aulochrome_Hull", "HSNS Conqueror", false);
+		wreck_omega = dpl_phase_labAddEntities.spawnNamedWreck(loc, system3, "dpl_persean_imperium", "dpl_aulochrome_Hull", "HSNS «Завоеватель»", false);
     	Misc.makeImportant(wreck_omega, "$dpl_ascension");
     	wreck_omega.getMemoryWithoutUpdate().set("$dpl_ascension_omega_derelict", true);
         setEntityMissionRef(wreck_omega, "$dpl_ascension_ref");
@@ -209,7 +209,7 @@ public class dpl_Ascension extends HubMissionWithBarEvent implements FleetEventL
     	faraday_holmes.setPostId("secondLeader");
 		fleet.getFleetData().addFleetMember("dpl_aulochrome_salazar_standard");
 		FleetMemberAPI member = fleet.getFlagship();
-		member.setShipName("HSNS Conqueror");
+		member.setShipName("HSNS «Завоеватель»");
 		
     	FleetParamsV3 params = new FleetParamsV3(
                 null,
@@ -227,7 +227,7 @@ public class dpl_Ascension extends HubMissionWithBarEvent implements FleetEventL
         );
     	params.averageSMods = 3;
     	omega_fleet = FleetFactoryV3.createFleet(params);
-    	omega_fleet.setName("Mysterious 'Ascension' Fleet");
+		omega_fleet.setName("Таинственный флот «Вознесение»");
     	omega_fleet.setNoFactionInName(true);
     	omega_fleet.getFleetData().addFleetMember(member);
     	omega_fleet.getFleetData().setFlagship(member);
@@ -240,7 +240,7 @@ public class dpl_Ascension extends HubMissionWithBarEvent implements FleetEventL
     	omega_fleet.addEventListener(this);
     	List<FleetMemberAPI> members = omega_fleet.getFleetData().getMembersListCopy();
 		for (FleetMemberAPI curr : members) {
-			if (!curr.getShipName().equalsIgnoreCase("HSNS Conqueror")) {
+			if (!curr.getShipName().equalsIgnoreCase("HSNS «Завоеватель»")) {
 				AICoreOfficerPlugin plugin = Misc.getAICoreOfficerPlugin(Commodities.OMEGA_CORE);
 				PersonAPI person = plugin.createPerson(Commodities.OMEGA_CORE, Factions.OMEGA, getGenRandom());
 				curr.setCaptain(person);
@@ -299,7 +299,7 @@ public class dpl_Ascension extends HubMissionWithBarEvent implements FleetEventL
         );
     	params.averageSMods = 3;
     	drone_fleet = FleetFactoryV3.createFleet(params);
-    	drone_fleet.setName("Olympias Fleet");
+		drone_fleet.setName("Флот «Олимпиас»");
     	drone_fleet.setNoFactionInName(true);
     	drone_fleet.getFleetData().addFleetMember(member);
     	drone_fleet.getFleetData().setFlagship(member);
@@ -380,25 +380,25 @@ public class dpl_Ascension extends HubMissionWithBarEvent implements FleetEventL
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Start investigation in " +
+            info.addPara("Начните расследование в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.BOARD_THE_SHIP) {
-            info.addPara("Examine the derelict in " +
+            info.addPara("Исследуйте покинутый корабль в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.DECODE_THE_DATA) {
-            info.addPara("Seek help for decoding the data in " +
+			info.addPara("Найдите помощь в расшифровке данных в локации " +
             		academy_system.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.KILL_OMEGA) {
-            info.addPara("Find the 'Ascension' fleet in " +
+			info.addPara("Найдите флот «Вознесение» в локации " +
                     system3.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.BOARD_OMEGA) {
-            info.addPara("Examine the derelict in " +
+			info.addPara("Исследуйте покинутый корабль в локации " +
                     system3.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Go back to Research Site V.", opad);
+			info.addPara("Вернитесь на Исследовательский объект V.", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: THE DRONE FLEET IS LOCATED IN THE " +
+			info.addPara("РЕЖИМ РАЗРАБОТЧИКА: ФЛОТ ДРОНОВ НАХОДИТСЯ В ЛОКАЦИИ " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -408,27 +408,27 @@ public class dpl_Ascension extends HubMissionWithBarEvent implements FleetEventL
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Start investigation in " +
+			info.addPara("Начните расследование в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.BOARD_THE_SHIP) {
-            info.addPara("Examine the derelict in " +
+			info.addPara("Исследуйте покинутый корабль в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.DECODE_THE_DATA) {
-            info.addPara("Seek help for decoding the data in " +
+			info.addPara("Найдите помощь в расшифровке данных в локации " +
             		academy_system.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.KILL_OMEGA) {
-            info.addPara("Find the 'Ascension' fleet in " +
+			info.addPara("Найдите флот «Вознесение» в локации " +
             		system3.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.BOARD_OMEGA) {
-            info.addPara("Examine the derelict in " +
+			info.addPara("Исследуйте покинутый корабль в локации " +
                     system3.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Go back to Research Site V in " +
+			info.addPara("Вернитесь на Исследовательский объект V в локации " +
                     system.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         }

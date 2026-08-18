@@ -4,7 +4,7 @@
     "noHomeworld":true,
     "corvusCompatible":true,
     
-    "rebelFleetSuffix":"Splinter Group",
+    "rebelFleetSuffix":"Отколовшаяся группа",
 
     "startRelationships":{ "exigency": -0.8 },
     "maxRelationships":{ "exigency":-0.76 },
@@ -18,8 +18,8 @@
     "freeMarket":true,
     
     "vengeanceLevelNames":["Grudge", "Vendetta", "Revenge"],
-    "vengeanceFleetNames":["Enforcers", "Hit-Fleet", "Reavers"],
-    "vengeanceFleetNamesSingle":["an Enforcer fleet", "a Hit-Fleet", "Reavers"],
+    "vengeanceFleetNames":["Каратели", "Ударный флот", "Налётчики"],
+    "vengeanceFleetNamesSingle":["флот карателей", "ударный флот", "Налётчики"],
     
     "startShipsSolo":[["exipirated_rauwel_Standard"]],
     "startShipsCombatSmall":[["exipirated_azryel_Standard", "exigency_yria_Firesupport", "hound_d_pirates_Standard"]],

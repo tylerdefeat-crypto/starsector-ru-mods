@@ -41,7 +41,7 @@ public class dpl_FluxEscorted extends BaseHullMod {
 	@Override
 	public String getUnapplicableReason(ShipAPI ship) {
 		if (ship != null && !ship.isCapital()) {
-			return "Can only be installed on capital ships";
+			return "Можно установить только на капитальные корабли";
 		}
 		return super.getUnapplicableReason(ship);
 	}
@@ -143,18 +143,17 @@ public class dpl_FluxEscorted extends BaseHullMod {
 				String icon = Global.getSettings().getSpriteName("ui", "icon_tactical_escort_package");
 				String percent = "" + (int) Math.round(data.mag * 100f) + "%";
 				Global.getCombatEngine().maintainStatusForPlayerShip(
-						STATUS_KEY, icon, "Remote flux projector", percent + " telemetry quality", false);
+						STATUS_KEY, icon, "Дистанционный проектор потока", "Качество телеметрии: " + percent, false);
 			} else {
 				String icon = Global.getSettings().getSpriteName("ui", "icon_tactical_escort_package");
 				Global.getCombatEngine().maintainStatusForPlayerShip(
-						STATUS_KEY, icon, "Remote flux projector", "no connection", true);
+						STATUS_KEY, icon, "Дистанционный проектор потока", "Нет соединения", true);
 			}
 		}
 		
 	}
 	
 }
-
 
 
 

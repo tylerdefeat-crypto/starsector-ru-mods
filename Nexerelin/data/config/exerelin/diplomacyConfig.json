@@ -11,7 +11,7 @@
 	# so negative events will still happen even if positive events have huge chance values
 	"events":[
 		{
-			"name":"Official Aid",
+			"name":"Официальная помощь",
 			"stage":"official_aid",
 			"random":false,	# if true (default), event will be triggered by the faction's diplomacy AI, which is _somewhat_ less random
 			"minRepLevelToOccur":"inhospitable",
@@ -19,10 +19,10 @@
 			"maxRepChange":0.2,
 			"allowNonPiratesToPirates":true,
 			"invert":false,	# if true, swaps faction 1 and 2 internally (mostly for ensuring a "do-er" that makes sense with strategic AI)
-			"desc":"$OtherFaction authorities have sent a charitable aid package to $faction citizens $onOrAt $market. Local officials have expressed their gratitude."
+			"desc":"Власти фракции $OtherFaction направили благотворительную помощь гражданам фракции $faction на рынке $market. Местные чиновники выразили благодарность."
 		},
 		{
-			"name":"Philanthropy",
+			"name":"Благотворительность",
 			"stage":"philanthropy",
 			"minRepLevelToOccur":"inhospitable",
 			"minRepChange":0.1,
@@ -30,49 +30,49 @@
 			"allowPiratesToPirates":true,
 			"allowPiratesToNonPirates":true,
 			"allowNonPiratesToPirates":true,
-			"desc":"An influential private figure in $theOtherFaction has made a generous donation $onOrAt $market. This has improved relations with $theFaction."
+			"desc":"Влиятельный представитель фракции $theOtherFaction сделал щедрое пожертвование на рынке $market. Это улучшило отношения с фракцией $theFaction."
 		},
 		{
-			"name":"Cultural Boom",
+			"name":"Культурный подъём",
 			"stage":"culture_boom",
 			"minRepLevelToOccur":"suspicious",
 			"minRepChange":0.1,
 			"maxRepChange":0.15,
 			"allowNonPiratesToPirates":true,
-			"desc":"Popular media works from $theOtherFaction have gained a strong following $onOrAt $market, leading to a $faction interest in strengthened cultural ties.",
+			"desc":"Популярные произведения фракции $theOtherFaction приобрели множество поклонников на рынке $market, пробудив у фракции $faction интерес к укреплению культурных связей.",
 		},
 		{
-			"name":"Cooperation Deal",
+			"name":"Соглашение о сотрудничестве",
 			"stage":"cooperation_deal",
 			"random":false,
 			"minRepLevelToOccur":"suspicious",
 			"minRepChange":0.15,
 			"maxRepChange":0.2,
 			"allowPiratesToPirates":true,
-			"desc":"Officials of $theFaction and $theOtherFaction have signed an agreement to further cooperation on areas of mutual interest."
+			"desc":"Представители фракций $theFaction и $theOtherFaction подписали соглашение о расширении сотрудничества в областях взаимного интереса."
 		},
 		{
-			"name":"Major Cooperation Deal",
+			"name":"Расширенное соглашение о сотрудничестве",
 			"stage":"cooperation_deal_major",
 			"random":false,
 			"minRepLevelToOccur":"favorable",
 			"minRepChange":0.25,
 			"maxRepChange":0.3,
 			"allowPiratesToPirates":true,
-			"desc":"$TheFaction and $theOtherFaction have signed a new agreement for much closer military and trade associations."
+			"desc":"Фракции $TheFaction и $theOtherFaction подписали новое соглашение о значительно более тесном военном и торговом сотрудничестве."
 		},
 		{
-			"name":"Celebrity Wedding",
+			"name":"Свадьба знаменитостей",
 			"stage":"celebrity_wedding",
 			"minRepLevelToOccur":"favorable",
 			"minRepChange":0.1,
 			"maxRepChange":0.15,
 			"chance":0.3,	# because realistically, how often would this happen?
 			
-			"desc":"The marriage of two celebrities from $theFaction and $theOtherFaction is the hottest new media sensation, with even official figures quick to play themselves into the matter."
+			"desc":"Брак двух знаменитостей из фракций $theFaction и $theOtherFaction стал главной сенсацией в СМИ, и даже официальные лица поспешили воспользоваться этим событием."
 		},
 		{
-			"name":"Helped Foil Terror Plot",
+			"name":"Помощь в предотвращении теракта",
 			"stage":"helped_foil_terror",
 			"random":false,
 			"minRepLevelToOccur":"suspicious",
@@ -81,10 +81,10 @@
 			"allowPiratesToPirates":true,
 			"allowPiratesToNonPirates":true,
 			"allowNonPiratesToPirates":true,
-			"desc":"Official statements by $theFaction praise $theOtherFaction for its assistance in foiling a terrorist plot $onOrAt $market."
+			"desc":"В официальных заявлениях фракция $theFaction благодарит фракцию $theOtherFaction за помощь в предотвращении террористического заговора на рынке $market."
 		},
 		{
-			"name":"Criminal Extradited",
+			"name":"Выдача преступника",
 			"stage":"extradition",
 			"random":false,
 			"minRepLevelToOccur":"suspicious",
@@ -92,10 +92,10 @@
 			"maxRepChange":0.2,
 			"allowPiratesToPirates":true,
 			"invert":true,
-			"desc":"Police $onOrAt $market have extradited a wanted $otherFaction criminal. Law enforcement officials have praised the cooperation of $faction authorities."
+			"desc":"Полиция рынка $market выдала разыскиваемого преступника фракции $otherFaction. Представители правоохранительных органов высоко оценили сотрудничество властей фракции $faction."
 		},
 		{
-			"name":"Prisoner Exchange",
+			"name":"Обмен пленными",
 			"stage":"prisoner_exchange",
 			"random":false,
 			"maxRepLevelToOccur":"hostile",
@@ -107,19 +107,19 @@
 			"allowPiratesToNonPirates":true,
 			"allowNonPiratesToPirates":true,
 			"invert":true,
-			"desc":"$TheFaction and $theOtherFaction have held a prisoner exchange $onOrAt $market. The honorable conduct of the two combatants has raised the prospect of peace talks in the future."
+			"desc":"Фракции $TheFaction и $theOtherFaction провели обмен пленными на рынке $market. Достойное поведение обеих сторон повысило вероятность будущих мирных переговоров."
 		},
 		{
-			"name":"Antiwar Protests",
+			"name":"Антивоенные протесты",
 			"stage":"antiwar_protest",
 			"maxRepLevelToOccur":"hostile",
 			"repLimit":"hostile",
 			"minRepChange":0.1,
 			"maxRepChange":0.15,
-			"desc":"Anti-war protestors have gathered $onOrAt $market, pressuring $theFaction leaders to seek peace with $theOtherFaction."
+			"desc":"На рынке $market собрались противники войны, призывающие руководство фракции $theFaction заключить мир с фракцией $theOtherFaction."
 		},
 		{
-			"name":"Star-crossed Lovers",	# love conquers all
+			"name":"Несчастные влюблённые",	# love conquers all
 			"stage":"starcrossed",
 			"maxRepLevelToOccur":"inhospitable",
 			"repEnsureAtWorst":"hostile",
@@ -127,40 +127,40 @@
 			"maxRepChange":0.25,
 			"allowPiratesToPirates":true,
 			"chance":0.2,
-			"desc":"Media reports of a \"Romeo & Juliet\" forbidden romance between a couple from $theFaction and $theOtherFaction have captivated the public imagination, and led to a thawing of relations between the two factions."
+			"desc":"Сообщения СМИ о запретной любви в духе «Ромео и Джульетты» между представителями фракций $theFaction и $theOtherFaction покорили воображение публики и привели к потеплению отношений между двумя сторонами."
 		},		
 		{
-			"name":"Diplomatic Blunder",
+			"name":"Дипломатический промах",
 			"stage":"diplomatic_blunder",
 			"minRepLevelToOccur":"inhospitable",
 			"minRepChange":-0.15,
 			"maxRepChange":-0.1,
 			"repLimit":"inhospitable",
 			"allowPiratesToPirates":true,
-			"desc":"A diplomatic faux pas by a $otherFaction delegate has caused grave offence to $faction officials $onOrAt $market."
+			"desc":"Дипломатическая оплошность представителя фракции $otherFaction серьёзно оскорбила чиновников фракции $faction на рынке $market."
 		},
 		{
-			"name":"Failed Deal",
+			"name":"Срыв переговоров",
 			"stage":"failed_deal",
 			"minRepLevelToOccur":"inhospitable",
 			"minRepChange":-0.2,
 			"maxRepChange":-0.15,
 			"repLimit":"inhospitable",
 			"allowPiratesToPirates":true,
-			"desc":"$OtherFaction delegates walked out of a meeting at $market today, dissatisfied with the hard line taken by $faction negotiators. The incident has ruffled feathers on both sides."
+			"desc":"Делегаты фракции $OtherFaction сегодня покинули встречу на рынке $market, возмущённые жёсткой позицией переговорщиков фракции $faction. Инцидент вызвал недовольство обеих сторон."
 		},
 		{
-			"name":"Celebrity Wedding Jilted",
+			"name":"Сорванная свадьба знаменитостей",
 			"stage":"celebrity_wedding_jilted",
 			"minRepLevelToOccur":"neutral",
 			"minRepChange":-0.2,
 			"maxRepChange":-0.15,
 			"repLimit":"inhospitable",
 			"chance":0.3,
-			"desc":"$market tabloids are abuzz with the news of a prominent $otherFaction figure who abandoned his $faction bride at the altar. The woman's influential family - and large segments of the public - are outraged."
+			"desc":"Таблоиды рынка $market обсуждают известного представителя фракции $otherFaction, бросившего у алтаря невесту из фракции $faction. Влиятельная семья женщины и значительная часть общественности возмущены."
 		},
 		{
-			"name":"Political Funding Uncovered",
+			"name":"Раскрыто политическое финансирование",
 			"stage":"political_funding_uncovered",
 			"random":false,
 			"minRepLevelToOccur":"inhospitable",
@@ -170,20 +170,20 @@
 			"repLimit":"inhospitable",
 			"allowPiratesToPirates":true,
 			"invert":true,
-			"desc":"$Faction officials have accused $theOtherFaction of funding opposition groups $onOrAt $market. The resulting dispute has soured relations between the two factions."
+			"desc":"Представители фракции $Faction обвинили фракцию $theOtherFaction в финансировании оппозиционных групп на рынке $market. Последовавший спор ухудшил отношения между сторонами."
 		},
 		{
-			"name":"Xenophobia",
+			"name":"Ксенофобия",
 			"stage":"xenophobia",
 			"minRepLevelToOccur":"inhospitable",
 			"maxRepLevelToOccur":"friendly",
 			"minRepChange":-0.2,
 			"maxRepChange":-0.15,
 			"repLimit":"inhospitable",
-			"desc":"A sharp increase in hostility to $theOtherFaction $onOrAt $market has been observed. $otherFaction citizens are being harassed and even assaulted on the streets, with authorities slow to respond."
+			"desc":"На рынке $market отмечен резкий рост враждебности к фракции $theOtherFaction. Граждан фракции $otherFaction притесняют и даже избивают на улицах, а власти не спешат вмешиваться."
 		},
 		{
-			"name":"Criminal Extradition Refused",
+			"name":"Отказ в выдаче преступника",
 			"stage":"extradition_refused",
 			"random":false,
 			"minRepLevelToOccur":"inhospitable",
@@ -193,10 +193,10 @@
 			"allowPiratesToPirates":true,
 			"chance":1.2,
 			"invert":true,
-			"desc":"$Faction authorities are refusing to turn over an escaped $otherFaction criminal $onOrAt $market, despite official protests through diplomatic channels."
+			"desc":"Власти фракции $Faction отказываются выдать беглого преступника фракции $otherFaction, находящегося на рынке $market, несмотря на официальные протесты по дипломатическим каналам."
 		},
 		{
-			"name":"Spy Ring Uncovered",
+			"name":"Раскрыта шпионская сеть",
 			"stage":"spy_ring_uncovered",
 			"random":false,
 			"maxRepLevelToOccur":"welcoming",
@@ -209,10 +209,10 @@
 			"allowNonPiratesToPirates":true,
 			"chance":1.2,
 			"invert":true,
-			"desc":"Rumors have surfaced that $faction counter-intelligence has broken up a spy ring operated by $theOtherFaction. Although official figures remain silent on the matter, it's clear that diplomatic relations are suffering."
+			"desc":"Появились слухи, что контрразведка фракции $faction разгромила шпионскую сеть фракции $theOtherFaction. Хотя официальные лица хранят молчание, очевидно, что дипломатические отношения ухудшаются."
 		},
 		{
-			"name":"Terrorist Plot Uncovered",
+			"name":"Раскрыт террористический заговор",
 			"stage":"terrorism_uncovered",
 			"random":false,
 			"repEnsureAtBest":"suspicious",
@@ -223,20 +223,20 @@
 			"allowPiratesToPirates":true,
 			"chance":1,
 			"invert":true,
-			"desc":"$Faction officials announce discovering evidence of an $otherFaction-backed terrorist plot $onOrAt $market. The $otherFaction leadership denies any involvement."
+			"desc":"Представители фракции $Faction объявили об обнаружении на рынке $market доказательств террористического заговора, поддержанного фракцией $otherFaction. Её руководство отрицает причастность."
 		},
 		{
-			"name":"Diplomat Crime Ring",
+			"name":"Преступная сеть дипломата",
 			"stage":"diplomat_crimes",
 			"minRepLevelToOccur":"suspicious",
 			"minRepChange":-0.15,
 			"maxRepChange":-0.1,
 			"repLimit":"inhospitable",
 			"chance":0.5,
-			"desc":"Police $onOrAt $market have broken up a crime syndicate operated by a $otherFaction envoy. While $theOtherFaction have disavowed the diplomat's actions, relations with $theFaction have nevertheless cooled."
+			"desc":"Полиция рынка $market разгромила преступный синдикат, которым руководил посланник фракции $otherFaction. Хотя фракция $theOtherFaction отмежевалась от действий дипломата, отношения с фракцией $theFaction всё равно охладели."
 		},
 		{
-			"name":"Privateering",
+			"name":"Каперство",
 			"stage":"privateering",
 			"random":false,
 			"minRepLevelToOccur":"inhospitable",
@@ -248,10 +248,10 @@
 			"allowPiratesToPirates":true,
 			"chance":1,
 			"invert":true,
-			"desc":"$TheFaction has accused $theOtherFaction of sponsoring privateers to attack its shipping. A formal military response has been considered."
+			"desc":"Фракция $TheFaction обвинила фракцию $theOtherFaction в поддержке каперов, нападающих на её транспортные суда. Рассматривается возможность официального военного ответа."
 		},
 		{
-			"name":"Tournament Cheating",
+			"name":"Мошенничество на турнире",
 			"stage":"tourney_cheating",
 			"minRepLevelToOccur":"inhospitable",
 			"maxRepLevelToOccur":"favorable",
@@ -260,10 +260,10 @@
 			"maxRepChange":-0.15,
 			"repLimit":"inhospitable",
 			"chance":0.5,
-			"desc":"$TheOtherFaction has made allegations of cheating by $faction hosts of the most recent Interstellar Simulated Battles Tournament. While ISBT officials are still investigating, rumors of banned mods and other such shenanigans have fed the rumor mill."
+			"desc":"Фракция $TheOtherFaction обвинила организаторов из фракции $faction в мошенничестве на последнем Межзвёздном турнире симуляционных боёв. Пока представители МТСБ ведут расследование, слухи о запрещённых модификациях и прочих махинациях множатся."
 		},
 		{
-			"name":"Shots Fired",
+			"name":"Первые выстрелы",
 			"stage":"shots_fired",
 			"minRepLevelToOccur":"inhospitable",
 			"maxRepLevelToOccur":"inhospitable",
@@ -275,11 +275,11 @@
 			"allowPiratesToNonPirates":true,
 			"allowNonPiratesToPirates":true,
 			"chance":0.25,
-			"desc":"Unconfirmed news reports have arrived of a shootout between forces of $theFaction and $theOtherFaction near $market. As of the time of writing, a state of war exists between the two factions."
+			"desc":"Поступили неподтверждённые сообщения о перестрелке между силами фракций $theFaction и $theOtherFaction возле рынка $market. На момент публикации между сторонами уже началась война."
 		},
 		
 		{
-			"name":"Declare War",
+			"name":"Объявление войны",
 			"stage":"declare_war",
 			"random":false,
 			"repEnsureAtBest":"hostile",
@@ -287,10 +287,10 @@
 			"maxRepChange":-0.3,
 			"invert":false,
 			"chance":0,	# only occurs when DiplomacyManager calls it directly
-			"desc":"$TheFaction announces initiation of hostilities against $theOtherFaction!"
+			"desc":"Фракция $TheFaction объявляет о начале боевых действий против фракции $theOtherFaction!"
 		},
 		{
-			"name":"Ceasefire",
+			"name":"Прекращение огня",
 			"stage":"ceasefire",
 			"random":false,
 			"maxRepLevelToOccur":"hostile",
@@ -300,10 +300,10 @@
 			"repLimit":"neutral",
 			"invert":false,
 			"chance":0,	# only occurs when DiplomacyManager calls it directly
-			"desc":"Weary of the fighting, $theFaction and $theOtherFaction have agreed to a cessation of hostilities. Nevertheless, relations remain tense."
+			"desc":"Устав от боёв, фракции $theFaction и $theOtherFaction договорились прекратить военные действия. Тем не менее отношения остаются напряжёнными."
 		},
 		{
-			"name":"Peace Treaty",
+			"name":"Мирный договор",
 			"stage":"peace_treaty",
 			"random":false,
 			"maxRepLevelToOccur":"hostile",
@@ -313,12 +313,12 @@
 			"repLimit":"favorable",
 			"invert":true,
 			"chance":0,	# only occurs when DiplomacyManager calls it directly
-			"desc":"$TheFaction and $theOtherFaction have set aside their differences and signed a lasting peace treaty."
+			"desc":"Фракции $TheFaction и $theOtherFaction отложили разногласия и подписали долгосрочный мирный договор."
 		},
 		
 		# faction-specific
 		{
-			"name":"Religious Expansion",
+			"name":"Распространение религии",
 			"stage":"religious_expansion",
 			"random":false,
 			"minRepLevelToOccur":"suspicious",
@@ -327,10 +327,10 @@
 			"allowedFactions2":["luddic_church","kadur_theocracy","insurgency"],
 			"allowNonPiratesToPirates":true,
 			"chance":1.5,
-			"desc":"$OtherFaction missionaries are spreading their religion amongst the people of $market. This has created a common bond with $theFaction."
+			"desc":"Миссионеры фракции $OtherFaction распространяют свою веру среди жителей рынка $market. Это укрепило их связь с фракцией $theFaction."
 		},
 		{
-			"name":"Religious Minority Persecuted",
+			"name":"Преследование религиозного меньшинства",
 			"stage":"persecution_minority",
 			"random":false,
 			"minRepChange":-0.2,
@@ -339,30 +339,30 @@
 			"allowPiratesToNonPirates":true,
 			"chance":1.5,
 			"invert":true,
-			"desc":"$OtherFaction adherents $onOrAt $market are facing social and state penalties for their faith, ranging from ostracism to beatings and confiscation of property. The $otherFaction believers have made their anger at $theFaction known."
+			"desc":"Последователи фракции $OtherFaction на рынке $market подвергаются общественным и государственным гонениям за свою веру — от остракизма до избиений и конфискации имущества. Верующие фракции $otherFaction открыто выразили гнев в адрес фракции $theFaction."
 		},
 		{
-			"name":"Religious Majority Persecutes",
+			"name":"Гонения со стороны религиозного большинства",
 			"stage":"persecution_majority",
 			"random":false,
 			"minRepChange":-0.2,
 			"maxRepChange":-0.15,
 			"allowedFactions1":["luddic_church","kadur_theocracy","insurgency"],
 			"chance":1.5,
-			"desc":"$OtherFaction figures have condemned the actions of $theFaction in suppressing \"heresy\" $onOrAt $market, describing as \"persecution\" and \"inquisition\" such acts as forced conversions and false criminal accusations against $otherFaction non-believers."
+			"desc":"Представители фракции $OtherFaction осудили подавление «ереси» фракцией $theFaction на рынке $market, назвав «гонениями» и «инквизицией» насильственное обращение и ложные уголовные обвинения против иноверцев фракции $otherFaction."
 		},
 		{
-			"name":"Priest Scandal",
+			"name":"Скандал со священнослужителем",
 			"stage":"priest_scandal",
 			"minRepChange":-0.15,
 			"maxRepChange":-0.1,
 			"repLimit":"inhospitable",
 			"allowedFactions2":["luddic_church","kadur_theocracy","insurgency"],
 			"chance":1.5,
-			"desc":"An $otherFaction clergyman $onOrAt $market has been charged with embezzlement of church funds and various sexual offences. Opinion polls show a marked decrease in respect for $theOtherFaction among $faction citizens."
+			"desc":"Священнослужителя фракции $otherFaction на рынке $market обвинили в хищении церковных средств и ряде преступлений сексуального характера. Опросы показывают заметное падение уважения к фракции $theOtherFaction среди граждан фракции $faction."
 		},
 		{
-			"name":"Condemn Treatment of Dissidents",
+			"name":"Осуждение обращения с диссидентами",
 			"stage":"dissident_treatment",
 			"random":false,
 			"minRepChange":-0.2,
@@ -371,10 +371,10 @@
 			"allowedFactions1":["hegemony","sindrian_diktat","mayorate","interstellarimperium","new_galactic_order","kadur_theocracy"],
 			"allowedFactions2":["luddic_church","shadow_industry","pack","spire","ORA"],
 			"chance":1.5,
-			"desc":"$OtherFaction officials and commentators have harshly criticized the actions of $faction authorities, who have arrested and beaten scores of dissidents and activists $onOrAt $market."
+			"desc":"Представители и обозреватели фракции $OtherFaction резко раскритиковали власти фракции $faction, арестовавшие и избившие десятки диссидентов и активистов на рынке $market."
 		},
 		{
-			"name":"Anti-Corporation Movement",
+			"name":"Антикорпоративное движение",
 			"stage":"anti_corporation",
 			"minRepLevelToOccur":"inhospitable",
 			"minRepChange":-0.2,
@@ -383,10 +383,10 @@
 			"allowedFactions1":["hegemony","luddic_church","pack","interstellarimperium","new_galactic_order","kadur_theocracy","insurgency"],
 			"allowedFactions2":["tritachyon","blackrock","neutrinocorp","diableavionics","shadow_industry","citadeldefenders","exigency","metelson","ptech","dassault_mikoyan"],
 			"chance":1.5,
-			"desc":"$TheOtherFaction is in the crosshairs of a populist anti-corporate movement $onOrAt $market, which sees it as an oppressive, exploitative entity. Movement leaders are pressing $faction authorities to crack down on $theOtherFaction's various crimes."
+			"desc":"Фракция $TheOtherFaction стала мишенью популистского антикорпоративного движения на рынке $market, считающего её угнетающей и эксплуататорской силой. Лидеры движения требуют от властей фракции $faction пресечь многочисленные преступления фракции $theOtherFaction."
 		},
 		{
-			"name":"Technology Stolen",
+			"name":"Кража технологий",
 			"stage":"tech_stolen",
 			"random":false,
 			"maxRepLevelToOccur":"welcoming",
@@ -397,10 +397,10 @@
 			"allowedFactions1":["blackrock", "citadeldefenders", "dassault_mikoyan", "diableavionics", "exigency", "fob", "hiigaran_descendants", "interstellarimperium", "mayorate", "metelson", 
 								"neutrinocorp", "oculus", "ORA", "ori", "rori", "pbc", "pn_colony", "ptech", "SCY", "shadow_industry", "spire", "sylphon", "tritachyon", "valkyrian"],
 			"chance":1.2,
-			"desc":"A major $faction R&D facility $onOrAt $market reports the theft of large amounts of advanced technology and related data. $TheOtherFaction denies allegations that it was responsible."
+			"desc":"Крупный исследовательский центр фракции $faction на рынке $market сообщил о краже большого объёма передовых технологий и связанных данных. Фракция $TheOtherFaction отрицает свою причастность."
 		},
 		{
-			"name":"Contract Cheating",
+			"name":"Махинации с контрактом",
 			"stage":"contract_cheating",
 			"random":false,
 			"maxRepLevelToOccur":"welcoming",
@@ -413,7 +413,7 @@
 				"ori","rori","tiandong","ptech","scalartech"],
 			"chance":1.2,
 			"invert":true,
-			"desc":"After $theOtherFaction won a major defense contract, competitor $Faction issued a press release alleging the use of bribery and kickbacks. $OtherFaction and client officials claim the process was entirely above board."
+			"desc":"После победы фракции $theOtherFaction в конкурсе на крупный оборонный контракт её конкурент, фракция $Faction, обвинил победителя во взятках и откатах. Представители фракции $OtherFaction и заказчика утверждают, что процедура была совершенно прозрачной."
 		},
 	]
 }

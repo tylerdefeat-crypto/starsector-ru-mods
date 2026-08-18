@@ -1,90 +1,90 @@
 fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
-boggledTerraformingContentEnabled,Enable terraforming content,Boolean,True,,"Set this to false to completely disable all terraforming content regardless of other settings.",,,Terraforming
-boggled_terraformingProjectsHeader,Terraforming Project Settings,Header,Terraforming Project Settings,,,,,Terraforming
-boggledTerraformingTime,Planet type change time,Int,400,,"Controls how long planet type change projects take (in days).",1,2000,Terraforming
-boggledResourceImprovementTime,Resource improvement time,Int,200,,"Controls how long resource improvement projects take (in days).",1,1000,Terraforming
-boggledConditionImprovementTime,Condition improvement time,Int,200,,"Controls how long condition improvement projects take (in days).",1,1000,Terraforming
-boggledTerraformingTypeChangeAddVolatiles,Add volatiles to Terran and tundra worlds,Boolean,True,,"Set this to false to prevent Terran and tundra type change projects from creating volatiles deposits.",,,Terraforming
-boggledTerraformingRemoveRadiationProjectEnabled,Enable radiation remediation project,Boolean,False,,"Set this to true to enable the terraforming project to remove radiation from a market.",,,Terraforming
-boggledTerraformingRemoveAtmosphereProjectEnabled,Enable the remove atmosphere project,Boolean,False,,"Set this to true to enable the terraforming project to remove the atmosphere from a market.",,,Terraforming
-boggled_terraformingBuildingHeader,Building Settings,Header,Building Settings,,,,,Terraforming
-boggledStellarReflectorArrayEnabled,Enable Stellar Reflector Array,Boolean,True,,"Set this to false to disable the Stellar Reflector Array building.",,,Terraforming
-boggledStellarReflectorArrayMarketAutoPlacementEnabled,Enable Stellar Reflector Array Autoplacement,Boolean,True,,"Set this to false to prevent certain markets from starting the game with the Stellar Reflector Array building already constructed.
+boggledTerraformingContentEnabled,Включить терраформирование,Boolean,True,,"Отключает всё содержимое терраформирования независимо от остальных настроек.",,,Терраформирование
+boggled_terraformingProjectsHeader,Проекты терраформирования,Header,Проекты терраформирования,,,,,Терраформирование
+boggledTerraformingTime,Время изменения типа планеты,Int,400,,"Продолжительность проектов изменения типа планеты в днях.",1,2000,Терраформирование
+boggledResourceImprovementTime,Время улучшения ресурсов,Int,200,,"Продолжительность проектов улучшения ресурсов в днях.",1,1000,Терраформирование
+boggledConditionImprovementTime,Время улучшения условий,Int,200,,"Продолжительность проектов улучшения условий в днях.",1,1000,Терраформирование
+boggledTerraformingTypeChangeAddVolatiles,Летучие вещества на земных и тундровых мирах,Boolean,True,,"Добавлять залежи летучих веществ при преобразовании планет в земной или тундровый тип.",,,Терраформирование
+boggledTerraformingRemoveRadiationProjectEnabled,Удаление радиации,Boolean,False,,"Включает проект терраформирования для удаления радиации с рынка.",,,Терраформирование
+boggledTerraformingRemoveAtmosphereProjectEnabled,Удаление атмосферы,Boolean,False,,"Включает проект терраформирования для удаления атмосферы с рынка.",,,Терраформирование
+boggled_terraformingBuildingHeader,Сооружения,Header,Сооружения,,,,,Терраформирование
+boggledStellarReflectorArrayEnabled,Звёздный отражающий массив,Boolean,True,,"Включает сооружение «Звёздный отражающий массив».",,,Терраформирование
+boggledStellarReflectorArrayMarketAutoPlacementEnabled,Авторазмещение отражающих массивов,Boolean,True,,"Позволяет некоторым рынкам начинать игру с уже построенным звёздным отражающим массивом.
 
-If set to false, Eventide, Eochu Bres and certain other markets will get to keep their Solar Array market condition for free without needing to maintain the Stellar Reflector Array building.",,,Terraforming
-boggledGenelabEnabled,Enable Genelab,Boolean,True,,"Set this to false to disable the Genelab building.",,,Terraforming
-boggledGenelabPollutionRemediationDaysToFinish,Days to finish pollution remediation with Genelab,Int,200,,"How many days are required to remove the pollution condition with the Genelab.",1,2000,Terraforming
-boggledGenelabLobsterSeedingDaysToFinish,Days to finish lobster seeding with Genelab,Int,200,,"How many days are required to add the Volturnian Lobsters resource to a colony on a water planet with the Genelab.",1,2000,Terraforming
-boggledMesozoicParkEnabled,Enable Mesozoic Park,Boolean,True,,"Set this to false to disable the Mesozoic Park building.",,,Terraforming
-boggledDomedCitiesEnabled,Enable Domed Cities,Boolean,True,,"Set this to false to disable the Domed Cities building. Also controls whether the Seafloor Cities building is enabled or disabled.",,,Terraforming
-boggledDomedCitiesDefensePenaltyEnabled,Enable Domed Cities defense penalty,Boolean,True,,"Set this to false to remove the defense penalty from the Domed Cities building.",,,Terraforming
-boggledHarmonicDamperEnabled,Enable Harmonic Damper,Boolean,False,,"Set this to true to enable the Harmonic Damper building.
+Если отключено, Ивентайд, Эочу Брес и некоторые другие рынки сохранят условие «Солнечный массив» бесплатно.",,,Терраформирование
+boggledGenelabEnabled,Генолаборатория,Boolean,True,,"Включает сооружение «Генолаборатория».",,,Терраформирование
+boggledGenelabPollutionRemediationDaysToFinish,Дней на устранение загрязнения,Int,200,,"Количество дней, необходимое генолаборатории для устранения загрязнения.",1,2000,Терраформирование
+boggledGenelabLobsterSeedingDaysToFinish,Дней на заселение омарами,Int,200,,"Количество дней, необходимое генолаборатории для добавления вольтурнианских омаров на водную планету.",1,2000,Терраформирование
+boggledMesozoicParkEnabled,Мезозойский парк,Boolean,True,,"Включает сооружение «Мезозойский парк».",,,Терраформирование
+boggledDomedCitiesEnabled,Купольные города,Boolean,True,,"Включает купольные и подводные города.",,,Терраформирование
+boggledDomedCitiesDefensePenaltyEnabled,Штраф обороны купольных городов,Boolean,True,,"Включает штраф к обороне от купольных городов.",,,Терраформирование
+boggledHarmonicDamperEnabled,Гармонический демпфер,Boolean,False,,"Включает сооружение «Гармонический демпфер».
 
-The Harmonic Damper building suppresses tectonic activity market conditions.",,,Terraforming
-boggledPlanetaryAgravFieldEnabled,Enable Planetary Agrav Field,Boolean,False,,"Set this to true to enable the Planetary Agrav Field building.
+Гармонический демпфер подавляет тектоническую активность.",,,Терраформирование
+boggledPlanetaryAgravFieldEnabled,Планетарное антигравитационное поле,Boolean,False,,"Включает соответствующее сооружение.
 
-The Planetary Agrav Field building supresses high and low gravity market conditions if the Domed Cities building is present on the colony.",,,Terraforming
-boggledPlanetCrackerEnabled,Enable Planet Cracker,Boolean,False,,"Set this to true to enable the Planet Cracker building.
+При наличии купольных городов оно подавляет высокую и низкую гравитацию.",,,Терраформирование
+boggledPlanetCrackerEnabled,Планетарный разрушитель,Boolean,False,,"Включает сооружение «Планетарный разрушитель».
 
-The Planet Cracker building can be constructed on a station orbiting a planet. It will permanently improve ore and rare ore resources on that planet by one level but will add the tectonic activity market condition. Does nothing if the planet already has tectonic activity.",,,Terraforming
-boggledPlanetCrackerProjectTime,Planet cracking required time,Int,200,,"Controls how long planet cracking takes (in days).",1,1000,Terraforming
-boggledOuyangOptimizerEnabled,Enable Ouyang Optimzer,Boolean,False,,"Set this to true to enable the Ouyang Optimizer building.
+Строится на станции у планеты, навсегда улучшает руду и редкую руду на один уровень, но добавляет тектоническую активность. Не действует на планеты с уже существующей тектонической активностью.",,,Терраформирование
+boggledPlanetCrackerProjectTime,Время разрушения планеты,Int,200,,"Продолжительность проекта в днях.",1,1000,Терраформирование
+boggledOuyangOptimizerEnabled,Оптимизатор Оуян,Boolean,False,,"Включает сооружение «Оптимизатор Оуян».
 
-The Ouyang Optimizer building can be constructed on a station orbiting a gas giant. It will permanently improve volatiles resources on that planet by one level but will add the extreme weather market condition. Does nothing if the planet already has extreme weather.",,,Terraforming
-boggledOuyangOptimizerProjectTime,Ouyang optimization required time,Int,200,,"Controls how long Ouyang optimization takes (in days).",1,1000,Terraforming
-boggledStationConstructionContentEnabled,Enable station construction content,Boolean,True,,"Set this to false to completely disable all station construction content regardless of other settings.",,,Station Construction
-boggled_StationConstructionHeader,Station Construction Features,Header,Station Construction Features,,,,,Station Construction
-boggledStationAccessibilityBoost,Modify station accessibility,Int,0,,"Adds an accessibility modifier to player-constructed stations. Negative values can be used to decrease accessibility.",-100,100,Station Construction
-boggledStationHazardRatingModifier,Modify station hazard,Int,0,,"Adds a hazard modifier to player-constructed stations. Negative values can be used to decrease hazard.",-100,100,Station Construction
-boggledApplyStationSettingsToAllStationsInSector,Apply settings to all stations,Boolean,True,,"Applies Cramped Quarters (if enabled), applies hazard and accessibility modifiers, and enables 'no atmosphere' special items on all stations sector-wide.
+Строится на станции у газового гиганта, навсегда улучшает залежи летучих веществ на один уровень, но добавляет экстремальную погоду. Не действует на планеты с уже существующей экстремальной погодой.",,,Терраформирование
+boggledOuyangOptimizerProjectTime,Время оптимизации Оуян,Int,200,,"Продолжительность проекта в днях.",1,1000,Терраформирование
+boggledStationConstructionContentEnabled,Включить строительство станций,Boolean,True,,"Включает всё содержимое, связанное со строительством станций.",,,Строительство станций
+boggled_StationConstructionHeader,Возможности строительства,Header,Возможности строительства,,,,,Строительство станций
+boggledStationAccessibilityBoost,Изменение доступности станций,Int,0,,"Добавляет модификатор доступности построенным игроком станциям. Отрицательные значения снижают доступность.",-100,100,Строительство станций
+boggledStationHazardRatingModifier,Изменение опасности станций,Int,0,,"Добавляет модификатор опасности построенным игроком станциям. Отрицательные значения снижают опасность.",-100,100,Строительство станций
+boggledApplyStationSettingsToAllStationsInSector,Применить ко всем станциям,Boolean,True,,"Применяет «Тесные помещения», модификаторы опасности и доступности, а также разрешает особые предметы без атмосферы на всех станциях сектора.
 
-If set to false, only stations created using Terraforming & Station Construction will have the above features applied to them.",,,Station Construction
-boggledEnableAIMiningDronesStructure,Enable AI Mining Drones building,Boolean,False,,"Set this to true to enable the AI Mining Drones building.
+Если отключено, параметры действуют только на станции, созданные этим модом.",,,Строительство станций
+boggledEnableAIMiningDronesStructure,Добывающие дроны ИИ,Boolean,False,,"Включает сооружение «Добывающие дроны ИИ».
 
-Can be built on station markets to increase mining yields. Balanced around Cramped Quarters also being enabled.",,,Station Construction
-boggled_CrampedQuartersHeader,Cramped Quarters Settings,Header,Cramped Quarters Settings,,,,,Station Construction
-boggledStationCrampedQuartersEnabled,Enable Cramped Quarters,Boolean,False,,"Set this to true to enable the Cramped Quarters condition.
+Строится на станциях и повышает добычу. Баланс рассчитан на включённые «Тесные помещения».",,,Строительство станций
+boggled_CrampedQuartersHeader,Тесные помещения,Header,Тесные помещения,,,,,Строительство станций
+boggledStationCrampedQuartersEnabled,Включить тесные помещения,Boolean,False,,"Включает условие «Тесные помещения».
 
-Cramped Quarters reduces population growth on station markets starting from the value chosen below.",,,Station Construction
-boggledStationCrampedQuartersSizeGrowthReductionStarts,Cramped Quarters growth penalty market size,Int,3,,"If Cramped Quarters is enabled this setting controls at what market size the growth penalty begins to apply.",0,6,Station Construction
-boggledStationCrampedQuartersBaseGrowthPenalty,Cramped Quarters penalty magnitude,Int,25,,"If Cramped Quarters is enabled this setting controls how significant the growth penalty is.
+Оно снижает рост населения станций начиная с выбранного ниже размера рынка.",,,Строительство станций
+boggledStationCrampedQuartersSizeGrowthReductionStarts,Размер рынка для штрафа роста,Int,3,,"Размер рынка, с которого начинает действовать штраф роста населения.",0,6,Строительство станций
+boggledStationCrampedQuartersBaseGrowthPenalty,Величина штрафа тесных помещений,Int,25,,"Определяет базовую величину штрафа роста населения.
 
-Note that the penalty will become more severe as the station grows beyond the base size at which the penalty began applying.",1,125,Station Construction
-boggledStationCrampedQuartersPlayerCanPayToIncreaseStationSize,Enable Expand Station building,Boolean,False,,"Set this to true to enable the Expand Station building.
+Штраф усиливается по мере роста станции сверх размера, с которого он начал действовать.",1,125,Строительство станций
+boggledStationCrampedQuartersPlayerCanPayToIncreaseStationSize,Расширение станции,Boolean,False,,"Включает сооружение «Расширение станции».
 
-The Expand Station building will increase the base level at which the Cramped Quarters growth penalty begins to apply.",,,Station Construction
-boggledStationProgressiveIncreaseInCostsToExpandStation,Expand Station progressive cost increase,Boolean,True,,"Set this to false to disable the progressive cost increase for the Expand Station building.
+Оно повышает базовый размер, с которого действует штраф «Тесных помещений».",,,Строительство станций
+boggledStationProgressiveIncreaseInCostsToExpandStation,Рост стоимости расширения,Boolean,True,,"Включает последовательное повышение стоимости расширения станции.
 
-By default, the Expand Station building will cost more each time it is built after the first time on a given station market.",,,Station Construction
-boggled_AstropolisHeader,Astropolis Settings,Header,Astropolis Settings,,,,,Station Construction
-boggledAstropolisEnabled,Enable Astropolis construction,Boolean,True,,"Set this to false to disable construction of astropolis stations.
+Каждое следующее расширение одной станции стоит дороже предыдущего.",,,Строительство станций
+boggled_AstropolisHeader,Астрополисы,Header,Астрополисы,,,,,Строительство станций
+boggledAstropolisEnabled,Строительство астрополисов,Boolean,True,,"Включает строительство станций-астрополисов.
 
-Astropolis stations can be constructed using an ability when the player is close to a planet they have already colonized. The station will orbit the planet and have a separate market from the market on the colony. Astropolis stations have no resource deposits.",,,Station Construction
-boggledCanBuildAstropolisOnPurchasedGovernorshipPlanets,Astropolis stations can be built on purchased planets,Boolean,False,,"Set this to true to allow astropolis stations to be constructed in orbit around planets where the player purchased governorship.",,,Station Construction
-boggledAstropolisIgnoreOrbitalRequirements,Astropolis stations ignore orbital requirements,Boolean,False,,"Set this to true to allow construction of astropolis stations in orbit around planets that otherwise do not meet the criteria for astropolis construction.
+Астрополис строится способностью рядом с уже колонизированной планетой, обращается вокруг неё и имеет отдельный рынок без залежей ресурсов.",,,Строительство станций
+boggledCanBuildAstropolisOnPurchasedGovernorshipPlanets,Астрополисы у купленных планет,Boolean,False,,"Разрешает строить астрополисы у планет, управление которыми было приобретено игроком.",,,Строительство станций
+boggledAstropolisIgnoreOrbitalRequirements,Игнорировать орбитальные требования,Boolean,False,,"Разрешает строить астрополисы у планет, которые иначе не соответствуют требованиям.
 
-The criteria for astropolis construction are factors like the size of the planet, other planets or moons orbiting close to it, etc.",,,Station Construction
-boggledAstropolisStationBuildCreditCost,Astropolis station credit build cost,Int,500000,,"How many credits are required to construct an astropolis station.",0,2500000,Station Construction
-boggledAstropolisStationBuildCrewCost,Astropolis station crew build cost,Int,1000,,"How many crew are required to construct an astropolis station.",0,5000,Station Construction
-boggledAstropolisStationBuildHeavyMachineryCost,Astropolis station heavy machinery build cost,Int,250,,"How much heavy machinery is required to construct an astropolis station.",0,1250,Station Construction
-boggledAstropolisStationBuildMetalCost,Astropolis station metal build cost,Int,1000,,"How much metal is required to construct an astropolis station.",0,5000,Station Construction
-boggledAstropolisStationBuildTransplutonicsCost,Astropolis station transplutonics build cost,Int,250,,"How much transplutonic metal is required to construct an astropolis station.",0,1250,Station Construction
-boggledAstropolisSpriteToUse,Astropolis sprite controller,Int,0,,"Controls which sprite(s) are used for astropolis stations.
+Учитываются размер планеты, близкие планеты и спутники и другие орбитальные факторы.",,,Строительство станций
+boggledAstropolisStationBuildCreditCost,Стоимость астрополиса в кредитах,Int,500000,,"Кредитов для строительства астрополиса.",0,2500000,Строительство станций
+boggledAstropolisStationBuildCrewCost,Экипаж для астрополиса,Int,1000,,"Членов экипажа для строительства астрополиса.",0,5000,Строительство станций
+boggledAstropolisStationBuildHeavyMachineryCost,Тяжёлая техника для астрополиса,Int,250,,"Единиц тяжёлой техники для строительства астрополиса.",0,1250,Строительство станций
+boggledAstropolisStationBuildMetalCost,Металлы для астрополиса,Int,1000,,"Единиц металлов для строительства астрополиса.",0,5000,Строительство станций
+boggledAstropolisStationBuildTransplutonicsCost,Трансплутониды для астрополиса,Int,250,,"Единиц трансплутонидов для строительства астрополиса.",0,1250,Строительство станций
+boggledAstropolisSpriteToUse,Внешний вид астрополиса,Int,0,,"Определяет используемые изображения астрополисов.
 
-Zero means the sprites for astropolis stations rotate between low tech, midline and high tech. One makes astropolis stations use exclusively low tech sprites, two is for midline sprites and three is for high tech sprites.",0,3,Station Construction
-boggled_MiningHeader,Mining Station Settings,Header,Mining Station Settings,,,,,Station Construction
-boggledMiningStationEnabled,Enable mining station construction,Boolean,True,,"Set this to false to disable construction of mining stations.
+0 — чередование низкотехнологичного, среднего и высокотехнологичного стилей; 1 — только низкотехнологичный; 2 — средний; 3 — высокотехнологичный.",0,3,Строительство станций
+boggled_MiningHeader,Добывающие станции,Header,Добывающие станции,,,,,Строительство станций
+boggledMiningStationEnabled,Строительство добывающих станций,Boolean,True,,"Включает строительство добывающих станций.
 
-Mining stations can be constructed using an ability when the player is in an asteroid field or asteroid belt. Mining stations have ore and rare ore resource deposits.",,,Station Construction
-boggledMaxNumMiningStationsPerSystem,Maximum mining stations per system,Int,1,,"Controls how many mining stations can be constructed per system.
+Они строятся способностью в поле или поясе астероидов и имеют залежи руды и редкой руды.",,,Строительство станций
+boggledMaxNumMiningStationsPerSystem,Максимум станций в системе,Int,1,,"Максимальное количество добывающих станций в одной системе.
 
-This value can be arbitrarily large but balance and performance problems will occur if too many colonies are in the same system.",0,5,Station Construction
-boggledMiningStationLinkToResourceBelts,Link mining resources to number of fields/belts,Boolean,False,,"Set this to true to link the ore and rare ore resource deposits on mining stations to the number of asteroid belts and fields present in the system.",,,Station Construction
-boggledMiningStationSparseOre,Number of belts/fields required for sparse ore deposits,Int,0,,"How many asteroid fields and/or asteroid belts are required in the system for mining stations to have at least sparse ore deposits.",0,10,Station Construction
-boggledMiningStationModerateOre,Number of belts/fields required for moderate ore deposits,Int,2,,"How many asteroid fields and/or asteroid belts are required in the system for mining stations to have at least moderate ore deposits.",0,10,Station Construction
-boggledMiningStationAbundantOre,Number of belts/fields required for abundant ore deposits,Int,5,,"How many asteroid fields and/or asteroid belts are required in the system for mining stations to have at least abundant ore deposits.",0,25,Station Construction
-boggledMiningStationRichOre,Number of belts/fields required for rich ore deposits,Int,7,,"How many asteroid fields and/or asteroid belts are required in the system for mining stations to have at least rich ore deposits.",0,35,Station Construction
-boggledMiningStationUltrarichOre,Number of belts/fields required for ultrarich ore deposits,Int,9,,"How many asteroid fields and/or asteroid belts are required in the system for mining stations to have at least ultra rich ore deposits.",0,45,Station Construction
+Большое значение может нарушить баланс и снизить производительность.",0,5,Строительство станций
+boggledMiningStationLinkToResourceBelts,Залежи зависят от астероидов,Boolean,False,,"Связывает качество залежей руды с количеством астероидных полей и поясов в системе.",,,Строительство станций
+boggledMiningStationSparseOre,Астероидов для скудных залежей,Int,0,,"Необходимое количество полей или поясов.",0,10,Строительство станций
+boggledMiningStationModerateOre,Астероидов для умеренных залежей,Int,2,,"Необходимое количество полей или поясов.",0,10,Строительство станций
+boggledMiningStationAbundantOre,Астероидов для обильных залежей,Int,5,,"Необходимое количество полей или поясов.",0,25,Строительство станций
+boggledMiningStationRichOre,Астероидов для богатых залежей,Int,7,,"Необходимое количество полей или поясов.",0,35,Строительство станций
+boggledMiningStationUltrarichOre,Астероидов для сверхбогатых залежей,Int,9,,"Необходимое количество полей или поясов.",0,45,Строительство станций
 boggledMiningStationStaticAmount,Static resource deposit amount,Int,2,,"If the setting to link mining station resource deposits to the number of asteroid belts and fields in the system is set to false, this controls the amount of the resource deposits on mining stations.
 
 1 = Sparse, 2 = Moderate, 3 = Abundant, 4 = Rich, 5 = Ultrarich, Any other value = set to moderate",1,5,Station Construction

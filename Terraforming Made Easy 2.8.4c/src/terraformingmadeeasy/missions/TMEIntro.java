@@ -136,14 +136,14 @@ public class TMEIntro extends HubMissionWithBarEvent {
         Color h = Misc.getHighlightColor();
 
         if (this.currentStage == Stage.ESCORT_CONTACT) {
-            info.addPara("Escort %s to %s in the %s", oPad, h, this.inadire.getName().getFullName(), this.planet.getFullName(), this.system.getNameWithLowercaseTypeShort());
+            info.addPara("Сопроводить %s на %s в системе %s", oPad, h, this.inadire.getName().getFullName(), this.planet.getFullName(), this.system.getNameWithLowercaseTypeShort());
         }
     }
 
     @Override
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         if (this.currentStage == Stage.ESCORT_CONTACT) {
-            info.addPara("Escort %s to a planet within the %s", pad, tc, this.inadire.getName().getFullName(), this.system.getNameWithLowercaseTypeShort());
+            info.addPara("Сопроводить %s на планету в системе %s", pad, tc, this.inadire.getName().getFullName(), this.system.getNameWithLowercaseTypeShort());
             return true;
         }
 

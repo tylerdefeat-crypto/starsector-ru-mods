@@ -1,39 +1,39 @@
 {
 	"questChains":{
 		"galatiaAcademy":{
-			"name":"Galatia Academy",
+		"name":"Академия Галатии",
 			"image":"graphics/icons/missions/ga_intro.png",
 			"sortKey":"AAAA_academy",
 			"quests":["transverseJump", "kallichore", "coureuse", "ziggurat", "atTheGates", "abyssalSpaceOddity"],
 			"plugin":"exerelin.campaign.questskip.GalatiaQuestSkipPlugin",
 		},
 		"luddicChurch":{
-			"name":"Luddic Church",
+		"name":"Луддитская Церковь",
 			"image":"graphics/icons/missions/pilgrims_path.png",
 			"sortKey":"AAAA_luddicChurch",
 			"quests":["pilgrimsPath", "knightErrant", "falseIdols"],
 			"plugin":"exerelin.campaign.questskip.LuddicChurchQuestSkipPlugin",
 		},
 		"sindrianDiktat":{
-			"name":"Sindrian Diktat",
+		"name":"Синдрианский Диктат",
 			"image":"graphics/icons/missions/the_usurpers.png",
 			"sortKey":"AAAA_sindrianDiktat",
 			"quests":["usurpers"],
 		},
 		"misc":{
-			"name":"Misc. vanilla",
+		"name":"Прочие задания базовой игры",
 			"image":"graphics/icons/missions/eventide.png",
 			"sortKey":"AAAA_zz_misc",
 			"quests":["anh", "princess_persea", "scytheOfOrion"],
 		},
 		"nex_remnant":{
-			"name":"Dissonance",
+		"name":"Диссонанс",
 			"image":"graphics/factions/crest_ai_remnant.png",
 			"quests":["nex_captiveCores", "nex_fragments", "nex_lostSci", "nex_showdown", "nex_salvation"],
 			"plugin":"exerelin.campaign.questskip.RemnantQuestSkipPlugin",
 		},
 		"topography":{
-			"name":"Hyperspace Topography",
+		"name":"Топография гиперпространства",
 			"image":"graphics/icons/markets/hyperspace_topography.png",
 			"sortKey":"AAAB_hyperspace_topography",
 			"quests":["topography_250", "topography_400", "topography_700"],
@@ -43,8 +43,8 @@
 
 	"quests":{
 		"transverseJump":{
-			"name":"Extract Researcher",
-			"tooltip":"The player extracts a Galatian academician from a Tri-Tachyon blacksite.",
+			"name":"Эвакуация исследователя",
+			"tooltip":"Игрок эвакуирует учёного Академии Галатии с секретного объекта Три-Тахиона.",
 			"idsToForceOnWhenEnabled":[],
 			"idsToForceOffWhenEnabled":[],
 			"idsToForceOnWhenDisabled":[],
@@ -60,8 +60,8 @@
 		},
 		# technically it should be possible to skip Kallichore and Coureuse separately, but I would rather not have to figure out the handling for that
 		"kallichore":{
-			"name":"Kallichore Arc.",
-			"tooltip":"The player recovers the archive of the previous Galatian Academy provost, Tomas Kallichore, from the Academy.",
+			"name":"Архив Каллихора",
+			"tooltip":"Игрок забирает из Академии архив прежнего ректора Академии Галатии Томаса Каллихора.",
 			"idsToForceOnWhenEnabled":["transverseJump"],
 			"idsToForceOffWhenDisabled":["ziggurat", "atTheGates"],
 			"sectorMemFlags":{
@@ -74,8 +74,8 @@
 			}
 		},
 		"coureuse":{
-			"name":"Finding Coureuse",
-			"tooltip":"The player finds the missing Academician Scylla Coureuse and invites her back to the Academy.",
+			"name":"В поисках Курёз",
+			"tooltip":"Игрок находит пропавшую учёную Сциллу Курёз и приглашает её вернуться в Академию.",
 			"idsToForceOnWhenEnabled":["transverseJump"],
 			"idsToForceOffWhenDisabled":["ziggurat", "atTheGates"],
 			"sectorMemFlags":{
@@ -99,8 +99,8 @@
 			}
 		},
 		"ziggurat":{
-			"name":"Proj. Ziggurat",
-			"tooltip":"The player tracks down a Tri-Tachyon project lead and finds the mysterious Ziggurat.\n\nThe Ziggurat will remain at Alpha Site, ready to be fought.",
+			"name":"Проект «Зиккурат»",
+			"tooltip":"Игрок выслеживает руководителя проекта Три-Тахиона и обнаруживает загадочный «Зиккурат».\n\n«Зиккурат» останется на объекте «Альфа», готовый к сражению.",
 			"idsToForceOnWhenEnabled":["transverseJump", "kallichore", "coureuse"],
 			"idsToForceOffWhenDisabled":["atTheGates"],
 			"sectorMemFlags":{
@@ -113,8 +113,8 @@
 			}
 		},
 		"atTheGates":{
-			"name":"At the Gates",
-			"tooltip":"The player unlocks the Gates with the power of the Janus Device.",
+			"name":"У Врат",
+			"tooltip":"Игрок разблокирует Врата с помощью устройства «Янус».",
 			"idsToForceOnWhenEnabled":["transverseJump", "kallichore", "coureuse", "ziggurat"],
 			"peopleToUnhide":["horus_yaribay"],
 			"sectorMemFlags":{
@@ -141,8 +141,8 @@
 			}
 		},
 		"abyssalSpaceOddity":{
-			"name":"Ab. Space Oddity",
-			"tooltip":"The player investigates unusual readings from a deep space array.\n\nWill receive the ==Onslaught Mk.I==.",
+			"name":"Странность в глубоком космосе",
+			"tooltip":"Игрок исследует необычные показания массива дальней космической разведки.\n\nВ награду будет получен ==«Натиск» Mk.I==.",
 			"plugin":"exerelin.campaign.questskip.SpaceOddityQuestSkipPlugin",
 			"peopleToUnhide":["elek"],
 			"sectorMemFlags":{
@@ -162,8 +162,8 @@
 		},
 		
 		"pilgrimsPath":{
-			"name":"Pilgrim's Path",
-			"tooltip":"The player visits the six Luddic shrines of the Sector.",
+			"name":"Путь паломника",
+			"tooltip":"Игрок посещает шесть луддитских святынь Сектора.",
 			"idsToForceOffWhenDisabled":["knightErrant", "falseIdols"],
 			"peopleToUnhide":["standfast", "jaspis", "oak"],
 			"sectorMemFlags":{
@@ -179,8 +179,8 @@
 			}
 		},
 		"knightErrant":{
-			"name":"Knight-Errant",
-			"tooltip":"The player finds a missing Luddic novice.\n\nJethro Bornanew will be ==returned== to Archcurate Jaspis.",
+			"name":"Странствующий рыцарь",
+			"tooltip":"Игрок находит пропавшего луддитского послушника.\n\nДжетро Борнанью будет ==возвращён== архикурату Яспису.",
 			"idsToForceOnWhenEnabled":["pilgrimsPath"],
 			"idsToForceOffWhenDisabled":["falseIdols"],
 			"peopleToUnhide":["virens"],
@@ -195,8 +195,8 @@
 			}
 		},
 		"falseIdols":{
-			"name":"False Idols",
-			"tooltip":"The player helps Jethro Bornanew track down a fake Luddic relic.",
+			"name":"Ложные идолы",
+			"tooltip":"Игрок помогает Джетро Борнанью разыскать поддельную луддитскую реликвию.",
 			"idsToForceOnWhenEnabled":["pilgrimsPath", "knightErrant"],
 			"sectorMemFlags":{
 				"$bfin_didStart":true,
@@ -215,8 +215,8 @@
 			}
 		},
 		"usurpers":{
-			"name":"The Usurpers",
-			"tooltip":"The player explores the shadows of Diktat politics.\n\nThis will grant three ==Kinetic Blasters==, a ==Gigacannon==, and an ==Executor-class battleship==.",
+			"name":"Узурпаторы",
+			"tooltip":"Игрок исследует тёмную сторону политики Диктата.\n\nВ награду будут получены три ==кинетических бластера==, ==гигаканон== и линкор класса ==«Экзекутор»==.",
 			"plugin":"exerelin.campaign.questskip.UsurpersQuestSkipPlugin",
 			"peopleToUnhide":["macario"],
 			"sectorMemFlags":{
@@ -242,8 +242,8 @@
 		},
 		
 		"anh":{
-			"name":"A New Hope",
-			"tooltip":"The player transports two unusual passengers to Volturn.",
+			"name":"Новая надежда",
+			"tooltip":"Игрок доставляет двух необычных пассажиров на Вольтурн.",
 			"sectorMemFlags":{
 				"$anh_missionCompleted":true
 			},
@@ -252,8 +252,8 @@
 			}
 		},
 		"princess_persea":{
-			"name":"Princess of Persea",
-			"tooltip":"The player attends a ball on Eventide.",
+			"name":"Принцесса Персеи",
+			"tooltip":"Игрок посещает бал на Ивентайде.",
 			"plugin":"exerelin.campaign.questskip.SOEQuestSkipPlugin",
 			"playerMemFlags":{
 				"$bladeSkill":true,
@@ -265,8 +265,8 @@
 			}
 		},
 		"scytheOfOrion":{
-			"name":"Scythe of Orion",
-			"tooltip":"The player tracks down a long-lost planetkiller.\n\nThis will convert ==Sentinel== into a ==Hegemony colony==, and stand down ==Task Force Safeguard==. The player receives the ==planetkiller== item.",
+			"name":"Коса Ориона",
+			"tooltip":"Игрок разыскивает давно потерянного планетоубийцу.\n\n==Сентинел== станет ==колонией Гегемонии==, а ==оперативная группа «Страж»== прекратит боевые действия. Игрок получит ==планетоубийцу==.",
 			"plugin":"exerelin.campaign.questskip.ScytheQuestSkipPlugin",
 			"sectorMemFlags":{
 				"$discoveredSentinel":true,
@@ -277,8 +277,8 @@
 			}
 		},
 		"nex_captiveCores":{
-			"name":"Captive Cores",
-			"tooltip":"The player recovers two Beta Cores for a Remnant contact.",
+			"name":"Пленные ядра",
+			"tooltip":"Игрок добывает два бета-ядра для контакта среди Остатков.",
 			"idsToForceOffWhenDisabled":["nex_fragments", "nex_lostSci", "nex_showdown", "nex_salvation"],
 			"sectorMemFlags":{
 				"$nex_remM1_missionCompleted":true,
@@ -287,8 +287,8 @@
 			},
 		},
 		"nex_fragments":{
-			"name":"Fragments",
-			"tooltip":"The player tracks down a salvager contact of Midnight.\n\nWill grant ==random Omega weapons==.",
+			"name":"Фрагменты",
+			"tooltip":"Игрок разыскивает знакомого сборщика Полуночи.\n\nВ награду будет получено ==случайное оружие Омега==.",
 			"idsToForceOnWhenEnabled":["nex_captiveCores"],
 			"idsToForceOffWhenDisabled":["nex_showdown", "nex_salvation"],
 			"sectorMemFlags":{
@@ -296,8 +296,8 @@
 			},
 		},
 		"nex_lostSci":{
-			"name":"Lost Scientist",
-			"tooltip":"The player locates a missing Galatia Academician.",
+			"name":"Пропавший учёный",
+			"tooltip":"Игрок находит пропавшего учёного Академии Галатии.",
 			"idsToForceOnWhenEnabled":["nex_captiveCores"],
 			"idsToForceOffWhenDisabled":["nex_showdown", "nex_salvation"],
 			"playerMemFlags":{
@@ -309,8 +309,8 @@
 			}
 		},
 		"nex_showdown":{
-			"name":"Showdown",
-			"tooltip":"The player faces off a mass Hegemony and Luddic Church assault on a Remnant nexus.",
+			"name":"Решающее столкновение",
+			"tooltip":"Игрок отражает массированный штурм нексуса Остатков силами Гегемонии и Луддитской Церкви.",
 			"idsToForceOnWhenEnabled":["nex_captiveCores", "nex_fragments", "nex_lostSci"],
 			"idsToForceOffWhenDisabled":["nex_salvation"],
 			"sectorMemFlags":{
@@ -318,8 +318,8 @@
 			}
 		},
 		"nex_salvation":{
-			"name":"Salvation",
-			"tooltip":"The player confronts a conspiracy among the Remnants.\n\nWill grant a ==Planetkiller== and the ==Silverlight-class capital ship==.",
+			"name":"Спасение",
+			"tooltip":"Игрок раскрывает заговор среди Остатков.\n\nВ награду будут получены ==Планетоубийца== и линкор класса ==«Серебряный свет»==.",
 			"idsToForceOnWhenEnabled":["nex_captiveCores", "nex_fragments", "nex_lostSci", "nex_showdown"],
 			"peopleToUnhide":["arroyo"],
 			"sectorMemFlags":{
@@ -329,19 +329,19 @@
 		},
 		
 		"topography_250":{
-			"name":"250 points",
-			"tooltip":"Enough experience in hyperspace to ==reverse slipstreams==.",
+			"name":"250 очков",
+			"tooltip":"Достаточный опыт в гиперпространстве позволяет ==обращать вспять потоки скольжения==.",
 			"idsToForceOffWhenDisabled":["topography_400", "topography_700"],
 		},
 		"topography_400":{
-			"name":"400 points",
-			"tooltip":"With greater expertise in hyperspace physics, ==spaceports== can ==detect slipstreams==.",
+			"name":"400 очков",
+			"tooltip":"Более глубокие знания физики гиперпространства позволяют ==космопортам== ==обнаруживать потоки скольжения==.",
 			"idsToForceOnWhenEnabled":["topography_400"],
 			"idsToForceOffWhenDisabled":["topography_700"],
 		},
 		"topography_700":{
-			"name":"700 points",
-			"tooltip":"Near-total mastery of hyperspace travel, up to the level of creating ==slipsurges==.",
+			"name":"700 очков",
+			"tooltip":"Почти полное овладение гиперпространственными путешествиями, вплоть до создания ==всплесков скольжения==.",
 			"idsToForceOnWhenEnabled":["topography_250", "topography_400"],
 		}
 	}

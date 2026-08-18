@@ -138,7 +138,7 @@ public class dpl_LostArts extends HubMissionWithBarEvent implements FleetEventLi
     
     public void Victory() {
     	Vector2f loc = last_loc_drones;
-    	wreck = dpl_phase_labAddEntities.spawnNamedWreck(loc, system2, "dpl_persean_imperium", "dpl_aulochrome_Hull", "HSNS Supremacy", false);
+		wreck = dpl_phase_labAddEntities.spawnNamedWreck(loc, system2, "dpl_persean_imperium", "dpl_aulochrome_Hull", "HSNS «Превосходство»", false);
     	Misc.makeImportant(wreck, "$dpl_lostarts");
     	wreck.getMemoryWithoutUpdate().set("$dpl_lostarts_derelict", true);
         setEntityMissionRef(wreck, "$dpl_lostarts_ref");
@@ -161,7 +161,7 @@ public class dpl_LostArts extends HubMissionWithBarEvent implements FleetEventLi
         helheim_agent.getStats().setSkillLevel(Skills.ENERGY_WEAPON_MASTERY, 2);
 		fleet.getFleetData().addFleetMember("dpl_aulochrome_salazar_standard");
 		FleetMemberAPI member = fleet.getFlagship();
-		member.setShipName("HSNS Supremacy");
+		member.setShipName("HSNS «Превосходство»");
 		
     	FleetParamsV3 params = new FleetParamsV3(
                 null,
@@ -179,7 +179,7 @@ public class dpl_LostArts extends HubMissionWithBarEvent implements FleetEventLi
         );
     	params.averageSMods = 3;
     	drone_fleet = FleetFactoryV3.createFleet(params);
-    	drone_fleet.setName("Strange Drone Fleet");
+		drone_fleet.setName("Странный флот дронов");
     	drone_fleet.setNoFactionInName(true);
     	drone_fleet.getFleetData().addFleetMember(member);
     	member.setCaptain(helheim_agent);
@@ -187,7 +187,7 @@ public class dpl_LostArts extends HubMissionWithBarEvent implements FleetEventLi
     	drone_fleet.addEventListener(this);
     	List<FleetMemberAPI> members = drone_fleet.getFleetData().getMembersListCopy();
 		for (FleetMemberAPI curr : members) {
-			if (!curr.getShipName().equalsIgnoreCase("HSNS Supremacy")) {
+			if (!curr.getShipName().equalsIgnoreCase("HSNS «Превосходство»")) {
 				AICoreOfficerPlugin plugin = Misc.getAICoreOfficerPlugin(Commodities.ALPHA_CORE);
 				PersonAPI person = plugin.createPerson(Commodities.ALPHA_CORE, Factions.REMNANTS, genRandom);
 				curr.setCaptain(person);
@@ -246,16 +246,16 @@ public class dpl_LostArts extends HubMissionWithBarEvent implements FleetEventLi
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Start investigation in " +
+			info.addPara("Начните расследование в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.BOARD_THE_SHIP) {
-            info.addPara("Examine the derelict in " +
+			info.addPara("Исследуйте покинутый корабль в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Go back to Research Site V.", opad);
+			info.addPara("Вернитесь на Исследовательский объект V.", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: THE DRONE FLEET IS LOCATED IN THE " +
+			info.addPara("РЕЖИМ РАЗРАБОТЧИКА: ФЛОТ ДРОНОВ НАХОДИТСЯ В ЛОКАЦИИ " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -265,15 +265,15 @@ public class dpl_LostArts extends HubMissionWithBarEvent implements FleetEventLi
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Start investigation in " +
+			info.addPara("Начните расследование в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.BOARD_THE_SHIP) {
-            info.addPara("Examine the derelict in " +
+			info.addPara("Исследуйте покинутый корабль в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Go back to Research Site V in " +
+			info.addPara("Вернитесь на Исследовательский объект V в локации " +
                     system.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         }
@@ -296,6 +296,6 @@ public class dpl_LostArts extends HubMissionWithBarEvent implements FleetEventLi
     // mission name
     @Override
     public String getBaseName() {
-        return "Lost Arts";
+		return "Утраченные искусства";
     }
 }

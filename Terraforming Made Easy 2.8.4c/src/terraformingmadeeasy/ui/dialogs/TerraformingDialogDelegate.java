@@ -48,7 +48,7 @@ public class TerraformingDialogDelegate extends DevelopmentDialogDelegate {
         // Orbit focus input
         CustomPanelAPI mirrorOptionsPanel = inputsPanel.createCustomPanel(this.width / 4f, 40f, null);
         TooltipMakerAPI mirrorOptionsElement = mirrorOptionsPanel.createUIElement(this.width / 4f, 40f, false);
-        mirrorOptionsElement.addPara("Stellar Mirror Options", 0f).setAlignment(Alignment.MID);
+        mirrorOptionsElement.addPara("Параметры звёздных зеркал", 0f).setAlignment(Alignment.MID);
         mirrorOptionsElement.setParaSmallInsignia();
         mirrorOptionsElement.addSpacer(3f);
         // Orbit focus input dropdown
@@ -67,7 +67,7 @@ public class TerraformingDialogDelegate extends DevelopmentDialogDelegate {
         // Orbit focus input
         CustomPanelAPI shadeOptionsPanel = inputsPanel.createCustomPanel(this.width / 4f, 40f, null);
         TooltipMakerAPI shadeOptionsElement = shadeOptionsPanel.createUIElement(this.width / 4f, 40f, false);
-        shadeOptionsElement.addPara("Stellar Shade Options", 0f).setAlignment(Alignment.MID);
+        shadeOptionsElement.addPara("Параметры звёздных экранов", 0f).setAlignment(Alignment.MID);
         shadeOptionsElement.setParaSmallInsignia();
         shadeOptionsElement.addSpacer(3f);
         // Orbit focus input dropdown

@@ -12,7 +12,7 @@ public class OrbitDaysFieldTooltip extends BaseTooltipCreator {
 
     @Override
     public void createTooltip(TooltipMakerAPI tooltip, boolean expanded, Object tooltipParam) {
-        tooltip.addPara("Input a number between %s", 0f, Misc.getHighlightColor(), "100 - 10000");
-        tooltip.addPara("How many days it takes for the megastructure to %s an entity", 10f, Misc.getHighlightColor(), "encircle");
+        tooltip.addPara("Введите число от %s", 0f, Misc.getHighlightColor(), "100 до 10000");
+        tooltip.addPara("Число дней, за которое мегаструктура совершает %s вокруг объекта", 10f, Misc.getHighlightColor(), "полный оборот");
     }
 }

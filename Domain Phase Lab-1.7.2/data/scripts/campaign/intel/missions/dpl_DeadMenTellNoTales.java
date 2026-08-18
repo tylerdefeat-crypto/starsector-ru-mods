@@ -197,7 +197,7 @@ public class dpl_DeadMenTellNoTales extends HubMissionWithBarEvent implements Fl
         );
     	
     	target = FleetFactoryV3.createFleet(params);
-        target.setName("Supreme Conqueror's Armada");
+		target.setName("Армада Верховного завоевателя");
         target.setNoFactionInName(true);
         target.getFleetData().addFleetMember(member);
         target.getFleetData().addFleetMember(member2);
@@ -292,13 +292,13 @@ public class dpl_DeadMenTellNoTales extends HubMissionWithBarEvent implements Fl
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Start investigation in " +
+			info.addPara("Начните расследование в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V to report the situations.", opad);
+			info.addPara("Вернитесь на Исследовательский объект V и доложите обстановку.", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: CHAIR IS LOCATED IN THE " +
+			info.addPara("РЕЖИМ РАЗРАБОТЧИКА: ПРЕДСЕДАТЕЛЬ НАХОДИТСЯ В ЛОКАЦИИ " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -308,11 +308,11 @@ public class dpl_DeadMenTellNoTales extends HubMissionWithBarEvent implements Fl
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Start investigation in " +
+			info.addPara("Начните расследование в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V.", tc, pad);
+			info.addPara("Вернитесь на Исследовательский объект V.", tc, pad);
             return true;
         }
         return false;
@@ -332,7 +332,7 @@ public class dpl_DeadMenTellNoTales extends HubMissionWithBarEvent implements Fl
     // mission name
     @Override
     public String getBaseName() {
-        return "Dead Men Tell No Tales";
+		return "Мертвецы не рассказывают сказок";
     }
 
     //I don't know why we need to implement this. If I don't implement this dummy method, things go wrong.

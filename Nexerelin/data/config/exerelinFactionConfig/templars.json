@@ -3,7 +3,7 @@
     "corvusCompatible":true,
     "hostileToAll":1,
     
-    "rebelFleetSuffix":"Heretics",
+    "rebelFleetSuffix":"Еретики",
 
     "marketSpawnWeight":0.5,
     
@@ -48,8 +48,8 @@
     "dropPrisoners":false,
     
     "vengeanceLevelNames":["Excommunication", "Interdiction", "Damnation"],
-    "vengeanceFleetNames":["Evangelists", "Inquisition", "Crusade"],
-    "vengeanceFleetNamesSingle":["Evangelists", "an Inquisition", "a Crusade Fleet"],
+    "vengeanceFleetNames":["Евангелисты", "Инквизиция", "Крестовый поход"],
+    "vengeanceFleetNamesSingle":["Евангелисты", "инквизиция", "флот крестоносцев"],
     
     "startShipsSolo":[["tem_martyr_sal"]],
     "startShipsCombatSmall":[["tem_jesuit_est", "tem_martyr_def"]],

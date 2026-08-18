@@ -84,15 +84,15 @@ public class DeathWorld extends BaseMarketConditionPlugin {
     protected void createTooltipAfterDescription(TooltipMakerAPI tooltip, boolean expanded) {
         float oPad = 10f;
 
-        tooltip.addPara("%s a random hazardous condition once every %s months", oPad, Misc.getHighlightColor(), "Suppresses", SUPPRESS_CONDITION_PER_MONTH_MOD + "");
-        tooltip.addPara("Trains %s of marines in the market's stockpile every %s", oPad, Misc.getHighlightColor(), Math.round(MARINES_TO_TRAIN_MULT * 100f) + "%", "month");
-        tooltip.addPara("%s ground defense", oPad, Misc.getHighlightColor(), "+" + Math.round(GROUND_DEFENSE_MULT * 100f) + "%");
-        tooltip.addPara("%s production to population & infrastructure, orbital works, high command, and mining. Applies to all similar structures.", oPad, Misc.getHighlightColor(), "+" + SUPPLY_BONUS);
+        tooltip.addPara("%s случайное опасное условие раз в %s мес.", oPad, Misc.getHighlightColor(), "Подавляет", SUPPRESS_CONDITION_PER_MONTH_MOD + "");
+        tooltip.addPara("Ежемесячно обучает %s морпехов из запасов рынка", oPad, Misc.getHighlightColor(), Math.round(MARINES_TO_TRAIN_MULT * 100f) + "%");
+        tooltip.addPara("%s к наземной обороне", oPad, Misc.getHighlightColor(), "+" + Math.round(GROUND_DEFENSE_MULT * 100f) + "%");
+        tooltip.addPara("%s к производству населения и инфраструктуры, орбитальных верфей, верховного командования и добычи. Действует на все аналогичные сооружения.", oPad, Misc.getHighlightColor(), "+" + SUPPLY_BONUS);
         tooltip.beginTable2(this.market.getFaction(), 20f, true, true,
-                new Object[]{"Suppressed Conditions", tooltip.getWidthSoFar() / 2f});
-        tooltip.addTableHeaderTooltip(0, "Name of the suppressed conditions");
+                new Object[]{"Подавленные условия", tooltip.getWidthSoFar() / 2f});
+        tooltip.addTableHeaderTooltip(0, "Названия подавленных условий");
         if (this.suppressedConditions.isEmpty()) {
-            tooltip.addRow(Alignment.MID, Misc.getGrayColor(), "No conditions suppressed");
+            tooltip.addRow(Alignment.MID, Misc.getGrayColor(), "Нет подавленных условий");
         }
         for (MarketConditionAPI c : this.suppressedConditions) {
             tooltip.addRow(Alignment.MID, Misc.getTextColor(), c.getName());

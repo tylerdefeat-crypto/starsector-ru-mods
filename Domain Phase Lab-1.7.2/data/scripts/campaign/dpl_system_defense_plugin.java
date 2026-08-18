@@ -398,7 +398,7 @@ public class dpl_system_defense_plugin implements EveryFrameScript, FleetEventLi
 		CampaignFleetAPI fleet = FleetFactoryV3.createFleet(params);
 		if (fleet == null || fleet.isEmpty()) return false;
 		
-		fleet.setName("Phase Lab Marine Fleet");
+		fleet.setName("Флот морской пехоты Фазовой Лаборатории");
 		fleet.setNoFactionInName(true);
 		
 		fleet.getFleetData().sort();
@@ -457,7 +457,7 @@ public class dpl_system_defense_plugin implements EveryFrameScript, FleetEventLi
 		CampaignFleetAPI fleet = FleetFactoryV3.createFleet(params);
 		if (fleet == null || fleet.isEmpty()) return false;
 		
-		fleet.setName("Phase Lab Marine Fleet");
+		fleet.setName("Флот морской пехоты Фазовой Лаборатории");
 		fleet.setNoFactionInName(true);
 		
 		fleet.getFleetData().sort();
@@ -516,7 +516,7 @@ public class dpl_system_defense_plugin implements EveryFrameScript, FleetEventLi
 		CampaignFleetAPI fleet = FleetFactoryV3.createFleet(params);
 		if (fleet == null || fleet.isEmpty()) return false;
 		
-		fleet.setName("Phase Lab Marine Fleet");
+		fleet.setName("Флот морской пехоты Фазовой Лаборатории");
 		fleet.setNoFactionInName(true);
 		
 		fleet.getFleetData().sort();
@@ -575,7 +575,7 @@ public class dpl_system_defense_plugin implements EveryFrameScript, FleetEventLi
 		CampaignFleetAPI fleet = FleetFactoryV3.createFleet(params);
 		if (fleet == null || fleet.isEmpty()) return false;
 		
-		fleet.setName("Phase Lab Marine Fleet");
+		fleet.setName("Флот морской пехоты Фазовой Лаборатории");
 		fleet.setNoFactionInName(true);
 		
 		fleet.getFleetData().sort();

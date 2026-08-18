@@ -1,10 +1,10 @@
 {
   "id": "aitweaks",
-  "name": "AI Tweaks",
+  "name": "Настройки ИИ",
   "author": "Genir",
   "utility": "true",
   "version": "2.2.9",
-  "description": "A mod providing various ship AI improvements.",
+  "description": "Различные улучшения искусственного интеллекта кораблей.",
   "gameVersion": "0.98a-RC8",
   "jars": [
     "jars/aitweaks-launcher.jar"

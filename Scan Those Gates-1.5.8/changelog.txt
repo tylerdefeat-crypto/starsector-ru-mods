@@ -1,55 +1,55 @@
-Version 1.5.8
-- Update for 0.98a
+Версия 1.5.8
+- Обновлено для 0.98a.
 
-Version 1.5.7
-- Update for 0.97a
-- Add missing settings keys to settings.json
+Версия 1.5.7
+- Обновлено для 0.97a.
+- В settings.json добавлены отсутствовавшие ключи.
 
-Version 1.5.6
-- Kotlin
-- Fix logging for Gate Scanner
-- Abilities should now be added if they aren't detected in the player's available abilities
-- Fix check for minimum LunaLib version
+Версия 1.5.6
+- Переход на Kotlin.
+- Исправлено журналирование сканера Врат.
+- Способности добавляются повторно, если отсутствуют у игрока.
+- Исправлена проверка минимальной версии LunaLib.
 
-Version 1.5.5
-- Prevent users from using outdated version of LunaLib with mod
-- Fixed spelling error in variable naming
+Версия 1.5.5
+- Добавлена защита от запуска с устаревшей версией LunaLib.
+- Исправлена опечатка в имени переменной.
 
-Version 1.5.4
-- Fixed mod crash due to lack of LunaLib soft dependency in some situations
-- Renamed method for checking gate intel and inverted behavior
-- Added gate intel check to make sure scan ability cannot be reactivated if no new gates can be activated or have intel to be added.
+Версия 1.5.4
+- Исправлен вылет при отсутствии необязательной зависимости LunaLib.
+- Переименован метод проверки разведданных о Вратах и инвертировано его поведение.
+- Повторное сканирование запрещено, если нет новых Врат для активации или добавления в разведданные.
 
-Version 1.5.3
-- LunaSettings integration
-- Allow gate scan to add inactive gates to intel without activating them
+Версия 1.5.3
+- Добавлена интеграция с LunaSettings.
+- Неактивные Врата можно добавлять в разведданные без активации.
 
-Version 1.5.2
-- Updated for Starsector version 0.96a.
-- Refactored package names.
+Версия 1.5.2
+- Обновлено для Starsector 0.96a.
+- Переработаны имена пакетов.
 
-Version 1.5.1
-- Added listeners to allow for discovered hypershunts and cryosleepers (when found not using the scanning abilities) to be added to the "Megastructures" intel tab.
+Версия 1.5.1
+- Обнаруженные без способностей гипершунты и криоспящие добавляются на вкладку разведданных «Мегаструктуры».
 
-Version 1.5.0
-- Moves scanning functionality to abilities.
-- Added abilities to reveal the location of Coronal Hypershunts and Domain-era Cryosleepers.
+Версия 1.5.0
+- Сканирование перенесено в способности.
+- Добавлены способности обнаружения корональных гипершунтов и криоспящих эпохи Домена.
 
-Version 1.4.1
-- Scanned gates are added to the intel screen. settings.json options are available for adding inactive gates to intel or scanning inactive gates during game startup.
+Версия 1.4.1
+- Просканированные Врата добавляются в разведданные. В settings.json доступны параметры для неактивных Врат.
 
-Version 1.4.0
-- Gates are scanned based on their being located in a system with a non-hidden market at save start when Nexerelin Skip Story or the Skip Story mod is enabled.
+Версия 1.4.0
+- При пропуске сюжета через Nexerelin или Skip Story сканируются Врата в системах с открытыми рынками.
 
-Version 1.3
-- Fixed a crash caused by not having Nexerelin enabled.
-- Added support for the Skip Story mod.
+Версия 1.3
+- Исправлен вылет без Nexerelin.
+- Добавлена поддержка Skip Story.
 
-Version 1.2
-- Added version checking
+Версия 1.2
+- Добавлена проверка версии.
 
-Version 1.1
-- Fixed the crash caused by gates with no gateData (Shadowyards Reconstruction Authority). Logs errors.
+Версия 1.1
+- Исправлен вылет из-за Врат без gateData; ошибки записываются в журнал.
 
-Version 1.0
--  Initial Release
+Версия 1.0
+- Первый выпуск.

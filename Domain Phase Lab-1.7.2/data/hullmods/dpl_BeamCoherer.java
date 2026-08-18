@@ -59,15 +59,14 @@ public class dpl_BeamCoherer extends BaseHullMod {
 		Color h = Misc.getHighlightColor();
 		Color bad = Misc.getNegativeHighlightColor();
 		
-		tooltip.addPara("Designed by the Phase Lab for use on Baritone class Light Cruiser, "
-				+ "this special device greatly alleviates dispersion of beam weapons.", opad);
-		tooltip.addPara("Increases the base range of all beam Energy and Hybrid weapons by %s.", opad, h,
+		tooltip.addPara("Это особое устройство, созданное Фазовой Лабораторией для лёгкого крейсера класса «Баритон», "
+				+ "значительно снижает рассеивание лучевого оружия.", opad);
+		tooltip.addPara("Увеличивает базовую дальность всего лучевого энергетического и гибридного оружия на %s.", opad, h,
 				"" + (float)RANGE_BONUS + "%");
 		
-		tooltip.addSectionHeading("Interactions with other modifiers", Alignment.MID, opad);
-		tooltip.addPara("Since the base range is increased, this range modifier"
-				+ " - unlike most other flat modifiers in the game - "
-				+ "is increased by percentage modifiers from other hullmods and skills.", opad);
+		tooltip.addSectionHeading("Взаимодействие с другими модификаторами", Alignment.MID, opad);
+		tooltip.addPara("Поскольку увеличивается базовая дальность, этот бонус, в отличие от большинства других фиксированных модификаторов, "
+				+ "усиливается процентными бонусами других модификаций корпуса и навыков.", opad);
 	}
 	
 //	@Override
@@ -86,7 +85,6 @@ public class dpl_BeamCoherer extends BaseHullMod {
 //	}
 	
 }
-
 
 
 

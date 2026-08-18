@@ -10,7 +10,7 @@
     
     "spawnPatrols":true,
     
-    "rebelFleetSuffix":"Splinter Group",
+    "rebelFleetSuffix":"Отколовшаяся группа",
     
     "startRelationships":{ "tritachyon":0.1, "templars":-0.1 }, # in Corvus they're also only suspicious with League and Exi but meh
     "diplomacyTraits":["anarchist"],
@@ -40,6 +40,6 @@
     ],
     
     "vengeanceLevelNames":["Grudge", "Elimination"],
-    "vengeanceFleetNames":["Executors", "Kill-Fleet"],
-    "vengeanceFleetNamesSingle":["Executors", "a Kill-Fleet"],
+    "vengeanceFleetNames":["Экзекуторы", "Флот убийц"],
+    "vengeanceFleetNamesSingle":["Экзекуторы", "флот убийц"],
 }

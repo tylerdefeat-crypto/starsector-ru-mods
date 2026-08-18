@@ -5,7 +5,7 @@
     "pirateFaction":true,
     "showIntelEvenIfDead":true,
     
-    "rebelFleetSuffix":"Heretics",
+    "rebelFleetSuffix":"Еретики",
 
     "difficultyString":"hard",
 	
@@ -18,8 +18,8 @@
     "maxRelationships":{ "tritachyon":-0.51, "remnant":-0.51 },
     
     "vengeanceLevelNames":["Excommunication", "Interdiction", "Jihad"],
-    "vengeanceFleetNames":["Evangelists", "Inquisition", "Crusade"],
-    "vengeanceFleetNamesSingle":["Evangelists", "an Inquisition", "a Crusade Fleet"],
+    "vengeanceFleetNames":["Евангелисты", "Инквизиция", "Крестовый поход"],
+    "vengeanceFleetNamesSingle":["Евангелисты", "инквизиция", "флот крестоносцев"],
     
     "specialForcesMaxFleets":0,
     

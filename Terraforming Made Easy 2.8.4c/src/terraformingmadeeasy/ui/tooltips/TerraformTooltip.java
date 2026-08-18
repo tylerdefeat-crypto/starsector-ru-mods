@@ -31,15 +31,15 @@ public class TerraformTooltip extends BaseTooltipCreator {
         displayPreferences(tooltip, this.project.likedIndustries, false, false, 10f);
         displayPreferences(tooltip, this.project.hatedConditions, true, true, 10f);
         Color textColor = this.project.canChangeGasGiants ? Misc.getHighlightColor() : Misc.getNegativeHighlightColor();
-        String textFormat = this.project.canChangeGasGiants ? "Can" : "Cannot";
-        tooltip.addPara("%s be used on gas giants", 10f, textColor, textFormat);
+        String textFormat = this.project.canChangeGasGiants ? "Можно" : "Нельзя";
+        tooltip.addPara("%s использовать на газовых гигантах", 10f, textColor, textFormat);
         if (this.project.planetSpecOverride != null) {
             for (PlanetSpecAPI spec : Global.getSettings().getAllPlanetSpecs()) {
                 if (spec.isStar()) {
                     continue;
                 }
                 if (Objects.equals(spec.getPlanetType(), this.project.planetSpecOverride)) {
-                    tooltip.addPara("The planet will be terraformed into a %s world", 10f, Misc.getHighlightColor(), spec.getName());
+                    tooltip.addPara("Планета будет преобразована в мир типа «%s»", 10f, Misc.getHighlightColor(), spec.getName());
                     break;
                 }
             }
@@ -47,11 +47,11 @@ public class TerraformTooltip extends BaseTooltipCreator {
     }
 
     public void displayPreferences(TooltipMakerAPI tooltip, String textExpression, boolean isHated, boolean isCondition, float pad) {
-        String titlePrefix = isHated ? "Removes " : "Required ";
-        String titleSuffix = isCondition ? "Conditions" : "Industries";
+        String titlePrefix = isHated ? "Устраняемые " : "Требуемые ";
+        String titleSuffix = isCondition ? "условия" : "производства";
 
         if (textExpression == null || textExpression.isEmpty()) {
-            tooltip.addPara(titlePrefix + titleSuffix + ": %s", pad, Misc.getHighlightColor(), "None");
+            tooltip.addPara(titlePrefix + titleSuffix + ": %s", pad, Misc.getHighlightColor(), "нет");
             return;
         }
 
@@ -60,13 +60,13 @@ public class TerraformTooltip extends BaseTooltipCreator {
 
         for (String s : expressions) {
             String expression = s;
-            String bulletPrefix = isHated ? "Removes " : "Needs ";
+            String bulletPrefix = isHated ? "Устраняет " : "Требуется ";
             String bulletTitle = "";
             if (expression.contains("needAll")) {
-                bulletTitle = bulletPrefix + "All:";
+                bulletTitle = bulletPrefix + "всё:";
                 expression = expression.replaceAll("needAll:", "");
             } else if (expression.contains("needOne")) {
-                bulletTitle = bulletPrefix + "One:";
+                bulletTitle = bulletPrefix + "одно:";
                 expression = expression.replaceAll("needOne:", "");
             }
             String[] ids = expression.split("\\|");

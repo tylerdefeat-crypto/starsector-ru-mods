@@ -218,13 +218,13 @@ public class dpl_BeInDeepWater extends HubMissionWithBarEvent implements FleetEv
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Find and rescue the agent in the " +
+			info.addPara("Найдите и спасите агента в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V to release the agent.", opad);
+			info.addPara("Вернитесь на Исследовательский объект V, чтобы отпустить агента.", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: PATHER IS LOCATED IN THE " +
+			info.addPara("РЕЖИМ РАЗРАБОТЧИКА: ЛУДДИТ НАХОДИТСЯ В ЛОКАЦИИ " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -234,11 +234,11 @@ public class dpl_BeInDeepWater extends HubMissionWithBarEvent implements FleetEv
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Find and rescue the agent in the " +
+			info.addPara("Найдите и спасите агента в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V.", tc, pad);
+			info.addPara("Вернитесь на Исследовательский объект V.", tc, pad);
             return true;
         }
         return false;
@@ -258,7 +258,7 @@ public class dpl_BeInDeepWater extends HubMissionWithBarEvent implements FleetEv
     // mission name
     @Override
     public String getBaseName() {
-        return "Be In Deep Water";
+		return "В глубокой воде";
     }
 
     //I don't know why we need to implement this. If I don't implement this dummy method, things go wrong.

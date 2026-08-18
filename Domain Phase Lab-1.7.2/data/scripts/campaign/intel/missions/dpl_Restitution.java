@@ -260,14 +260,14 @@ public class dpl_Restitution extends HubMissionWithBarEvent implements FleetEven
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.FIND_CLUE) {
-            info.addPara("Look for the stolen clarinet class ship around the star in " +
+			info.addPara("Ищите украденный корабль класса «Кларнет» возле звезды в локации " +
                     system.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Hunt down and eliminate the executive in the " +
+			info.addPara("Выследите и устраните руководителя в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: EXECUTIVE IS LOCATED IN THE " +
+			info.addPara("РЕЖИМ РАЗРАБОТЧИКА: РУКОВОДИТЕЛЬ НАХОДИТСЯ В ЛОКАЦИИ " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -277,11 +277,11 @@ public class dpl_Restitution extends HubMissionWithBarEvent implements FleetEven
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.FIND_CLUE) {
-            info.addPara("Look for the stolen clarinet class ship around the star in " +
+			info.addPara("Ищите украденный корабль класса «Кларнет» возле звезды в локации " +
                     system.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Hunt down the executive in the " +
+			info.addPara("Выследите руководителя в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         }
@@ -302,6 +302,6 @@ public class dpl_Restitution extends HubMissionWithBarEvent implements FleetEven
     // mission name
     @Override
     public String getBaseName() {
-        return "Restitution";
+		return "Возмещение";
     }
 }

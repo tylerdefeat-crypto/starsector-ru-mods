@@ -104,9 +104,9 @@ FireBest MarketPostOpen","Недавно восстановленные огни
 #IndEvo_crucible_market_flavourTextEnabled,PopulateOptions,"$menuState == main
 $hasMarket
 $IndEvo_crucible
-!$crucible_introTextShown",$crucible_introTextShown = true 0,"Recently restored lights flicker on as if already ancient, illuminating clouds of dust as your ship traverses the industrial flightways. Crossing the threshold of the dark, claustrophobic corridors, a residential hangar opens up, the gargoyle-like guidance mechanism watching in contempt as you make your way towards the busy landing pads. 
+!$crucible_introTextShown",$crucible_introTextShown = true 0,"Недавно восстановленные светильники мерцают так, словно уже успели состариться, выхватывая из пыльной мглы промышленные лётные коридоры. За порогом тёмных тесных переходов раскрывается жилой ангар. Похожий на горгулью механизм наведения презрительно наблюдает, как ваш корабль направляется к оживлённым посадочным площадкам.
 
-While the personnel manning flight control sounds chipper, the architecture turns their friendly speech into something almost foreboding.",,
+Диспетчеры говорят бодро и приветливо, но мрачная архитектура придаёт их словам почти зловещий оттенок.",,
 IndEvo_crucible_market_activate,PopulateOptions,"$menuState == main
 $hasMarket
 $IndEvo_crucible
@@ -397,9 +397,9 @@ SetTooltip salExplore ""Ваши сборщики отказываются сп�
 ,,,,,,
 #watchtower,,,,,,
 #IndEvo_derelictWatchtower,OpenInteractionDialog,"$IndEvo_isArtilleryActive score:2000
-$tag:IndEvo_watchtower",,"Any attempts at connecting to the $entityName get stifled by an obviously AI-backed counter-hack. Your engineers concede defeat after a few minutes to avoid a network breach.
+$tag:IndEvo_watchtower",,"Любая попытка подключиться к $entityName пресекается контратакой, явно поддерживаемой искусственным интеллектом. Через несколько минут инженеры отступают, чтобы не допустить взлома вашей сети.
 
-Disabling the entity backing the hacks will probably fix this.",0:defaultLeave:Уйти,
+Вероятно, проблему решит отключение объекта, обеспечивающего контратаку.",0:defaultLeave:Уйти,
 IndEvo_derelictWatchtower_notFunctional,OpenInteractionDialog,"$objectiveNonFunctional score:2001
 $tag:IndEvo_watchtower",,"$entityName лежит безмолвно, и любые попытки взаимодействия с ним безуспешны, возможно, он находится в аварийном отключении.
 

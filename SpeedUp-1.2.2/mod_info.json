@@ -4,7 +4,7 @@
     "author": "DarkRevenant",
     "version": "1.2.2",
     "utility": "true",
-    "description": "Adds a key binding to speed the game up. Hold the middle mouse button or press the caps lock key. Controls are fully customizable.",
+    "description": "Добавляет горячие клавиши для ускорения игры. Удерживайте среднюю кнопку мыши или нажмите Caps Lock. Управление полностью настраивается.",
     "gameVersion": "0.98a-RC7",
     "jars":["jars/SpeedUp.jar"],
     "modPlugin":"org.dark.speedup.SUModPlugin"

@@ -142,25 +142,25 @@ public class dpl_JustAsPlanned extends HubMissionWithBarEvent {
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.GO_TO_SINDRIA) {
-            info.addPara("Find clues in Sindria. Try to ask Macario first in " +
+			info.addPara("Найдите улики на Синдрии. Сначала попробуйте расспросить Макарио в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.GO_TO_RSV) {
-            info.addPara("Go back to Research Site V to ask Eliza about the hymn.", opad);
+			info.addPara("Вернитесь на Исследовательский объект V и спросите Элизу о «гимне».", opad);
         } else if (currentStage == Stage.GO_FOR_EXECUTOR) {
-            info.addPara("Report to Macario about the hymn system, he is in " +
+			info.addPara("Расскажите Макарио о системе «гимна»; он находится в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.GO_FOR_ANTHEM) {
-            info.addPara("Go to Research Site V to ask Eliza about the prototype.", opad);
+			info.addPara("Отправляйтесь на Исследовательский объект V и спросите Элизу о прототипе.", opad);
         } else if (currentStage == Stage.WAIT_FOR_ANTHEM) {
-            info.addPara("Eliza is preparing the prototype at Research Site V, be patient.", opad);
+			info.addPara("Элиза готовит прототип на Исследовательском объекте V. Подождите.", opad);
         } else if (currentStage == Stage.RETURN_TO_SINDRIA) {
-            info.addPara("Report to Macario about the prototype, he is in " +
+			info.addPara("Расскажите Макарио о прототипе; он находится в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V to release the agent.", opad);
+			info.addPara("Вернитесь на Исследовательский объект V, чтобы отпустить агента.", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: MACARIO IS LOCATED IN THE " +
+			info.addPara("РЕЖИМ РАЗРАБОТЧИКА: МАКАРИО НАХОДИТСЯ В ЛОКАЦИИ " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -170,31 +170,31 @@ public class dpl_JustAsPlanned extends HubMissionWithBarEvent {
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.GO_TO_SINDRIA) {
-            info.addPara("Ask Macario in " +
+			info.addPara("Спросите Макарио в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.GO_TO_RSV) {
-            info.addPara("Ask Eliza about the 'hymn' in " +
+			info.addPara("Спросите Элизу о «гимне» в локации " +
                     system.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.GO_FOR_EXECUTOR) {
-            info.addPara("Tell Macario about the hymn system in " +
+			info.addPara("Расскажите Макарио о системе «гимна» в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.GO_FOR_ANTHEM) {
-            info.addPara("Ask Eliza about the prototype in " +
+			info.addPara("Спросите Элизу о прототипе в локации " +
                     system.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.WAIT_FOR_ANTHEM) {
-            info.addPara("Wait for Eliza to finish the prototype, she is in " +
+			info.addPara("Дождитесь, пока Элиза закончит прототип; она находится в локации " +
                     system.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_SINDRIA) {
-            info.addPara("Find clues in sindria. Try to ask Macario first in " +
+			info.addPara("Найдите улики на Синдрии. Сначала попробуйте расспросить Макарио в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V.", tc, pad);
+			info.addPara("Вернитесь на Исследовательский объект V.", tc, pad);
             return true;
         }
         return false;
@@ -224,7 +224,7 @@ public class dpl_JustAsPlanned extends HubMissionWithBarEvent {
     // mission name
     @Override
     public String getBaseName() {
-        return "Just As Planned";
+		return "Всё по плану";
     }
 
 }

@@ -2612,11 +2612,11 @@ $global.dpl_lmtdStarted
 
 Видеопоток оживает с рябью и искажениями звука пока ваш датапад подстраивается под устаревшие протоколы связи.
 
-""Ты?"" рычит $personName. Элиза стоит в углу избегая камеры. Она тихо шепчет вам сказать ""Captain EL sends her regards."" Вы так и делаете.
+""Ты?"" рычит $personName. Элиза стоит в углу избегая камеры. Она тихо шепчет вам сказать: ""Капитан ЭЛ передаёт привет."" Вы так и делаете.
 
 ""А."" Манера $hisOrHer резко меняется и враждебность в голосе падает на несколько уровней. ""Ты никто важный. Но гостя ты привел. По приказу Канты я уже подготовил шаттл. Спускайтесь лично только наш гость и ты. Без глупостей.""",dpl_lmtd_meetKanta:Сесть в шаттл.,
 dpl_lmtdkdLandingFirstTime,DialogOptionSelected,$option == dpl_lmtd_meetKanta,"EndConversation DO_NOT_FIRE
-ShowDefaultVisual","Вы выходите из шаттла вместе с Элизой. Пиратский лейтенант встречающий вас стоит с закрытыми глазами и молча ждет ваших слов. Вы говорите ему ""Captain EL sends her regards."" Он кивает и отправляет сигнал. К посадочной площадке подходит другой станционный шаттл: ""Канта не хочет чтобы кто-то видел этого капитана EL. Садитесь в станционный шаттл он доставит вас к Канте.""",dpl_lmtd_meetKanta2:Сесть в станционный шаттл.,
+ShowDefaultVisual","Вы выходите из шаттла вместе с Элизой. Пиратский лейтенант, встречающий вас, стоит с закрытыми глазами и молча ждёт ваших слов. Вы говорите ему: ""Капитан ЭЛ передаёт привет."" Он кивает и отправляет сигнал. К посадочной площадке подходит другой станционный шаттл: ""Канта не хочет, чтобы кто-то видел этого капитана ЭЛ. Садитесь в станционный шаттл — он доставит вас к Канте.""",dpl_lmtd_meetKanta2:Сесть в станционный шаттл.,
 dpl_lmtdkdKantaFirstIntro,DialogOptionSelected,$option == dpl_lmtd_meetKanta2,"BeginConversation kanta false true
 $player.metKanta = true","Шаттл останавливается. Вы с Элизой выходите наружу. За вами закрывается огромная взрывная дверь увешанная багровыми знаменами с черепами. Это небольшой стальной бункер вмещающий лишь два шаттла. Помещение заливается красным светом и вы видите шипящую гудящую фигуру военачальника Джориен Канты - теперь в ней больше машины чем человека. Лицо словно маска. Видимая кожа сухая и жесткая как старые радиационные шрамы космических ветеранов.
 
@@ -2971,18 +2971,18 @@ dpl_artworksBanachEncounter2,DialogOptionSelected,$option == dpl_artworks_ask1,u
 dpl_artworksBanachEncounter3,DialogOptionSelected,$option == dpl_artworks_ask2,,"Он вздыхает: ""Ладно полагаю сейчас не время спорить. Я уже загрузил данные испытаний в спаскапсулу. И сам в нее сяду. Если случится что-то плохое она стартует и доставит меня обратно на Research Site V. И капитан если что-то пойдет не так пожалуйста вернитесь и скажите Элизе что оружие работает. Для меня и для Фазовой Лаборатории это очень важно.""",dpl_artworks_ask3:Понял. Берегите себя.,
 dpl_artworksBanachEncounter4,DialogOptionSelected,$option == dpl_artworks_ask3,$entity.ignorePlayerCommRequests = true,"Его глаза широко раскрываются: ""Вражеский флот на подходе! Боевая тревога!"" Связь обрывается.",cutCommLink:Готовиться к бою.,
 dpl_artworksOmegaEncounter,BeginFleetEncounter,"$dpl_artworks_omegafleet score: 1000
-!$global.dpl_artworks_metomega",$global.dpl_artworks_metomega = true,"""target Banach Salazar
-important equipments, kept
-potential allied fleet, identified
-to earn omegas blessing
-equipments
-submit!
-to face complete destruction
-else!""
+!$global.dpl_artworks_metomega",$global.dpl_artworks_metomega = true,"""цель Банах Салазар
+важное оборудование обнаружено
+потенциальный союзный флот опознан
+чтобы заслужить благословение Омеги
+оборудование
+передать!
+иначе
+полное уничтожение!""
 
-Похоже этот странный ИИ хочет заполучить оружие Банаха. А имя omega вам кажется смутно знакомым. Пока вы пытаетесь осмыслить происходящее Банах выходит в эфир: ""Внимание флот дрон-кораблей! Этот флот перевозит засекреченное оружие Фазовой Лаборатории. Вы можете вступить в бой и понести потери но оружие вы не получите.""
+Похоже, этот странный ИИ хочет заполучить оружие Банаха. А имя Омега кажется вам смутно знакомым. Пока вы пытаетесь осмыслить происходящее, Банах выходит в эфир: ""Внимание, флот дронов! Этот флот перевозит засекреченное оружие Фазовой Лаборатории. Вы можете вступить в бой и понести потери, но оружие не получите.""
 
-Странный ИИ обрывает связь. Похоже чтобы открыть Банаху путь обратно на Research Site V придется их уничтожить.",cutCommLink:Ну и переговорщик.,
+Странный ИИ обрывает связь. Похоже, чтобы открыть Банаху путь обратно на Исследовательский объект V, придётся их уничтожить.",cutCommLink:Ну и переговорщик.,
 dpl_artworks_completeOpen,PopulateOptions,"$id == eliza_lovelace
 !$dpl_artworks_completed
 $dpl_artworks_killed ",SetOptionColor dpl_artworks_complete buttonShortcut,,dpl_artworks_complete:Я вернулся(лась)! Банах должен быть в безопасности.,
@@ -4375,14 +4375,14 @@ Call $global.dpl_RepairCTap_ref updateStage
 $global.dpl_RepairCTap_Complete = true","""Академик Элиза сейчас крайне занята, ее команда почти завершила устройство подключения к сети Врат,"" говорит Бэрд. ""Следующая задача - построить прототип временных звездных Врат. Контр-адмирал Росс Хиггс ждет вас в Лабораторной фабрике.""",dpl_gaMeetingRCTapComplete:Хорошо. Понял. Я отправляюсь.,
 dpl_gaMeetingRCTapComplete1,DialogOptionSelected,$option == dpl_gaMeetingRCTapComplete,AddCredits 1000000,"""Хорошо, мы ждем от вас хороших новостей."" Бэрд уходит в кабинет с охраной. Пора идти.
 
-И вы замечаете зачисление кредитов с названием операции: ""Project Rewards. The transaction name is not empty so I guess it worked. Vice Admiral Salazar, I think you are supposed to hit that red button to stop recording. Oh I see."" на ваш счет.",dpl_gaPPrometheusLeave:Уйти,
+И вы замечаете зачисление кредитов с названием операции: ""Награды за проект. Название транзакции не пустое, так что, полагаю, всё сработало. Вице-адмирал Салазар, кажется, вам нужно нажать красную кнопку, чтобы остановить запись. А, понятно."" на ваш счёт.",dpl_gaPPrometheusLeave:Уйти,
 dpl_gaMeetingRCTapAllComplete,DialogOptionSelected,"$option == dpl_gaOpeningRCTapComplete
 $global.dpl_DD_Completed","$global.dpl_RepairCTap_complete = true
 Call $global.dpl_RepairCTap_ref updateStage
 $global.dpl_RepairCTap_Complete = true
 AddCredits 1000000","""Академик Элиза доложила, что устройство подключения к сети Врат почти готово,"" говорит Бэрд. ""И поскольку устройство HELA уже развернуто, считаю это удачным моментом для короткой встречи. Пожалуйста, пройдемте со мной в кабинет, капитан.""
 
-И вы замечаете зачисление кредитов с названием операции: ""Project Rewards. The transaction name is not empty so I guess it worked. Vice Admiral Salazar, I think you are supposed to hit that red button to stop recording. Oh I see."" на ваш счет.",dpl_gaMeetingAllComplete:Продолжить.,
+И вы замечаете зачисление кредитов с названием операции: ""Награды за проект. Название транзакции не пустое, так что, полагаю, всё сработало. Вице-адмирал Салазар, кажется, вам нужно нажать красную кнопку, чтобы остановить запись. А, понятно."" на ваш счёт.",dpl_gaMeetingAllComplete:Продолжить.,
 ,,,,,,
 #Ask Ross about HELA Device,,,,,,
 dpl_RossDeployHELA,PopulateOptions,"$id == ross_higgs
@@ -4527,14 +4527,14 @@ Call $global.dpl_DeployDevice_ref updateStage
 $global.dpl_DD_Completed = true","""Академик Элиза сейчас крайне занята, ее команда почти завершила устройство подключения к сети Врат,"" говорит Бэрд. ""Следующая задача - отремонтировать поврежденный заброшенный корональный ответвитель. Он будет питать HELA-device, так что это критично для успеха.""",dpl_gaMeetingDHelaComplete:Хорошо. Понял. Я выдвигаюсь.,
 dpl_gaMeetingDHelaComplete1,DialogOptionSelected,$option == dpl_gaMeetingDHelaComplete,AddCredits 1000000,"""Хорошо, мы ждем от вас хороших новостей."" Бэрд уходит в кабинет с охраной. Пора идти.
 
-И вы замечаете зачисление кредитов с названием операции: ""Project Rewards. Did it work this time? Vice Admiral Salazar I think so. Good, and then how do I send this transaction? Oh, first you need to finish recording, just click this button."" на ваш счет.",dpl_gaPPrometheusLeave:Уйти,
+И вы замечаете зачисление кредитов с названием операции: ""Награды за проект. На этот раз сработало? Вице-адмирал Салазар: думаю, да. Хорошо, а как теперь отправить транзакцию? О, сначала нужно завершить запись — просто нажмите эту кнопку."" на ваш счёт.",dpl_gaPPrometheusLeave:Уйти,
 dpl_gaMeetingDHelaAllComplete,DialogOptionSelected,"$option == dpl_gaOpeningDHelaComplete
 $global.dpl_RepairCTap_Complete","$global.dpl_DD_completed = true
 Call $global.dpl_DeployDevice_ref updateStage
 $global.dpl_DD_Completed = true
 AddCredits 1000000","""Академик Элиза доложила, что устройство подключения к сети Врат почти готово,"" говорит Бэрд. ""И поскольку поврежденный корональный ответвитель уже отремонтирован, считаю это удачным моментом для короткой встречи. Пожалуйста, пройдите со мной в кабинет, капитан.""
 
-И вы замечаете зачисление кредитов с названием операции: ""Project Rewards. Did it work this time? Vice Admiral Salazar I think so. Good, and then how do I send this transaction? Oh, first you need to finish recording, just click this button."" на ваш счет.",dpl_gaMeetingAllComplete:Продолжить.,
+И вы замечаете зачисление кредитов с названием операции: ""Награды за проект. На этот раз сработало? Вице-адмирал Салазар: думаю, да. Хорошо, а как теперь отправить транзакцию? О, сначала нужно завершить запись — просто нажмите эту кнопку."" на ваш счёт.",dpl_gaMeetingAllComplete:Продолжить.,
 ,,,,,,
 #Activate HELA Device,,,,,,
 dpl_gaMeetingActHelaStart,DialogOptionSelected,$option == dpl_gaMeetingAllComplete,"ShowSecondPerson eliza_lovelace

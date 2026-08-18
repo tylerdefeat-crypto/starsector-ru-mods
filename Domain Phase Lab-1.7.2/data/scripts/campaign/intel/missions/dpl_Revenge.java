@@ -164,14 +164,14 @@ public class dpl_Revenge extends HubMissionWithBarEvent {
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.FIND_SHIP) {
-            info.addPara("Check the situation in the system " +
+			info.addPara("Проверьте обстановку в локации " +
                     system.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.RETURN_TO_FACTORY) {
-            info.addPara("Go to Lab Factory to return the dara storage, it's in the system " +
+			info.addPara("Верните хранилище данных на Фабрику Лаборатории в локации " +
                     system2.getNameWithLowercaseTypeShort() + ".", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: THE DERELICT IS LOCATED IN THE " +
+			info.addPara("РЕЖИМ РАЗРАБОТЧИКА: ПОКИНУТЫЙ КОРАБЛЬ НАХОДИТСЯ В ЛОКАЦИИ " +
                     system.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -181,11 +181,11 @@ public class dpl_Revenge extends HubMissionWithBarEvent {
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.FIND_SHIP) {
-            info.addPara("Check the situation in " +
+			info.addPara("Проверьте обстановку в локации " +
                     system.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_FACTORY) {
-            info.addPara("Go to Lab Factory in " +
+			info.addPara("Отправляйтесь на Фабрику Лаборатории в локации " +
                     system2.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         }
@@ -206,6 +206,6 @@ public class dpl_Revenge extends HubMissionWithBarEvent {
     // mission name
     @Override
     public String getBaseName() {
-        return "Revenge";
+		return "Месть";
     }
 }

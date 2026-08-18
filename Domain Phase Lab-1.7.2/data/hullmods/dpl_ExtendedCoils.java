@@ -34,10 +34,9 @@ public class dpl_ExtendedCoils extends BaseHullMod {
 	@Override
 	public String getUnapplicableReason(ShipAPI ship) {
 		if (!ship.getHullSpec().isPhase()) {
-			return "Can only be installed on phase ships";
+			return "Можно установить только на фазовые корабли";
 		}
 		return super.getUnapplicableReason(ship);
 	}
 	
 }
-

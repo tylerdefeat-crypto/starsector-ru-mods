@@ -1,7 +1,7 @@
 {
 	"baseHullId":"facet",
 	"skinHullId":"facet_endbringer",
-	"hullName":"Facet (END)",
+	"hullName":"Грань (КОНЕЦ)",
 	"descriptionPrefix":"[file not found]\n// Please do not touch ^_^",
 	"builtInMods":["nex_fast_repair"],
 	#"removeBuiltInMods":["automated"],

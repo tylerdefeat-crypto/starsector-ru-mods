@@ -166,7 +166,7 @@ public class dpl_Artworks extends HubMissionWithBarEvent implements FleetEventLi
     	params.averageSMods = 3;
     	
     	target = FleetFactoryV3.createFleet(params);
-        target.setName("Unknown Fleet");
+        target.setName("Неизвестный флот");
         target.setNoFactionInName(true);
         
 		CampaignFleetAPI fleet = Global.getFactory().createEmptyFleet(Factions.OMEGA, "f1", true);
@@ -264,7 +264,7 @@ public class dpl_Artworks extends HubMissionWithBarEvent implements FleetEventLi
         );
     	
     	banach_fleet = FleetFactoryV3.createFleet(params);
-    	banach_fleet.setName(banach_salazar.getNameString() + "'s Task Force");
+		banach_fleet.setName("Оперативная группа: " + banach_salazar.getNameString());
     	banach_fleet.getFleetData().addFleetMember(member);
     	banach_fleet.getFleetData().addFleetMember(member2);
     	banach_fleet.getFleetData().addFleetMember(member3);
@@ -329,16 +329,16 @@ public class dpl_Artworks extends HubMissionWithBarEvent implements FleetEventLi
         float opad = 10f;
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.MEET_BANACH) {
-            info.addPara("Find Banach Salazar's fleet in the " +
+            info.addPara("Найдите флот Банаха Салазара в локации " +
                     system.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Engage the unknown enemy fleet in the " +
+            info.addPara("Вступите в бой с неизвестным вражеским флотом в локации " +
                     system.getNameWithLowercaseTypeShort() + ".", opad);
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V to release the agent.", opad);
+            info.addPara("Вернитесь на Исследовательский объект V, чтобы отпустить агента.", opad);
         }
         if (isDevMode()) {
-            info.addPara("DEVMODE: BANACH IS LOCATED IN THE " +
+            info.addPara("РЕЖИМ РАЗРАБОТЧИКА: БАНАХ НАХОДИТСЯ В ЛОКАЦИИ " +
                     system.getNameWithLowercaseTypeShort() + ".", opad);
         }
     }
@@ -348,15 +348,15 @@ public class dpl_Artworks extends HubMissionWithBarEvent implements FleetEventLi
     public boolean addNextStepText(TooltipMakerAPI info, Color tc, float pad) {
         Color h = Misc.getHighlightColor();
         if (currentStage == Stage.MEET_BANACH) {
-            info.addPara("Find Banach Salazar's fleet in the " +
+            info.addPara("Найдите флот Банаха Салазара в локации " +
                     system.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.KILL_FLEET) {
-            info.addPara("Engage the unknown enemy fleet in the " +
+            info.addPara("Вступите в бой с неизвестным вражеским флотом в локации " +
                     system.getNameWithLowercaseTypeShort(), tc, pad);
             return true;
         } else if (currentStage == Stage.RETURN_TO_RSV) {
-            info.addPara("Return to Research Site V.", tc, pad);
+            info.addPara("Вернитесь на Исследовательский объект V.", tc, pad);
             return true;
         }
         return false;

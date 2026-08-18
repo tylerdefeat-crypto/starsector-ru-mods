@@ -30,7 +30,7 @@ public class dpl_OrbitalStation extends OrbitalStation {
         if (!super.isAvailableToBuild()) {
             return super.getUnavailableReason();
         }
-        return "Station type unavailable.";
+        return "Этот тип станции недоступен.";
     }
 
     @Override

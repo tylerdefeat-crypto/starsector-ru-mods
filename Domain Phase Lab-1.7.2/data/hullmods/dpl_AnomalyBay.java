@@ -57,12 +57,12 @@ public class dpl_AnomalyBay extends BaseHullMod {
 	}
 	
 	public String getUnapplicableReason(ShipAPI ship) {
-		if (ship != null && ship.isFrigate()) return "Can not be installed on a frigate";
-		if (ship != null && ship.isDestroyer()) return "Can not be installed on a destroyer";
-		if (ship != null && ship.getHullSpec().getFighterBays() <= 0) return "Ship doesn't have fighter bays";
-		if (ship != null && ship.getVariant().hasHullMod(HullMods.CONVERTED_HANGAR)) return "The ship must have fighter bays, not converted hangers";
-		if (ship != null && ship.getVariant().hasHullMod(HullMods.CONVERTED_BAY)) return "The ship's bay is already converted to cargo space";
-		return "Can not be installed on a phase ship";
+		if (ship != null && ship.isFrigate()) return "Нельзя установить на фрегат";
+		if (ship != null && ship.isDestroyer()) return "Нельзя установить на эсминец";
+		if (ship != null && ship.getHullSpec().getFighterBays() <= 0) return "На корабле нет ангаров";
+		if (ship != null && ship.getVariant().hasHullMod(HullMods.CONVERTED_HANGAR)) return "Кораблю нужны штатные, а не переоборудованные ангары";
+		if (ship != null && ship.getVariant().hasHullMod(HullMods.CONVERTED_BAY)) return "Ангары корабля уже переоборудованы под грузовые отсеки";
+		return "Нельзя установить на фазовый корабль";
 	}
 	
 	public boolean affectsOPCosts() {

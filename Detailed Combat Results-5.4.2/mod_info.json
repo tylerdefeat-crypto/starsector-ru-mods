@@ -1,9 +1,9 @@
 {
 	"id":"DetailedCombatResults",
-	"name":"Detailed Combat Results",
+	"name":"Подробные результаты боя",
 	"author":"Nick XR",
 	"version":"5.4.2",
-	"description":"Detailed Combat Results, open intel screen after combat ('E'), or press 'L' in the campaign map to bring up the analytics dialogue.",
+	"description":"Показывает подробные результаты боя. После сражения откройте разведданные клавишей E или нажмите L на карте кампании, чтобы открыть окно аналитики.",
 
 	# Breaking changes to this mod are only done between major game versions.
 	# If you change this to force compatability it's very likely you wont be able to upgrade this mod without breaking your save.

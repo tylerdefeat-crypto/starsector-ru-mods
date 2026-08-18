@@ -1,6 +1,6 @@
 {
   "tme_station": {
-    "defaultName": "Orbital Station",
+    "defaultName": "Орбитальная станция",
     "defaultRadius": 50,
     "customDescriptionId": "orbital_station_default",
     "interactionImage": "graphics/illustrations/orbital.jpg",
@@ -25,5 +25,4 @@
     ]
   }
 }
-
 

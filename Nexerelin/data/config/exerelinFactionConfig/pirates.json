@@ -7,7 +7,7 @@
     
     #"factionConditionSubplugin":"exerelin.campaign.econ.faction.OutlawFCSubplugin",
         
-    "rebelFleetSuffix":"Rivals",
+    "rebelFleetSuffix":"Соперники",
     
     "difficultyString":"hard",
     
@@ -20,8 +20,8 @@
     
     "freeMarket":true,
     
-    "vengeanceFleetNames":["Enforcers", "Hit-Fleet", "Horde"],
-    "vengeanceFleetNamesSingle":["an Enforcer fleet", "a Hit-Fleet", "a Horde"],
+    "vengeanceFleetNames":["Каратели", "Ударный флот", "Орда"],
+    "vengeanceFleetNamesSingle":["флот карателей", "ударный флот", "орда"],
     
     "specialForcesMaxFleets":0,
 
